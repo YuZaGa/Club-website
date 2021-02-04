@@ -1,0 +1,113 @@
+/*----------------------
+    Carousel
+-----------------------*/
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.m-slides-0 {
+    .slick-list {
+        margin: 0;
+    }
+
+    .slick-slide {
+        margin: 0;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    @include prefix(transform, translateY(-50%), webkit moz ms o);
+    color: rgba($color-heading, 70%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    z-index: 3;
+    border: 1px solid $color-heading;
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+
+    &:hover {
+        color: $color-heading
+    }
+
+    &.slick-next,
+    &.slick-prev {
+        &:before {
+            font-family: 'icomoon';
+            font-size: 12px;
+        }
+    }
+
+    &.slick-next {
+        right: 0;
+
+        &:before {
+            content: "\e901";
+        }
+    }
+
+    &.slick-prev {
+        left: 0;
+
+        &:before {
+            content: "\e900";
+        }
+    }
+}
+
+.carousel-arrows-light .slick-arrow {
+    color: rgba($color-white, 0.8);
+    border-color: rgba($color-white, 0.2);
+
+    &:hover {
+        color: $color-white
+    }
+}
+
+.slick-dots {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 2;
+
+    li {
+        display: inline-block;
+        margin: 5px;
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        font-size: 0;
+        width: 16px;
+        height: 4px;
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: rgba($color-body, 0.50);
+        transition: all .3s linear;
+
+        button {
+            font-size: 0;
+            width: 100%;
+        }
+
+        &.slick-active {
+            width: 26px;
+            background-color: $color-primary;
+        }
+    }
+}
+
+.carousel-dots-light .slick-dots li {
+    background-color: rgba($color-white, 0.4);
+
+    &.slick-active {
+        background-color: $color-white;
+    }
+}

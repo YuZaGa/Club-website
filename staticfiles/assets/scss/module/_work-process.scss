@@ -1,0 +1,102 @@
+/*-------------------------
+    Work Process
+-------------------------*/
+.work-process {
+    padding-top: 130px !important;
+}
+
+.process-item {
+    position: relative;
+    padding-bottom: 65px;
+
+    .process-item__number {
+        color: $color-primary;
+        font-size: 26px;
+        line-height: 1;
+        position: relative;
+        padding-top: 70px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 30px;
+            height: 2px;
+            background-color: $color-primary;
+        }
+
+        flex: 0 0 18.5%;
+        max-width: 18.5%;
+    }
+
+    .process-item__content {
+        position: relative;
+        padding-top: 70px;
+        flex: 0 0 81.5%;
+        max-width: 81.5%;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #253b61;
+        }
+    }
+
+    .process-item__title {
+        color: $color-white;
+        font-size: 26px;
+        line-height: 1;
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+
+    .process-item__desc {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 0;
+        flex: 0 0 54%;
+        max-width: 54%;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .process-item {
+        flex-direction: column !important;
+        padding-bottom: 20px;
+
+        .process-item__number {
+            padding-top: 20px;
+        }
+
+        .process-item__content {
+            padding-top: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .process-item__content {
+            flex-direction: column !important;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .process-item__title,
+        .process-item__desc {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .process-item__title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}

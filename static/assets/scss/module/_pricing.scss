@@ -1,0 +1,119 @@
+/*--------------------------
+        pricing
+--------------------------*/
+.page-title-layout4+.pricing {
+    margin-top: -265px;
+    z-index: 2;
+}
+
+.pricing-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: calc(100% - 30px);
+    padding: 45px 50px 50px;
+    background-color: $color-white;
+    box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.08);
+    @include prefix(transition, all .3s ease, webkit moz ms o);
+    margin-bottom: 30px;
+
+    .pricing-item__header {
+        padding-bottom: 57px;
+        margin-bottom: 38px;
+        border-bottom: 2px solid #e7ebef;
+    }
+
+    .pricing-item__title {
+        color: $color-primary;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .pricing-item__currency {
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    .pricing-item__price {
+        font-family: $font-heading;
+        font-size: 60px;
+        font-weight: 500;
+        color: $color-secondary;
+        line-height: 1;
+        margin-bottom: 18px;
+    }
+
+    .pricing-item__time {
+        font-size: 15px;
+        font-weight: 700;
+        color: $color-body;
+    }
+
+    .pricing-item__desc {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .pricing-item__list {
+        margin-bottom: 34px;
+
+        li {
+            margin-bottom: 12px;
+
+            &:before {
+                width: 26px;
+                height: 26px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .btn {
+        height: 70px;
+        line-height: 70px;
+        padding: 0 20px;
+    }
+}
+
+.pricing {
+    .btn.btn__secondary.btn__bordered {
+        min-width: 180px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media (max-width:992px) {
+    .page-title-layout4+.pricing {
+        margin-top: 0;
+    }
+
+    .pricing-item {
+        height: auto;
+        padding: 20px;
+
+        .pricing-item__list {
+            margin-bottom: 20px;
+        }
+
+        .pricing-item__desc {
+            font-size: 12px;
+        }
+
+        .pricing-item__price {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-item__currency {
+            font-size: 25px;
+        }
+
+        .pricing-item__header {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

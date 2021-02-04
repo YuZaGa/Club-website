@@ -1,0 +1,97 @@
+/*-------------------------
+   Awards
+-------------------------*/
+.awards {
+
+    .awards-wrapper>[class*="col"]:nth-of-type(even) .fancybox-item {
+        margin-top: 30px;
+    }
+
+    .fancybox-item {
+        border-radius: 5px;
+        text-align: center;
+        padding: 48px 40px 37px;
+        background-color: $color-gray;
+
+        .fancybox-item__icon__img {
+            margin-bottom: 30px;
+
+            img {
+                transition: all .4s linear;
+            }
+        }
+
+        .fancybox-item__title {
+            font-size: 18px;
+        }
+
+        .fancybox-item__desc {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            .fancybox-item__icon__img img {
+                transform: rotateY(360deg);
+            }
+
+            .fancybox-item__title {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .pinned-ribbon {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        width: 15px;
+        height: 30px;
+        background-color: $color-primary;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: 7.5px solid transparent;
+            border-bottom-color: $color-gray;
+        }
+    }
+
+    .btn__primary.btn__link {
+        .icon-outlined {
+            color: $color-secondary;
+        }
+
+        &:hover {
+            .icon-outlined {
+                color: $color-white;
+                border-color: $color-secondary;
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media screen and (max-width: 992px) {
+    .awards {
+        .fancybox-item {
+            padding: 28px 20px 27px;
+            margin-bottom: 20px;
+
+            .fancybox-item__icon__img {
+                margin-bottom: 15px;
+            }
+        }
+
+        .pinned-ribbon {
+            right: 20px;
+        }
+
+        .awards-wrapper>[class*="col"]:nth-of-type(even) .fancybox-item {
+            margin-top: 0;
+        }
+    }
+}

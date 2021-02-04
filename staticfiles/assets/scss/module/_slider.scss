@@ -1,0 +1,212 @@
+/*------------------------
+    Slider 
+--------------------------*/
+.header-transparent+.slider {
+    margin-top: -100px;
+}
+
+.header-transparent+.slider .slide-item {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.slider {
+    padding: 0;
+    overflow-x: hidden;
+
+    .slide-item {
+        height: calc(100vh - 160px);
+        min-height: 520px;
+    }
+
+    .slide-item__subtitle {
+        display: block;
+        font-family: $font-body;
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-gray;
+        margin-bottom: 8px;
+    }
+
+    .slide-item__title {
+        font-size: 75px;
+        font-weight: 800;
+        line-height: 1.1;
+        color: $color-white;
+        margin-bottom: 30px;
+    }
+
+    .slide-item__desc {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: $color-white;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .btn__lg {
+        min-width: 200px;
+    }
+
+    .btn__white:before {
+        background-color: $color-primary;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .slick-arrow {
+        border: 0;
+
+        &:before {
+            font-size: 50px;
+        }
+
+        &.slick-next {
+            right: 35px;
+
+            &:before {
+                content: "\e92a";
+            }
+        }
+
+        &.slick-prev {
+            left: 35px;
+
+            &:before {
+                content: "\e929";
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .slider {
+        .slick-arrow.slick-next {
+            right: 30px;
+        }
+
+        .slick-arrow.slick-prev {
+            left: 30px;
+        }
+    }
+
+    .slider-layout3 {
+        .slide-item__title {
+            font-size: 75px;
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+    .slider {
+        .slide-item {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .slick-arrow {
+            &.slick-prev {
+                left: 10px;
+            }
+
+            &.slick-next {
+                right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .slider .video-btn-wrapper {
+        margin-top: 25px;
+        justify-content: flex-start !important;
+    }
+}
+
+/* Large Size Screens */
+@include lg-screens {
+    .slider .slide-item__title {
+        font-size: 65px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .slider {
+        .slide-item__title {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .header-transparent+.slider {
+        margin-top: 0;
+    }
+
+    .slider {
+        .slide-item {
+            min-height: 0;
+            padding: 100px 10px;
+            height: auto !important;
+        }
+
+        .slide-item__desc {
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*  Small Screens and tablets  */
+@include sm-screens {
+    .slider {
+        .slide-item__title {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 10px;
+        }
+
+        .slick-arrow {
+            &.slick-prev {
+                left: 0;
+            }
+
+            &.slick-next {
+                right: 0;
+            }
+        }
+    }
+}
+
+/* Extra Small Devices */
+@include xs-screens {
+    .slider {
+        .slide-item__subtitle {
+            margin-bottom: 15px;
+        }
+
+        .slide-item__title {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+        }
+
+        .slick-arrow {
+            display: none;
+        }
+    }
+}

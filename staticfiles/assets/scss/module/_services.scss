@@ -1,0 +1,357 @@
+/*-----------------------
+    Services 
+--------------------------*/
+.service-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    background-color: $color-white;
+
+    .service-item__img {
+        @include prefix(transform, translateY(-40px), webkit moz ms o);
+
+        img {
+            border-radius: 4px;
+        }
+    }
+
+    .service-item__icon {
+        color: $color-primary;
+        font-size: 70px;
+        line-height: 1;
+        margin-bottom: 20px;
+        @include prefix(transition, all .3s linear, webkit moz ms o);
+    }
+
+    .service-item__title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        @include prefix(transition, all .3s linear, webkit moz ms o);
+    }
+
+    .service-item__desc {
+        font-size: 15px;
+        margin-bottom: 20px;
+        @include prefix(transition, all .3s linear, webkit moz ms o);
+    }
+}
+
+.service-item-custom {
+    padding: 55px 55px 60px 60px;
+    margin-top: 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 50px);
+
+    .service-item__title {
+        color: $color-white;
+        font-size: 34px;
+        margin-bottom: 35px;
+    }
+
+    .service-item__desc {
+        color: $color-white;
+        margin-bottom: 0;
+    }
+}
+
+.services-layout1 {
+    .service-item:not(.service-item-custom) {
+        padding: 0 30px 30px;
+        text-align: center;
+        margin-top: 40px;
+        overflow: visible;
+        box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+
+        .service-item__title {
+            margin-top: -6px;
+        }
+
+        .btn:not(.btn__white) {
+            height: 40px;
+            line-height: 40px;
+            min-width: 120px;
+            color: $color-secondary;
+            background-color: transparent;
+
+            span {
+                margin-right: 6px;
+            }
+        }
+
+        &:hover {
+            .btn:not(.btn__white) {
+                color: $color-white;
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+.services-layout2 {
+    .service-item {
+        padding: 60px 40px;
+        margin-bottom: 40px;
+
+        &:not(.service-item-custom) {
+            border: 1px solid #e6e9ed;
+
+            .btn {
+                overflow: visible;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: -22px;
+                    top: 50%;
+                    width: 18px;
+                    height: 2px;
+                    opacity: 0;
+                    background-color: $color-white;
+                    @include prefix(transition, all .5s linear, webkit moz ms o);
+                    @include prefix(transform, translateY(-50%), webkit moz ms o);
+                }
+            }
+
+            &:hover {
+                .btn {
+                    margin-left: 22px;
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .service-item__title {
+            margin-bottom: 20px;
+        }
+
+        .service-item__desc {
+            font-size: 14px;
+            margin-bottom: 27px;
+        }
+
+        .service-item__content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-item__overlay {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            text-align: center;
+            z-index: 1;
+            @include prefix(transform, scale(1.1), webkit moz ms o);
+            @include prefix(transition, all .5s linear, webkit moz ms o);
+        }
+
+        &:hover {
+            .service-item__overlay {
+                opacity: 1;
+                @include prefix(transform, scale(1), webkit moz ms o);
+            }
+
+            .service-item__title,
+            .service-item__desc,
+            .service-item__icon,
+            .btn__link {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.services-layout3 {
+    .service-item {
+        padding: 40px;
+        overflow: visible;
+        margin-bottom: 0;
+        @include prefix(transition, all .3s linear, webkit moz ms o);
+
+        .service-item__title {
+            margin-bottom: 20px;
+        }
+
+        .service-item__desc {
+            font-size: 14px;
+            margin-bottom: 27px;
+        }
+
+        .service-item__content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn__link {
+            overflow: visible;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: -22px;
+                top: 50%;
+                width: 18px;
+                height: 2px;
+                opacity: 0;
+                background-color: $color-primary;
+                @include prefix(transition, all .5s linear, webkit moz ms o);
+                @include prefix(transform, translateY(-50%), webkit moz ms o);
+            }
+        }
+
+        &:hover {
+            z-index: 5;
+            box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+
+            .btn__link {
+                margin-left: 22px;
+                color: $color-primary;
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.services-carousel {
+    overflow-x: hidden;
+
+    .slick-list {
+        margin: 0 -15px;
+    }
+
+    .slick-slide {
+        margin: 0 15px;
+    }
+
+    .slick-dots {
+        text-align: left;
+        margin-top: 35px;
+    }
+
+    .service-item-custom {
+        min-height: 520px;
+    }
+
+    .service-item .service-item__desc {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+@media (min-width: 1500px) {
+    .services-carousel .slick-slider {
+        margin-right: -300px;
+    }
+}
+
+@media (min-width:1200px) {
+    .services-carousel {
+        .slick-slider {
+            margin-right: -220px;
+            margin-left: 20px;
+        }
+
+        .btn-wrapper .btn {
+            margin-top: -90px;
+        }
+    }
+
+    .services-layout3 .service-item-custom {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        left: 15px;
+        margin-top: 40px;
+        height: 100%;
+        min-height: 520px;
+        box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+
+        .service-item__title {
+            padding-right: 20px;
+        }
+    }
+
+    .services-masonry .services-wrapper>[class*="col-"] {
+        &:nth-of-type(2) .service-item {
+            margin-top: 40px;
+        }
+
+        &:nth-of-type(3) .service-item {
+            margin-top: 80px;
+        }
+
+        &:nth-of-type(4) .service-item {
+            margin-top: -80px;
+        }
+
+        &:nth-of-type(5) .service-item {
+            margin-top: -40px;
+        }
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media (max-width:992px) {
+    .service-item {
+        .service-item__img {
+            @include prefix(transform, translateY(-20px), webkit moz ms o);
+        }
+
+        .service-item__icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .service-item__title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .service-item__desc {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .service-item-custom {
+        height: auto;
+        padding: 20px;
+
+        .service-item__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-item__desc {
+            margin-bottom: 40px;
+        }
+    }
+
+    .services-layout1 {
+        .service-item {
+            padding: 0 20px 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .services-layout3 .service-item {
+        padding: 20px;
+    }
+}

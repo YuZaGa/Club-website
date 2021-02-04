@@ -1,0 +1,26 @@
+/*-------------------------
+    Breadcrumb
+--------------------------*/
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    position: relative;
+    font-size: 14px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+
+    .breadcrumb-item a,
+    .breadcrumb-item+.breadcrumb-item {
+        font-size: 12px;
+    }
+}

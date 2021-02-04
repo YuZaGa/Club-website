@@ -1,0 +1,202 @@
+/*-------------------------
+    Footer
+--------------------------*/
+.footer {
+    background-repeat: no-repeat;
+    background-size: auto !important;
+    background-position: bottom right !important;
+
+    .footer-secondary {
+        padding-bottom: 44px;
+
+        span {
+            color: rgba(255, 255, 255, .6);
+        }
+    }
+
+    .footer-primary {
+        padding-top: 85px;
+        padding-bottom: 65px;
+    }
+
+    .footer-contact {
+        border-bottom: 2px solid #253b61;
+    }
+
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+
+    .footer-widget__title {
+        color: $color-white;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+    }
+
+    .contact-list li {
+        line-height: 26px;
+        color: rgba(255, 255, 255, .67);
+        margin-bottom: 0;
+
+        a {
+            color: rgba(255, 255, 255, .67);
+        }
+    }
+
+    .footer-form {
+        .form-control {
+            border-color: transparent;
+            background-color: #061b49;
+            color: $color-body;
+
+            &:focus {
+                border-color: $color-body;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $color-body;
+            }
+
+            &:-moz-placeholder {
+                color: $color-body;
+            }
+
+            &::-moz-placeholder {
+                color: $color-body;
+            }
+
+            &:-ms-input-placeholder {
+                color: $color-body;
+            }
+        }
+
+        .btn {
+            min-width: 120px;
+        }
+    }
+
+    .footer-widget-nav li a {
+        display: block;
+        position: relative;
+        color: $color-gray;
+        font-size: 14px;
+        margin-bottom: 11px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    .social-icons li {
+        margin-right: 7px;
+
+        a {
+            width: 44px;
+            height: 44px;
+            line-height: 42px;
+            border-radius: 50%;
+            border: 2px solid #253b61;
+            text-align: center;
+            color: $color-primary;
+
+            &:hover {
+                color: $color-white;
+                border-color: $color-primary;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .btn__primary .icon-outlined {
+        color: $color-white;
+    }
+}
+
+/* Scroll Top Button */
+#scrollTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    z-index: 1000;
+    font-size: 18px;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-primary;
+    overflow: hidden;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+
+    &:hover {
+        background-color: $color-dark;
+    }
+}
+
+#scrollTopBtn.actived {
+    right: 30px;
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .footer .footer-widget-about p {
+        max-width: 270px;
+    }
+}
+
+/* Mobile Phones and tablets */
+@media (min-width: 320px) and (max-width: 1200px) {
+    .footer {
+        .footer-primary {
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+
+        .footer-secondary {
+            padding-bottom: 20px;
+        }
+
+        .footer .footer-widget {
+            margin-bottom: 20px;
+        }
+
+        .footer-widget__title {
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .footer-widget-nav li a {
+            font-size: 13px;
+        }
+    }
+}
+
+/* Mobile Phones */
+@include xs-screens {
+    .footer .footer-form {
+        .form-control {
+            margin-right: 10px !important;
+        }
+
+        .btn {
+            min-width: 80px;
+            padding: 0 5px;
+            font-size: 12px;
+        }
+    }
+
+    #scrollTopBtn {
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #scrollTopBtn.actived {
+        right: 20px;
+    }
+}

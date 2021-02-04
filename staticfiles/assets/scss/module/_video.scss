@@ -1,0 +1,116 @@
+/*--------------------------
+      Video
+--------------------------*/
+.video__btn {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding-left: 70px;
+    height: 70px;
+
+    .video__player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    .video__player-animation {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: .2;
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+        @include animation("pulsing 3s linear 0s infinite");
+    }
+
+    .video__player-animation-2 {
+        animation-delay: 1s;
+    }
+
+    .video__player-animation-3 {
+        animation-delay: 1.8s;
+    }
+
+    &:hover .video__player-animation {
+        opacity: 0;
+        animation-play-state: paused;
+    }
+
+    .video__btn-title {
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 20px;
+        line-height: 1;
+        display: inline-block;
+        white-space: nowrap;
+        margin-left: 12px;
+    }
+
+    &-lg {
+        padding-left: 80px;
+        height: 80px;
+
+        .video__player {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+        }
+    }
+}
+
+.video__btn-white {
+    .video__player {
+        background-color: $color-white !important;
+        color: $color-heading;
+    }
+
+    .video__player-animation {
+        border-color: $color-white !important;
+    }
+}
+
+.video__btn-theme {
+    .video__player-animation {
+        border-color: $color-primary;
+    }
+}
+
+.video-banner {
+    position: relative;
+
+    .video__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include prefix(transform, translate(-50%, -50%), webkit moz ms o);
+    }
+
+    .video__btn-title {
+        position: absolute;
+        bottom: -30px;
+        left: -7px;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile Phones */
+@include xs-screens {
+    .video__btn {
+        padding-left: 50px;
+        height: 50px;
+
+        .video__player {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}

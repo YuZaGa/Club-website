@@ -1,0 +1,287 @@
+/*-------------------------
+    page title 
+-------------------------*/
+.header-transparent+.page-title {
+    margin-top: -100px;
+}
+
+.pagetitle__subheading {
+    font-size: 15px;
+    font-weight: 700;
+    color: $color-gray;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.pagetitle__heading {
+    color: $color-white;
+    font-size: 75px;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    .text-underlined {
+        border-bottom: 4px solid $color-white;
+    }
+}
+
+.pagetitle__desc {
+    font-size: 17px;
+    font-weight: 700;
+    color: $color-gray;
+    margin-bottom: 32px;
+}
+
+.page-title {
+    padding-top: 240px;
+    padding-bottom: 150px;
+
+    .breadcrumb-item {
+
+        +.breadcrumb-item::before {
+            color: $color-white;
+        }
+
+        &.active {
+            color: $color-gray;
+        }
+
+        a {
+            position: relative;
+            color: $color-white;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    .btn:not(.btn__xl) {
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+.page-title-layout2 {
+    padding-top: 225px;
+    padding-bottom: 130px;
+
+    .pagetitle__heading {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+}
+
+.page-title-layout4 {
+    .pagetitle__desc {
+        font-size: 16px;
+        max-width: 480px;
+        margin: auto;
+    }
+}
+
+.page-title-layout5 {
+    padding-bottom: 335px;
+
+    .pagetitle__heading {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    &+.pricing .pricing-wrapper {
+        position: relative;
+        margin-top: -200px;
+        z-index: 3;
+    }
+}
+
+.page-title-layout6 {
+    padding-top: 265px;
+    padding-bottom: 35px;
+
+    .pagetitle__subheading {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .pagetitle__heading {
+        margin-bottom: 100px;
+    }
+}
+
+.page-title-layout7 {
+    padding-bottom: 35px;
+
+    .pagetitle__heading {
+        margin-bottom: 120px;
+    }
+}
+
+.page-title-layout8 {
+    padding-top: 220px;
+    padding-bottom: 120px;
+
+    .pagetitle__heading {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .btn__xl {
+        min-width: 190px;
+    }
+
+    .slick-dots {
+        text-align: left;
+    }
+
+    .cta-banner {
+        padding: 60px 50px;
+    }
+}
+
+.page-title-layout9 {
+    .btn__xl {
+        min-width: 180px;
+    }
+}
+
+.page-title-layout10 {
+    padding-bottom: 25px;
+
+    .pagetitle__heading {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .breadcrumb {
+        margin-top: 100px;
+    }
+
+    .btn__xl {
+        min-width: 170px;
+    }
+}
+
+.page-title-layout11 {
+    padding-top: 245px;
+
+    .pagetitle__heading {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .pagetitle__subheading {
+        border-bottom: 2px solid $color-white;
+    }
+
+    .btn__xl {
+        min-width: 180px;
+    }
+}
+
+.page-title-layout12 {
+    padding-top: 225px;
+    padding-bottom: 130px;
+
+    .pagetitle__heading {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+}
+
+.page-title-layout12 {
+    .btn__xl {
+        min-width: 190px;
+    }
+}
+
+.page-title-layout13 {
+    padding-top: 260px;
+    padding-bottom: 170px;
+}
+
+.page-title-layout14 {
+    padding-top: 290px;
+    padding-bottom: 190px;
+
+    .pagetitle__desc {
+        max-width: 480px;
+        margin: auto;
+    }
+}
+
+.page-title-layout15 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .breadcrumb-item a,
+    .breadcrumb-item+.breadcrumb-item:before {
+        color: $color-secondary;
+    }
+
+    .breadcrumb-item.active {
+        color: $color-body;
+    }
+}
+
+@media (max-width:1200px) {
+    .page-title-layout8 .cta-banner-wrapper {
+        margin-top: 30px;
+        justify-content: flex-start !important;
+    }
+}
+
+/* Medium Size Devices */
+@include md-screens {
+    .page-title {
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .pagetitle__heading {
+            font-size: 50px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .page-title {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .pagetitle__subheading {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .pagetitle__desc {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .pagetitle__heading {
+            font-size: 28px !important;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+    }
+
+    .page-title-layout5 {
+        padding-bottom: 235px;
+    }
+
+    .page-title-layout15 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

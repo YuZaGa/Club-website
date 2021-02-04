@@ -1,0 +1,148 @@
+/*-----------------------
+    banner
+------------------------*/
+.banner-layout1 {
+    .heading__desc {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .client__logo {
+        filter: brightness(100);
+    }
+
+    .client__quote {
+        color: $color-white;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    .client__signature {
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .client__signature__title {
+        color: $color-white;
+        font-size: 13px;
+    }
+}
+
+.banner-layout2,
+.banner-layout3 {
+    .heading__desc {
+        font-size: 17px;
+    }
+
+    .banner-img {
+        position: relative;
+        z-index: 5;
+
+        .video__btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+    }
+}
+
+@media (min-width:1500px) {
+    .banner-layout1 {
+        margin-right: 60px;
+        margin-left: 60px;
+
+        .container-fluid {
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+
+        .contact-panel {
+            margin-left: 50px;
+        }
+
+        .col-inner {
+            margin-right: 50px;
+        }
+    }
+}
+
+/* Extra Large Size Screens */
+@media (min-width:1350px) {
+    .banner-layout1 {
+        margin-right: 50px;
+        margin-left: 50px;
+
+        .container-fluid {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .banner-layout2 {
+        .banner-img {
+            position: relative;
+            margin-left: 70px;
+            margin-top: -115px;
+        }
+
+        .banner-text {
+            padding-top: 105px;
+        }
+    }
+
+    .banner-layout3 {
+        margin-bottom: 120px;
+
+        .banner-img {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            margin-left: 70px;
+        }
+
+        .banner-text {
+            padding-bottom: 70px;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1350px) {
+    .banner-layout1 .contact-panel {
+        padding: 60px 40px;
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media(max-width:992px) {
+    .banner-layout1 .contact-panel {
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .banner-layout2 {
+        padding-top: 60px !important;
+    }
+}
+
+/* Mobile Phones And tablets  */
+@include xs-sm-screens {
+    .banner-layout1 {
+        .heading__desc {
+            font-size: 14px;
+        }
+
+        .client__quote {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .contact-panel {
+            padding: 20px;
+        }
+    }
+}
