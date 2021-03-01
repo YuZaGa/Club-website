@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary',
 
     'base.apps.BaseConfig',
 
@@ -144,7 +146,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -179,3 +181,12 @@ django_heroku.settings(locals())
 
 #AWS_S3_FILE_OVERWRITE = False
 #AWS_DEFAULT_ACL = None
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'yuzaga',
+    'API_KEY': '179748487429254',
+    'API_SECRET': 'IJw-ig_1wSqzdKut-trYPO4BGDs'
+}
+
+MEDIA_ROOT = '/media/'  # or any prefix you choose
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
