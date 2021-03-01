@@ -1,0 +1,161 @@
+/**************************************************/
+/* .specialists-3 */
+/**************************************************/
+.specialists-3 {
+    position: relative;
+    background-color: $light-col;
+
+    & > .bg-text {
+        position: absolute;
+        top: 90px;
+        right: -50px;
+    }
+
+    .container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding-top: $section-space-2;
+        padding-bottom: $section-space-2;
+
+        .section-title {
+            margin-left: -5px;
+        }
+    }
+    
+    &__carousel {
+        padding: 0!important;
+        margin-top: $title-space-2 - 10px;
+        max-width: 1200px;
+        width: 100%;
+    
+        .owl-nav {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            width: 1330px;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+        
+            button {
+                margin: 0!important;
+                overflow: hidden;
+                border-radius: 8px!important;
+                width: 49px;
+                height: 49px;
+                border: 1px solid $primary-blue!important;  
+                transition: all .3s linear;
+                background-color: $light-col;
+                
+                span {
+                    display: block;
+                    display: inline;
+                    line-height: 20px;
+                    font-size: 20px;
+                    color: $primary-blue;
+                    font-size: 30px;
+                }
+                
+                
+                &:hover {
+                    box-shadow: 8.135px 18.271px 51px 0px rgba($primary-blue, .5);
+                    background-color: $primary-blue!important;
+                    span {
+                        color: $light-col;
+                    }
+                }
+                
+            }
+        }
+
+
+        .owl-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+        }
+        
+        .owl-dot {
+            margin-right: 2px;
+            &:last-child {
+                margin-right: 0;
+                
+                & > span {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+        .owl-dot span{
+            min-width: 10px;
+            height: 10px;
+        }
+        
+        .owl-dot.active span {
+            width: 48px;
+            transition: all .3s ease;
+            background-color: $primary-pink-2!important;
+        }
+    }
+
+    &__item {
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: center;
+
+        & > .inner-block {
+            position: relative;
+            z-index: 1;
+            max-width: 250px;
+            border: 1px solid #f0f0f0;
+            background-color: #fafafa;
+            border-radius: 8px;
+            padding-bottom: 15px;
+            
+            & > .img {
+                overflow: hidden;
+                width: 100%;
+                height: 260px; 
+                object-fit: cover;
+                object-position: center center;
+            }
+
+            & > .name {
+                margin-top: 25px;
+                font-size: 17.5px;
+                font-family: $RobBold;
+                text-align: center;
+            }
+
+            & > .proffesia {
+                margin-top: 8px;
+                text-align: center;
+                color: $primary-blue;
+                font-weight: 600;
+            }
+
+            & > .work-date {
+                width: 100%;
+                padding: 10px 43px;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    height: 28px;
+                    line-height: 28px;
+                }
+                  
+            }
+
+            & > .btn-2 {
+                position: absolute;
+                bottom: -21px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 20;
+            }
+        }
+    }
+}

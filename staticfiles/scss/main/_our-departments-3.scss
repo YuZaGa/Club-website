@@ -1,0 +1,704 @@
+/**************************************************/
+/* .departments-3 */
+/**************************************************/
+
+.departments-3 {
+
+    & > .container {
+        justify-content: space-between;
+
+        & > .departments-3__items {
+            padding-top: $section-space;
+            padding-bottom: $section-space - 80px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            
+            & > .item {
+                border-radius: 8px;
+                overflow: hidden;
+                text-align: center;
+                max-width: 31.5%;
+                width: 100%;
+                background-color: $light-col;
+                padding-bottom: 40px;
+                border: 1px solid #e6e6e6;
+                transition: all .3s linear;
+                margin-bottom: 80px;
+
+                &:hover {
+                    box-shadow: 0px 0px 29px 0px rgba( 0, 0, 0, .1 );
+                }
+
+                & > .img {
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+
+                & > .title {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    line-height: 1;
+                    font-family: $RobBold;
+                    color: $text-col;
+                }
+
+                & > .text {
+                    padding: 0 20px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $text-col-2;
+                }                 
+            }
+
+            & > .item-icon {
+                border-radius: 8px;
+                overflow: hidden;
+                text-align: center;
+                max-width: 31.5%;
+                width: 100%;
+                background-color: $light-col;
+                padding-bottom: 40px;
+                border: 1px solid #e6e6e6;
+                transition: all .3s linear;
+                margin-bottom: 80px;
+
+                &:hover {
+                    box-shadow: 0px 0px 29px 0px rgba( 0, 0, 0, .1 );
+                }
+
+                & > .img {
+                    position: relative;
+                    width: 100%;
+                    height: 260px;
+                    z-index: 1;
+                    
+                    & > img {
+                        overflow: hidden;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+
+                    & > .icon {
+                        position: absolute;
+                        z-index: 2;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -62.5px;
+                        height: 125px;
+                        width: 125px;
+                        background-color: $primary-blue;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                    }
+                }
+
+                & > .title {
+                    margin-top: 90px;
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    line-height: 1;
+                    font-family: $RobBold;
+                }
+
+                & > .text {
+                    padding: 0 20px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $text-col-2;
+                }                 
+            }
+        }
+        
+        & > .departments-3__item-1 {
+            padding-top: $section-space;
+            padding-bottom: $section-space;
+            & > .item {
+                width: 100%;
+                overflow: hidden;
+                border-radius: 8px;
+                border: 1px solid #e6e6e6;
+                background-color: $light-col;
+                transition:  all .3s linear;
+                display: flex;
+                margin-bottom: 60px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                &:hover {
+                    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, .1 );
+                }
+
+                & > .img {
+                    max-height: 470px;
+                    height: 100%;
+                    max-width: 630px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+
+                & > .content {
+                    position: relative;
+                    max-width: 500px;
+                    width: 100%;
+                    padding: 130px 50px 50px;
+                    overflow: hidden;
+
+                    & > .departments-3__item-bg-text {
+                        position: absolute;
+                        top: 40px;
+                        left: -10px;
+                        line-height: 1;
+                        z-index: 1;
+                        color: #f2f2f2;
+                        font-size: 100px;
+                        font-weight: 900;
+                        font-family: $RobBlack;    
+                        z-index: 1;      
+                        user-select: none; 
+                    }
+
+                    & > .title {
+                        position: relative;
+                        z-index: 2;
+                        line-height: 1;
+                        color: $primary-blue;
+                        font-weight: 600;
+                        font-size: 45px;
+                        margin-left: -3px;
+                    }
+                    
+                    & > .text {
+                        position: relative;
+                        z-index: 2;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        font-size: 14px;
+                        line-height: 1.7;
+                        color: $text-col-2;
+                    }
+                }
+            }
+        }
+
+
+
+        & > .article {
+            width: 100%;
+            max-width: 800px;
+            
+            & > .departments-3__single {
+                padding-bottom: $section-space - 10px;
+                padding-top: $section-space;
+                width: 100%;
+
+                & > .title {
+                    font-size: 45px;
+                    margin-bottom: 40px;
+                    font-weight: 500;
+                    color: $text-col;
+                    margin-left: -3px; 
+                }
+
+                & > .img {
+                    overflow: hidden;
+                    border-radius: 8px;
+                    width: 100%;
+                    height: 590px;
+                    margin-bottom: 35px;
+
+
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    } 
+                }
+
+                & > .text {
+                    font-size: 15px;
+                    color: $text-col-2;
+                    line-height: 1.8;
+                }
+
+                & > .lists {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    & > .list-title {
+                        font-size: 16px;
+                        font-family: $RobBold;
+                        font-weight: 700;
+                    }
+                    
+                    & > .list-item {
+                        position: relative;
+                        min-height: 35px;
+                        line-height: 35px;
+                        margin-left: 35px;
+                        padding-left: 30px;
+                        
+                        & > .fa {
+                            position: absolute;
+                            left: 0;
+                            top: 8px;
+                        }
+                    }
+
+                }
+
+                & > .prices {
+                    margin-top: 65px;
+                    padding-top: 45px;
+                    padding-bottom: 65px;
+                    border-top: 1px solid #e6e6e6;
+                    border-bottom: 1px solid #e6e6e6;
+                    & > .title {
+                        font-size: 32px;
+                        color: $text-col;
+                        font-weight: 500;
+                        line-height: 1;
+                        margin-bottom: 50px;
+                    }
+                    & > .prices-block {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        & > .item {
+                            border-radius: 8px;
+                            max-width: 48%;
+                            width: 100%;
+                            border-radius: 8px;
+                            box-shadow: 0 0 25px rgba(0,0,0, .1);
+                            background-color: $light-col;;
+                            padding: 50px 40px 40px;
+                            margin-bottom: 30px;
+                            &:first-child {
+                                margin-right: 30px;
+                            }
+                            & > .title {
+                                line-height: 1;
+                                font-size: 28px;
+                                font-family: $RobBold;
+                                margin-bottom: 20px;
+                            }
+                            & > .lists {
+                                & > .list-item {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    & > .text {
+                                        line-height: 35px;
+                                        height: 35px;
+                                        color: $text-col;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        &::after {
+                                            overflow: hidden; 
+                                            content: ".............................................................";
+                                        }
+                                    } 
+                                    & > .price {
+                                        color: $primary-blue;
+                                        font-family: $RobBlack;
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                        text-align: left;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & > .doctors-department{
+                    width: 100%;
+                    margin-top: 60px;
+                    padding-bottom: 65px;
+                    border-bottom: 1px solid #e6e6e6;
+                    
+                    & > .title {
+                        font-size: 32px;
+                        color: $text-col;
+                        font-weight: 500;
+                        line-height: 1;
+                        margin-bottom: 50px;
+                    }
+                    & > .doctors-department__carousel {
+                        width: 100%;
+                        
+                        .owl-item {
+                            display: flex;
+                            justify-content: center;
+                            
+                            & > .item {
+                                width: 100%;
+                                display: flex;
+    
+                                & > .img {
+                                    max-width: 417px;
+                                    width: 100%;
+                                    height: 490px;
+                                    border-radius: 8px;
+                                    overflow: hidden;
+
+                                    & > img {
+                                        height: 100%;
+                                        width: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                    }
+                                }
+        
+                                & > .content {
+                                    margin-left: 40px;
+                                    max-width: 400px;
+                                    width: 100%;
+                                    padding: 20px 5px;
+
+                                    & > .name {
+                                        font-size: 22px;
+                                        font-family: $RobBold;
+                                        color: $text-col;
+                                        line-height: 1;
+                                    }
+        
+                                    & > .profession {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        color: $text-col-2;
+                                    }
+        
+                                    & > .text {
+                                        
+                                        margin-top: 30px;
+                                        margin-bottom: 30px;
+                                        line-height: 1.5;
+                                        color: $text-col-2;
+                                    }
+        
+                                    & > .lists {
+                                        margin-bottom: 30px;
+                                        & > .list-item {
+                                            font-size: 16px;
+                                            color: $text-col-2;
+                                            line-height: 35px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            
+                                            & > .que {
+                                                width: auto;
+                                                white-space: nowrap;
+                                                position: relative;
+                                                overflow: hidden;
+                                                &::after {
+                                                    content: ".....................................................................................................................................................................................";
+                                                }
+                                            } 
+                                            
+                                            & > .ans {
+                                                width: auto;
+                                                white-space: nowrap;
+                                                text-align: left;
+                                                font-size: 16px;
+                                                font-family: $RobBold;
+                                                color: $text-col;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        & > .owl-nav {
+                            position: absolute;
+                            top: -90px;
+                            right: 0;
+                            width: 108px;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                display: block;
+                                margin: 0!important;
+                                overflow: hidden;
+                                border-radius: 8px!important;
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #999999;  
+                                transition: all .3s linear;
+                                background-color: $light-col;
+                                
+                                span {
+                                    display: block;
+                                    display: inline;
+                                    line-height: 20px;
+                                    color: #999999;
+                                    font-size: 30px;
+                                }
+                                
+                
+                                &:hover {
+                                    border-color: $primary-pink-2;
+                                    background-color: $primary-pink-2;
+                                    span {
+                                        color: $light-col;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & > .department-faq {
+                    width: 100%;
+                    border-bottom: 1px solid #e6e6e6;
+                    padding-top: 65px;
+                    padding-bottom: 35px;
+                    
+                    & > .title {
+                        font-size: 32px;
+                        color: $text-col;
+                        font-weight: 500;
+                        line-height: 1;
+                        margin-bottom: 50px;
+                    }
+                    
+                    & > .department-accardion {
+                        
+                        & > .item {
+                            background-color: $light-col;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            border: 1px solid #f0f0f0;
+                            background-color: #ffffff;
+                            margin-bottom: 20px;
+                            padding: 18px 0 18px 17px;
+            
+                            & > .item-title {
+                                padding: 10px 25px 10px 10px;
+                                position: relative;
+                                font-size: 18px;
+                                font-weight: 700;
+                                color: $text-col;
+                                span {
+                                    font-family: $RobBold;
+                                    margin-right: 10px;
+                                    font-weight: 900;
+                                    color: $primary-pink-2
+                                }
+            
+                                .fa {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 10px;
+                                }
+                            }
+                            
+                            &>.item-text {
+                                display: none;
+                                font-size: 17px;
+                                line-height: 1.5;
+                                padding-left: 35px;
+                                padding-right: 35px;
+                                letter-spacing: -.5px;    
+                            }
+            
+                            &:nth-child(2) {
+                                border-color: $primary-pink-2;
+                                
+                                .item-text {
+                                    display: block;
+                                }
+                            }
+                        }
+                    } 
+                }
+            
+                & > .department-cases {
+                    margin-top: 65px;
+                    width: 100%;
+                    & > .title {
+                        font-size: 32px;
+                        color: $text-col;
+                        font-weight: 500;
+                        line-height: 1;
+                        margin-bottom: 50px;
+                    }
+                    .department-cases__carousel {
+                        max-width: 100%;
+                        .owl-item {
+                            opacity: .5;
+                            transition: all .3s linear;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            &.active {
+                                opacity: 1;
+                            }
+                            & > .item {
+                                padding-bottom: 50px;
+                                max-width: 270px;
+                                width: 100%;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                position: relative;
+                                & > .img {
+                                    width: 100%;
+                                    height: 195px;
+                                    & > img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center;
+                                    }
+                                }
+                                & > .icon {
+                                    position: absolute;
+                                    top: 220px;
+                                    right: 10px;
+                                    width: 57px;
+                                    height: 48px;
+                                    &>img {
+                                        width: 100%;
+                                        height: 100%;
+                                        opacity: 1;
+                                    }
+                                }
+                                & > .name {
+                                    margin-top: 20px;
+                                    font-size: 18px;
+                                    font-family: $RobBold;
+                                    color: $text-col;
+                                    line-height: 1;
+                                }
+
+                                & > .profession {
+                                    font-size: 16px;
+                                    color: $text-col-2;
+                                }
+
+                                & > .text {
+                                    display: block;
+                                    color: $text-col-2;
+                                    line-height: 1.5;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        
+                        & > .owl-nav {
+                            position: absolute;
+                            top: -90px;
+                            right: 0;
+                            width: 108px;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                display: block;
+                                margin: 0!important;
+                                overflow: hidden;
+                                border-radius: 8px!important;
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #999999;  
+                                transition: all .3s linear;
+                                background-color: $light-col;
+                                
+                                span {
+                                    display: block;
+                                    display: inline;
+                                    line-height: 20px;
+                                    color: #999999;
+                                    font-size: 30px;
+                                }
+                                
+                
+                                &:hover {
+                                    border-color: $primary-pink-2;
+                                    background-color: $primary-pink-2;
+                                    span {
+                                        color: $light-col;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        & > .owl-dots {
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 100%;
+                            text-align: center;
+                            
+                            .owl-dot span{
+                                min-width: 10px;
+                                height: 10px;
+                            }
+                            
+                            .owl-dot.active span {
+                                width: 48px;
+                                transition: all .3s ease;
+                                background-color: $primary-pink-2!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .sidebar {
+            padding-top: $section-space;
+            padding-bottom: 140px;        
+            max-width: 270px;
+            width: 100%;
+        }
+
+        &_no-sidebar {
+            & > .article {
+                max-width: 100%!important;
+                width: 100%;
+                & > .departments-3__single {
+                    & > .img {
+                        display: none;
+                    }
+                    & > .doctors-department{
+                        & > .doctors-department__carousel {
+                            .owl-item{
+                                & > .item {
+                                    & > .content {
+                                        max-width: 750px;
+                                        width: 100%;
+                                    }
+                                }   
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}

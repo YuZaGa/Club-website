@@ -1,0 +1,139 @@
+/**************************************************/
+/* departments sidebar */
+/**************************************************/
+
+.sidebar {
+	& > .departments-sidebar {
+		margin-top: 95px;
+		z-index: 20;
+		max-width: 100%;
+		& > div {
+			margin-bottom: 40px;
+			
+			& > .title {
+				font-size: 18px;
+				color: $text-col;
+				font-family: $RobBold;
+				line-height: 1;
+				text-transform: uppercase;
+			}
+		}
+		
+		& > .departments-blog {
+			& > .lists {
+				& > .list-item {
+					margin-bottom: 5px;
+					& > a {
+						display: block;
+						height: 50px;
+						line-height: 50px;
+						overflow: hidden;
+						border-radius: 8px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						border: 1px solid #e6e6e6;
+						padding-left: 20px;
+						padding-right: 20px;
+						color: $text-col;
+						background-color: $light-col;
+						transition: all .3s ease-in-out;
+						&.active,
+						&:hover {
+							background-color: $primary-blue;
+							color: $light-col;
+							border-color: $primary-blue;
+						}
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		& > .work-hours {
+			padding: 30px 25px 30px 25px;
+			background-color: $primary-blue;
+			border-radius: 8px;
+			color: $light-col;
+
+			& > .title {
+				color: $light-col;
+			}
+
+			& > .lists {
+				margin: 0;
+				margin-top: 15px;
+				& > .list-item {
+					font-size: 14px;
+					line-height: 2;
+					display: flex;
+					justify-content: space-between;
+					& > .date {
+						width: auto;
+						overflow: hidden;
+						white-space: nowrap;
+						&::after {
+							content: ".......................................................................................................................................................................................................................................................................................................";
+							overflow: hidden;
+						}
+					}
+
+					& > .time {
+						white-space: nowrap;
+						text-align: right;
+					}
+				}
+			}
+		}
+
+		& > .appointment {
+			padding: 35px 30px;
+			background-color: #f7f7f7;
+			border-radius: 8px;
+			border: 1px solid #e6e6e6;
+		
+			& > .appointment-form {
+				width: 100%;
+				& > input {
+					width: 100%;
+					height: 40px;
+					border: 1px solid #e6e6e6;
+					background-color: $light-col;
+					padding-left: 10px;
+					padding-right: 10px;
+					font-size: 14px;
+					line-height: 30px;
+					color: $text-col;
+					box-shadow: none;
+					outline: none;
+					margin-bottom: 10px;
+					border-radius: 8px;	
+					&::placeholder {
+						color: #b2b2b2;
+					}
+				}	
+				
+				& > textarea {
+					border-radius: 8px;	
+					width: 100%;
+					border: 1px solid #e6e6e6;
+					background-color: $light-col;
+					padding: 10px;
+					font-size: 14px;
+					resize: none;
+					height: 150px;
+					margin-bottom: 10px;
+				}
+
+				& > button {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+ 	}
+}
+

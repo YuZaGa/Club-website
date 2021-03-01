@@ -1,0 +1,109 @@
+/**************************************************/
+/* .searchBox */
+/**************************************************/
+
+.searchBox {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: -120%;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(0,0,0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+    opacity: 0;
+    &-close {
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 40px;
+        font-weight: 900;
+        color: $light-col;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    & > form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        input {
+            max-width: 785px;
+            width: 90%;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid $light-col;
+            margin-right: 10px;
+            background-color: transparent;
+            color: $light-col;
+            font-size: 24px;
+            height: 60px;
+            &::placeholder {
+                
+                font-size: 20px;
+                color: $light-col;
+                margin-bottom: -15px;
+            }
+        }
+    
+        button {
+            cursor: pointer;
+            padding: 0 20px;
+            color: $light-col;
+            font-family: $RobBold;
+            text-transform: uppercase;
+            font-size: 20px;
+            width: 175px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: none;
+            outline: none;
+            border: 2px solid $light-col;
+            background-color: transparent;
+            transition: all .3s linear;
+    
+            &>svg>path {
+                transition: all .3s linear;
+            }
+        
+            &:hover {
+                background-color: $light-col;
+                color: $text-col;
+                
+                &>svg>path {
+                    fill: $text-col;
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 1199.98px){
+    .searchBox{
+        & > form {
+            flex-direction: column;
+            & > input {
+                margin-bottom: 30px;
+                font-size: 18px;
+                &::placeholder {
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

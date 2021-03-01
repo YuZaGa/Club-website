@@ -1,0 +1,162 @@
+/**************************************************/
+/* .header-bottom-2 */
+/**************************************************/
+
+.header-bottom-2 {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	height: 750px;
+	z-index: 10;
+
+	&__banner {
+		z-index: 9;
+		position: absolute;
+		top: -150px;
+		left: 0;
+		width: 100%;
+		.slide-item {
+			height: 900px;
+			padding-top: 310px;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			&__bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($primary-blue, .5);
+			}
+
+			& > img {
+				position: absolute;
+				z-index: -1;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center 25%;
+				transform: scale(1);
+			}
+			
+			.container {
+			
+				position: relative;
+				flex-direction: column;
+				text-align: center;
+				z-index: 10;
+			}
+			
+			&__title {
+				margin-left: -2px;
+				text-transform: uppercase;
+				font-size: 78px;
+				font-family: $Bebas;
+				font-weight: 900;
+				line-height: 1;
+				letter-spacing: 0px;
+				width: 100%;
+				color: $light-col;
+
+				span {
+					font-weight: 900;
+					font-family: $Bebas;
+					color: $light-col;
+				}
+			}
+
+			&__subtitle {
+				margin-top: 22px;;
+				margin-bottom: 34px;;
+				font-weight: 100;
+				font-size: 25px;
+				color: $light-col;
+			}
+
+			&__block {
+				opacity: 0;
+				transform: translateY(150px);
+				transition: all 1s ease .2s;
+			}
+
+		}
+		
+		.owl-item.active {
+			.slide-item > img{
+				animation: bannerScale 5s linear 1s;
+			}
+			.slide-item__block {
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
+	
+		& > .owl-dots {
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			transform: translate(-50%, -80%);
+			z-index: 10;
+		
+			& > .owl-dot span{
+				width: 10px;
+				min-width: 10px;
+				height: 10px;
+				min-height: 10px;
+				margin-right: 5px;
+				background-color: $light-col!important;
+				cursor: pointer;
+			}
+
+			& > .owl-dot.active span {
+				width: 47px;
+				transition: all .3s ease;
+			}
+		}
+
+		& > .owl-nav {
+			z-index: 10;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			max-width: 1200px;
+			padding-left: 15px;
+			padding-right: 15px;
+			display: flex;
+			justify-content: space-between;
+
+			& > button {
+				overflow: hidden;
+				border-radius: 8px!important;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				background-color: rgba($light-col, .5)!important;
+			
+				transition: all .3s linear;
+				
+				&:hover {
+					background-color: $primary-blue!important;
+					span {
+						color: $light-col;
+					}
+				}
+
+				span {
+					line-height: 20px;
+					font-weight: 900;
+					margin-top: -5px;
+					font-size: 30px;
+					color: $primary-blue;
+				}
+			}
+		}	
+	}
+}

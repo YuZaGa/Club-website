@@ -1,0 +1,130 @@
+/**************************************************/
+/* .our-departments-2 */
+/**************************************************/
+
+.our-departments-2 {
+    position: relative;
+    width: 100%;
+    padding-top: $section-space-2;
+    padding-bottom: $section-space-2 + 20px;
+    overflow: hidden;
+    
+    & > .bg-text {
+        position: absolute;
+        top: 20px;    
+        right: 0;
+    }
+
+    & > .container {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+
+        & > .section-title {
+            margin-bottom: $title-space-2;
+        }
+    }
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__inner-item {
+        position: relative;
+        z-index: 2;
+        max-width: 270px;
+        width: 100%;
+        height: 280px;
+        transition: all .3s linear;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        background-color: $light-col;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        padding: 30px;
+
+        &:hover {
+            border: 1px solid rgb( 55, 116, 194 );
+            box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, .1 );
+        }
+
+        
+        & > .title {
+            font-family: $RobBold;
+            font-size: 22px;
+            color: $text-col;  
+            letter-spacing: -.5px;
+        }
+
+        & > .text {
+            font-size: 16px;
+            color: $text-col-2;
+        }
+        
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 1330px;
+        transform: translateX(-50%);
+        padding: 10px 3px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            margin: 0!important;
+            overflow: hidden;
+            border-radius: 8px!important;
+            width: 49px;
+            height: 49px;
+            border: 1px solid $primary-blue!important;  
+            transition: all .3s linear;
+            background-color: $light-col;
+            
+            span {
+                display: block;
+                display: inline;
+                line-height: 20px;
+                font-size: 20px;
+                color: $primary-blue;
+                font-size: 30px;
+            }
+            
+            
+            &:hover {
+                box-shadow: 8.135px 18.271px 51px 0px rgba($primary-blue, .5);
+                background-color: $primary-blue!important;
+                span {
+                    color: $light-col;
+                }
+            }
+            
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-50%);
+        
+        .owl-dot span{
+            min-width: 10px;
+            height: 10px;
+        }
+        
+        .owl-dot.active span {
+            width: 48px;
+            transition: all .3s ease;
+            background-color: $primary-pink-2!important;
+        }
+    }
+
+}

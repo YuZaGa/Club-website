@@ -1,0 +1,56 @@
+/**************************************************/
+/* .bg-text */
+/**************************************************/
+
+.bg-text {
+    user-select: none;
+    font-size: 230px;
+    line-height: 230px;
+    font-family: $RobBold;
+    text-transform: uppercase;
+    color: rgba($light-col, .03);
+    
+    &_dark {
+        @extend .bg-text;
+        color: rgba(0, 0, 0, .03);
+    }
+}
+
+
+@media (max-width: 1919.98px) {
+    .bg-text {       
+        font-size: 170px;
+        top: 0!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+        width: 100%!important;
+        text-align: center!important;
+        right: initial!important;
+        bottom: initial!important;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .bg-text {       
+        display: none;
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .bg-text {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .bg-text {       
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 567.98px) {
+    .bg-text {       
+        display: none;
+    }
+}

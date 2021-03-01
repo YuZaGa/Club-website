@@ -1,0 +1,43 @@
+/**************************************************/
+/* .to-top */
+/**************************************************/
+
+.to-top {
+    display: none;
+    border-radius: 8px;
+    background-color: rgb( 31, 61, 157 );
+    box-shadow: 8.135px 18.271px 51px 0px rgba( 31, 61, 157, .4);
+    position: fixed;
+    right: 80px;
+    bottom: 50px;
+    width: 50px;
+    height: 52px;
+    z-index: 20;
+    color: $light-col;
+    transition: all .3s linear;
+    overflow: hidden;
+    cursor: pointer;
+    
+    & > .fa {
+        display: block;
+        width: 100%;
+        line-height: 45px;
+        text-align: center;
+        font-size: 24px;
+    }
+    &:hover {
+        background-color: $primary-pink-2;
+        box-shadow: 8.135px 18.271px 51px 0px rgba($primary-pink-2, .4);
+    }
+}
+@media only screen and (max-width: 1199.98px) {
+    .to-top{
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        bottom: 10px;    
+        &>.fa {
+            line-height: 35px;
+        }
+    }
+}

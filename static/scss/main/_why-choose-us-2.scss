@@ -1,0 +1,94 @@
+/**************************************************/
+/* .why-choose-us-2 */
+/**************************************************/
+.why-choose-us-2 {
+    position: relative;
+    overflow: hidden;
+    padding-top: $section-space-2;
+    padding-bottom: $section-space-2 - 75px;
+    
+    
+    & > .container {
+        flex-direction: column;
+        align-items: center;
+        
+        .section-title {
+            margin-bottom: $title-space-2;
+        }
+
+    }
+    
+    &__items {      
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        margin-bottom: 60px;
+        max-width: 370px;
+        width: 100%!important;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+            margin-bottom: 0px;
+        }
+
+        &-content {
+            padding-top: 5px;
+        }
+
+        &-number {
+            margin-right: 30px;
+            min-height: 87px;
+            min-width: 87px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background-color: $primary-pink-2;
+            
+            
+            font-family: $BebasBold;
+            font-size: 48px;
+            color: $light-col;
+            position: relative;
+            z-index: 2;
+            
+            &:before {
+                content: "";
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba($primary-pink-2, .4);
+                width: 126%;
+                height: 126%;
+                z-index: -1;
+                animation: animatePinkShadow 1s linear alternate-reverse infinite;
+            }
+
+        }
+        &-title {
+            color: $text-col;
+            font-family: $RobBold;
+            font-weight: 900;
+            font-size: 23.5px;
+            letter-spacing: -1px;
+        }
+
+        &-text {
+            color: $text-col-2;
+            margin-top: 10px;
+            line-height: 26px;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,549 @@
+/**************************************************/
+/* .latest-news-4 */
+/**************************************************/
+.latest-news-4 {
+    position: relative;
+    padding-top: $section-space;
+    padding-bottom: $section-space - 20px;
+    
+    & > .container {   
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & > .item {
+            background-color: $light-col;
+            z-index: 1;
+            max-width: 350px;
+            width: 100%;
+            background-color: $light-col;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            padding-bottom: 45px;
+            margin-bottom: 80px;
+            transition: all .3s linear;
+            overflow: hidden;
+
+            & > .img {
+                position: relative;
+                width: 100%;
+                height: 260px; 
+                
+                & > .date {
+                    position: absolute;
+                    left: 37px;
+                    bottom: -20px;    
+                    margin-top: 25px;
+                    font-size: 12px;
+                    font-weight: 100;
+                    text-align: center;
+                    border-radius: 20px;
+                    padding: 8px 15px;
+                    color: $light-col;
+                    background-color: $primary-blue;
+                }
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;    
+                }
+            }
+
+
+            & > .title {
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 40px;
+                color: $text-col;
+                font-family: $RobBold;
+                font-weight: 900;
+                font-size: 21px;
+            }
+
+            & > .text {
+                color: $text-col-2;
+                padding: 5px 40px 0px;
+                font-size: 15px;
+                line-height: 1.8;
+            }
+
+            & > .read-more-2 {
+                font-size: 14px;
+                padding: 0 40px;
+            }
+
+            &:hover {
+                box-shadow: 10px 10px 35px rgba(0,0,0, .1);
+            }
+        }
+    }
+
+    & > .container_left-sidebar,
+    & > .container_right-sidebar {
+        
+        & > .article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            & > .item {
+                z-index: 1;
+                width: 100%;
+                max-width: 330px;
+                background-color: $light-col;
+                border: 1px solid #f0f0f0;
+                border-radius: 8px;
+                padding-bottom: 45px;
+                margin-bottom: 80px;
+                transition: all .3s linear;
+                overflow: hidden;
+    
+                & > .img {
+                    position: relative;
+                    width: 100%;
+                    height: 260px; 
+                    
+                    & > .date {
+                        position: absolute;
+                        left: 37px;
+                        bottom: -20px;    
+                        margin-top: 25px;
+                        font-size: 12px;
+                        font-weight: 100;
+                        text-align: center;
+                        border-radius: 20px;
+                        padding: 8px 15px;
+                        color: $light-col;
+                        background-color: $primary-blue;
+                    }
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;    
+                    }
+                }
+    
+    
+                & > .title {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    margin-top: 40px;
+                    color: $text-col;
+                    font-family: $RobBold;
+                    font-weight: 900;
+                    font-size: 21px;
+                }
+    
+                & > .text {
+                    color: $text-col-2;
+                    padding: 5px 40px 0px;
+                    font-size: 15px;
+                    line-height: 1.8;
+                }
+    
+                & > .read-more-2 {
+                    font-size: 14px;
+                    padding: 0 40px;
+                }
+    
+                &:hover {
+                    box-shadow: 10px 10px 35px rgba(0,0,0, .1);
+                }
+            }
+            & > .item-2 {
+                z-index: 1;
+                width: 100%;
+                max-width: 770px;
+                background-color: $light-col;
+                border: 1px solid #f0f0f0;
+                margin-bottom: 80px;
+                border-radius: 8px;
+                padding-bottom: 45px;
+                transition: all .3s linear;
+                overflow: hidden;
+                
+                & > .img {
+                    position: relative;
+                    width: 100%;
+                    height: 350px; 
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;    
+                    }
+                }
+                
+                & > .date {
+                    margin-left: 40px;
+                    margin-right: 10px;
+                    font-size: 12px;
+                    font-weight: 100;
+                    border-radius: 20px;
+                    padding: 8px 15px;
+                    color: $light-col;
+                    background-color: $primary-blue;
+                    text-align: center;
+                }
+
+                & > .comments {
+                    font-size: 16px;
+                    color: $text-col-2;
+                }
+    
+                & > .title {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    margin-top: 20px;
+                    color: $text-col;
+                    font-family: $RobBold;
+                    font-weight: 900;
+                    font-size: 21px;
+                }
+    
+                & > .text {
+                    color: $text-col;
+                    padding: 5px 40px 0px;
+                    font-size: 15px;
+                    line-height: 1.8;
+                }
+    
+                & > .read-more-2 {
+                    font-size: 14px;
+                    padding: 0 40px;
+                }
+    
+                &:hover {
+                    box-shadow: 10px 10px 35px rgba(0,0,0, .1);
+                }
+            }
+        }
+
+        & > .article {
+            & > .single-card {
+                overflow: hidden;
+                background-color: $light-col;
+                
+                & > .img {
+                    width: 100%;
+                    height: 470px;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    margin-bottom: 30px;
+    
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+    
+                & > .date {
+                    margin-right: 10px;
+                    font-size: 12px;
+                    font-weight: 100;
+                    border-radius: 20px;
+                    padding: 8px 15px;
+                    color: $light-col;
+                    background-color: $primary-blue;
+                }
+    
+                & > .comments {
+                    font-size: 16px;
+                    color: $text-col-2;
+                    line-height: 42px;
+                    padding: 6px;
+                }
+
+                & > .title {
+                    margin-top: 20px;
+                    font-size: 40px;
+                    font-family: $RobBold;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+
+                & > .text {
+                    font-size: 17px;
+                    color: $text-col-2;
+                    line-height: 2;
+                    margin-bottom: 50px;
+                }
+
+                & > .blog {
+                    background-color: $primary-blue;
+                    padding: 45px;
+                    border-radius: 8px;
+                    display: flex;
+                    margin-bottom: 50px;
+                    
+                    & > .icon {
+                        margin-top: 30px;
+                        margin-right: 40px;
+                    }
+
+                    & > .content {
+                        color: $light-col;
+
+                        & > .text {
+                            font-size: 18px;
+                            line-height: 2;
+                        }
+                        
+                        & > .author {
+                            font-size: 22px;
+                            font-family: $RobBold;
+                        }
+
+                    }
+
+                }
+
+                & > .share {
+                    border-top: 1px solid #d9d9d9;
+                    border-bottom: 1px solid #d9d9d9;
+                    padding: 30px 0;
+                    display: flex;
+                    margin-bottom: 50px;
+                    & > h4 {
+                        font-family: $RobBold;
+                        font-size: 20px;
+                        margin-right: 24px;
+                        line-height: 20px;
+                    }
+                    & > a {
+                        line-height: 20px;
+                        font-size: 20px;
+                        color: $text-col-2;
+                        transition: all .3s linear;
+                        margin-right: 24px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &:hover {
+                            color:$primary-pink-2;
+                        }
+                    }
+                }
+
+                & > .single-card__comments {
+                    & > .title {
+                        color: $text-col;
+                        font-size: 24px;
+                        font-family: $RobBold;
+                        font-weight: 900;
+                        margin-bottom: 45px;
+                    }
+
+                    & > .single-card__comments-items {
+                        padding-bottom: 20px;
+                        margin-bottom: 50px;
+                        border-bottom: 1px solid #d9d9d9;
+                    
+                        & > .item {
+                            display: flex;
+                            margin-bottom: 20px;
+                            & > .img {
+                                margin-right: 40px;
+                                height: 99px;
+                                min-width: 99px;
+                                width: 99px;
+                                overflow: hidden;
+                                border-radius: 50%;
+    
+                                & > img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                }
+                            }
+                            & > .content {
+                                & > .date-reply {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    & > .date {
+                                        font-size: 14px;
+                                        color: $text-col-2;
+                                    }
+                                    & > .reply {
+                                        color: $text-col-2;
+                                        transition: all .3s linear;
+                                        font-size: 14px;
+                                        & > .fa {
+                                            // transition: all .3s linear;
+                                            margin-right: 5px;
+                                        }
+                                        &:hover {
+                                            color: $primary-pink-2;
+                                        }
+                                    }
+                                }
+
+                                & > .name {
+                                    color: $text-col;
+                                    font-size: 22px;
+                                    font-family: $RobBold;
+                                    margin-bottom: 10px;
+                                }
+
+                                & > .text {
+                                    font-size: 15.5px;
+                                    color: $text-col-2;
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & > .single-card__post-comment {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding-bottom: 40px;
+                    margin-bottom: 50px;
+                    border-bottom: 1px solid #d9d9d9;
+
+                    & > input,
+                    & > textarea {
+                        outline: none;
+                        box-shadow: none;
+                        max-width: 100%;
+                        width: 100%;
+                        height: 200px;
+                        color: $text-col;
+                        background-color: #fafafa;
+                        border: 1px solid #e6e6e6;
+                        transition: all .3s linear;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        padding: 20px 25px;
+                        font-weight: 600;
+                        resize: none;
+
+                        &::placeholder {
+                            color: #b2b2b2; 
+                            font-weight: 400;
+                        }
+                        
+                        &:hover {
+                            background-color: $light-col;
+                            border-color: $primary-pink-2;
+                        } 
+                    }
+
+                    & > input {
+                        max-width: 340px;
+                        line-height: 1;
+                        height: initial;
+                    }
+
+                    & > button {
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    & > label {
+                        align-self: center;
+                        margin-right: auto;
+                        font-size: 16px;
+                        color: #b3b3b3;
+                        margin-bottom: 20px;
+                    }
+
+                }
+
+                & > .also-like {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    
+                    & > .title {
+                        width: 100%;
+                        color: $text-col;
+                        font-size: 24px;
+                        font-family: $RobBold;
+                        font-weight: 900;
+                        margin-bottom: 45px;
+                        text-transform: capitalize;
+                    }
+
+                    & > .item {
+                        background-color: $light-col;
+                        z-index: 1;
+                        max-width: 330px;
+                        width: 100%;
+                        background-color: $light-col;
+                        border: 1px solid #f0f0f0;
+                        border-radius: 8px;
+                        padding-bottom: 45px;
+                        // margin-bottom: 30px;
+                        transition: all .3s linear;
+                        overflow: hidden;
+
+                        & > .img {
+                            position: relative;
+                            width: 100%;
+                            height: 260px; 
+                            
+                            & > .date {
+                                position: absolute;
+                                left: 37px;
+                                bottom: -20px;    
+                                margin-top: 25px;
+                                font-size: 12px;
+                                font-weight: 100;
+                                text-align: center;
+                                border-radius: 20px;
+                                padding: 8px 15px;
+                                color: $light-col;
+                                background-color: $primary-blue;
+                            }
+                            & > img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;    
+                            }
+                        }
+            
+            
+                        & > .title {
+                            padding-left: 40px;
+                            padding-right: 40px;
+                            margin-top: 40px;
+                            color: $text-col;
+                            font-family: $RobBold;
+                            font-weight: 900;
+                            font-size: 21px;
+                        }
+            
+                        & > .text {
+                            color: $text-col;
+                            padding: 5px 40px 0px;
+                            font-size: 15px;
+                            line-height: 1.8;
+                        }
+            
+                        & > .read-more-2 {
+                            font-size: 14px;
+                            padding: 0 40px;
+                        }
+            
+                        &:hover {
+                            box-shadow: 10px 10px 35px rgba(0,0,0, .1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

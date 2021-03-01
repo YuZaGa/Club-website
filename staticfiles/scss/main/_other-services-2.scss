@@ -1,0 +1,177 @@
+/**************************************************/
+/* .other-services-2 */
+/**************************************************/
+.other-services-2 {
+    position: relative;
+    padding-top: $section-space-2 + 260px;
+    padding-bottom: $section-space-2 + 70px;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        background-color: #fafafa;
+        .icon {
+            position: absolute;
+            right: -14px;
+            bottom: -10px;
+            max-width: 1216px;
+            width: 100%;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    .container {
+        position: relative;
+        z-index: 15;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card {
+            margin-top: $title-space-2 - 10px;
+            border-radius: 8px;
+            width: 100%;
+            height: 580px;
+            background-image: linear-gradient(to right, $primary-blue 340px, $light-col 1px);
+            box-shadow: 0px 20px 51px 0px rgba( 0, 0, 0, .1);
+            position: relative;
+
+            &>.img {
+                position: absolute;
+                left: 50px;
+                top: 50px;
+                border-radius: 8px;
+                max-width: 555px;
+                width: 100%;
+                height: 595px;
+                overflow: hidden;
+                
+                & > img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position:  center;
+                    transition: all .3s linear;
+                }
+
+                &:hover {
+                    &>img {
+                        transform: scale(1.05);
+                    }
+                }
+                
+            }
+            & > .content {
+                position: absolute;
+                right: 0;
+                top: 50px;
+                z-index: 100;
+                width: 520px;
+                height: 530px;
+                padding-left: 75px;
+                
+                .other-services-2__carousel {
+                    
+                    &-item {
+
+                        max-width: 345px;
+
+                        & > .title {
+                            margin-top: 20px;
+                            font-size: 36px;
+                            font-weight: 600;
+                            font-family: $RobLight;
+                            color: $text-col;
+                        }
+        
+                        & > .subtitle {
+                            margin-top: 20px;
+                            font-size: 17px;
+                            color: $text-col-2;
+                            line-height: 1.5;
+                        }
+        
+                        & > .lists {
+                            margin-top: 20px;
+                            font-weight: 600;
+                            color: $text-col;
+                            list-style: none;
+                    
+                            li {
+                                i.fa {
+                                    color: $primary-blue;
+                                    margin-right: 7px;
+                                }
+                                line-height: 36px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    position: absolute;
+                    right: 0;
+                    bottom: -102px;
+                    display: flex;
+                    justify-content: space-between;
+                
+                    button {
+                        border-radius: 0;
+                        margin: 0;
+                        overflow: hidden;
+                        width: 77px;
+                        height: 77px;
+                        background-color: $primary-blue!important;
+                        transition: all .3s linear;
+                        
+                        &:hover {
+                            background-color: $primary-pink-2!important;
+                            opacity: 1!important;
+                        }
+                        
+                        span {
+                            font-size: 30px;
+                            color: $light-col;
+                        }
+                        
+                        &:last-child {
+                            border-bottom-right-radius: 8px;
+                            background-color: lighten($primary-blue, 15%)!important;
+                            &:hover {
+                                background-color: $primary-pink-2!important;
+                                opacity: 1!important;
+                            
+                            }
+    
+                        }
+                    }
+                }
+
+                & > .btn {
+                    position: absolute;
+                    right: 154px;
+                    bottom: 0;
+                    border-radius: 0;
+                    height: 77px;
+                    line-height: 77px;
+                    padding: 0;
+                    width: 351px;
+                    text-align: center;
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    font-family: $RobLight;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                }
+            }
+    }
+}

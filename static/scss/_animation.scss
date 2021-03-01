@@ -1,0 +1,74 @@
+/**************************************************/
+/* animations */
+/**************************************************/
+
+
+// .header-bottom banner for index1.html
+@keyframes bannerScale {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.15);
+	}
+}
+
+@keyframes navbarShowAnimation {
+	from {
+		// display: none;
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		// display: block!important;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+// background-pink circle  for index1.html
+@keyframes animatePinkShadow {
+    from {
+        box-shadow: 0 0 0 0 rgba($primary-pink-2, .48);
+    }
+    to {
+		box-shadow: 8.135px 18.271px 51px 0px rgba($primary-pink-2, .48);
+	}
+}
+
+// background-pink circle  for index1.html
+@keyframes animateBlueShadow {
+    from {
+        box-shadow: 0 0 0 0 rgba($primary-blue, .48);
+    }
+    to {
+		box-shadow: 8.135px 18.271px 51px 0px rgba($primary-blue, .48);
+	}
+}
+
+
+@keyframes playBtn {
+	
+	50% {
+		box-shadow: 0 0 0 70px rgba(253, 167, 0, 0);
+	}
+    100% {
+		box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
+	}
+
+}
+
+
+// .faqs__cards-item.show animation
+@keyframes faqsCardsItemShow {
+	from {
+		opacity: .7;
+		margin-left: -100px;
+		transform: scale(.9);
+	}
+	to {
+		opacity: 1;
+		margin-left: 0px;
+		transform: scale(1);
+	}
+}

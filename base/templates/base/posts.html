@@ -32,8 +32,10 @@
 			<div class="post">
 				<img class="thumbnail" src="{{post.thumbnail.url}}">
 				<div class="post-preview">
+					<p class="post-intro">{{post.createdp}}</p>
 					<h6 class="post-title">{{post.headline}}</h6>
 					<p class="post-intro">{{post.sub_headline}}</p>
+
 					<a href="{% url 'post' post.slug %}">Read More</a>
 
 					{% if request.user.is_staff %}

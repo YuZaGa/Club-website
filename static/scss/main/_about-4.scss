@@ -1,0 +1,109 @@
+/**************************************************/
+/* .about-4 */
+/**************************************************/
+
+.about-4 {
+    position: relative;
+    padding-top: $section-space;
+    padding-bottom: $section-space - 20px;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        & > .icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            max-width: 882px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    & > .container {
+        position: relative;
+        z-index: 2;
+        & > .content {
+            width: 100%;
+            
+            & > .video {
+                float: left;
+                position: relative;
+                height: 590px;
+                max-width: 570px;
+                width: 100%;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                border-radius: 8px;
+            
+                & > .btn-video-outer {
+                    position: absolute;
+                    left: -28px;
+                    top: 80%;
+                    z-index: 2;
+                }
+                
+                & > .img {
+                    z-index: 1;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 8px;
+                    height: 100%;
+                    width: 100%;
+                    
+                    & > img {
+                         height: 100%;
+                         width: 100%;
+                         object-fit: cover;
+                         object-position: center center;
+                         transition: all .3s linear;
+                    }
+        
+                    &:hover {
+                        &>img {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+
+            & > .content-right {
+                
+                & > h4 {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    letter-spacing: 6.5px;
+                    color: $text-col;
+                }
+                
+                & > h2 {
+                    margin-top: 20px;
+                    font-family: $RobBold;
+                    font-size: 25px;
+                    font-weight: 900;
+                    line-height: 1.2;
+                    color: $text-col;
+                }
+                
+                & > p {
+                    margin-top: 30px;
+                    font-family: $RobLight;
+                    font-size: 16px;    
+                    line-height: 2;
+                    color: $text-col-2;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

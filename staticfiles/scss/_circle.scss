@@ -1,0 +1,22 @@
+/**************************************************/
+/* circle style */
+/**************************************************/
+
+.circle-blue {
+    z-index: 1;
+    width: 605px;
+    height: 605px;
+    border-radius: 50%;
+    background-color: $primary-blue;
+}
+
+.circle-pink {
+    z-index: 2;
+    width: 146px;
+    height: 146px;
+    border-radius: 50%;
+    background-color: $primary-pink-2;
+    box-shadow: 20px 20px 51px rgba($primary-pink-2, .48);
+    animation: 1s animatePinkShadow linear alternate-reverse infinite;
+}
+

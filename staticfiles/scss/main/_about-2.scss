@@ -1,0 +1,133 @@
+/**************************************************/
+/* .about-2 */
+/**************************************************/
+
+.about-2 {
+    position: relative;
+    height: 900px;
+    width: 100%;
+    z-index: 10;
+    background-image: url(./../images/jpg/about-us-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    & > .video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($primary-blue, .5);
+        display: flex;
+        justify-content: center;
+
+        
+        & > a {
+            margin-top: 230px;
+        }
+    } 
+
+    & > .container {
+        z-index: 15px;
+        position: relative;
+        top: 500px;
+        
+        & > .about-2-card {
+            border-radius: 8px;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            background-image: linear-gradient(to left, $primary-blue 250px, $light-col 1px);
+            box-shadow: 0px 20px 51px 0px rgba( 0, 0, 0, .1);
+              
+            & > .text {
+                padding-top: 20px;   
+                padding-left: 20px;   
+                max-width: 550px;
+                // background-color: greenyellow;
+            
+                & > h4 {
+                    padding-left: 1px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    letter-spacing: 6.5px;
+                    color: $text-col;
+                    margin-bottom: 35px;
+                }
+        
+                
+                & > h1 {
+                    margin-bottom: 35px;
+                }
+                
+                & > h2 {
+                    font-family: $RobBold;
+                    font-size: 25px;
+                    line-height: 1.4;
+                    color: $text-col;
+                    margin-bottom: 35px;
+                }
+                
+                & > p {
+                    font-size: 16px;    
+                    line-height: 1.5;
+                    color: $text-col;
+                    margin-bottom: 35px;
+                }
+                
+                & > .signature {
+                    width: 100%;
+                    margin-top: 35px;
+                    color: $text-col;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+        
+                    & > img {
+                        margin-right: 28px;
+                    }
+        
+                    & > h4 {
+                        font-size: 19px;
+                        padding-top: 20px;
+                        font-family: $RobBold;
+                        span {
+                            font-family: $RobLight;
+                            font-size: 15px;
+                            color: $text-col-2;
+                        }
+                    }
+                }
+            }
+
+            & > .img {
+                position: relative;
+                border-radius: 8px;
+                max-width: 418px;
+                width: 100%;
+                max-height: 559px;
+                overflow: hidden;
+                
+                & > img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    transition: all .3s linear;
+                }
+
+                &:hover {
+                    &>img {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    } 
+}

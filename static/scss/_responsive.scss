@@ -1,0 +1,4777 @@
+/**************************************************/
+/* responsive */
+/**************************************************/
+
+html,
+body {
+  min-width: 320px !important;
+  min-height: 320px !important;
+  background-color: $light-col;
+}
+
+@media (max-width: 1900px) {
+  /*****************************************************/
+  /************** Start of index3.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-3 responsive ----------*/
+  .header-bottom-3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 600px;
+    z-index: 10;
+
+    &__banner {
+      overflow: hidden;
+
+      .slide-item {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600px;
+
+        & > .content {
+          text-align: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          max-width: 100%;
+          width: 100%;
+          background-color: rgba($primary-blue, 0.5);
+          border-radius: none;
+
+          & > .bg-text {
+            display: none;
+          }
+        }
+
+        &__text {
+          right: 0 !important;
+          top: 0;
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+        }
+
+        & > .img {
+          border-bottom-left-radius: none;
+          right: 0;
+          top: 0;
+          height: 600px;
+          width: 100%;
+          max-width: 100%;
+
+          & > img {
+            object-position: center 10%;
+          }
+        }
+      }
+
+      .owl-nav {
+        display: none;
+      }
+
+      .owl-dots {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -90px;
+      }
+    }
+  }
+  /*---------- Start .header-bottom-3 responsive ----------*/
+
+  /*---------- Start .why-choose-us-3 responsive ----------*/
+  .why-choose-us-3 {
+    height: initial;
+
+    & > .bl-left {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      z-index: 2;
+      border-radius: none;
+      background-color: rgba($primary-blue, 0.5);
+      overflow: hidden;
+
+      & > .bg-text {
+        display: none;
+      }
+
+      & > .content {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        right: initial;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 100%;
+        max-width: 1170px;
+        width: 100%;
+
+        & > .section-title > span {
+          color: $light-col;
+        }
+
+        & > .items {
+          margin-top: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          & > .item {
+            width: 150px;
+            color: $light-col;
+            margin-bottom: 50px;
+
+            & > h1 {
+              font-family: $BebasBold;
+              font-size: 60px;
+
+              & > span {
+                font-size: 60px;
+                font-family: $BebasBold;
+              }
+            }
+
+            h4 {
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    & > .bl-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-height: 770px;
+      height: 100%;
+      width: 54%;
+      z-index: 1;
+      & > .img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        & > img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: 0% center;
+        }
+      }
+    }
+  }
+  /*---------- End .why-choose-us-3 responsive ------------*/
+
+  /*---------- Start .medical-center responsive ----------*/
+  .medical-center {
+    height: initial !important;
+
+    & > .bl-left {
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+
+      & > .img {
+        & > img {
+          object-position: center 20%;
+        }
+      }
+    }
+
+    & > .bl-right {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      height: 100%;
+      max-width: 100%;
+      background-color: rgba($primary-blue, 0.7);
+      border-radius: 0;
+
+      & > .bg-text {
+        display: none;
+      }
+
+      & > .content {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        height: initial;
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+
+        & > .medical-center__form {
+          align-items: flex-start;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+  /*---------- End .medical-center responsive ------------*/
+
+  /*---------- Start .our-clients-2 responsive ----------*/
+  .our-clients-2 {
+    width: 100%;
+    height: initial;
+    z-index: 10;
+
+    &__carousel {
+      .slide-item {
+        width: 100%;
+        height: initial;
+
+        & > .content {
+          padding-top: 100px;
+          padding-bottom: 100px;
+          background-color: rgba($primary-blue, 0.5);
+          position: relative;
+          top: 0;
+          left: 0;
+          right: initial;
+          bottom: initial;
+          height: initial;
+          width: 100%;
+          max-width: 100%;
+          border-radius: none;
+          & > .bg-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            right: initial;
+            bottom: initial;
+            max-width: 575px;
+            width: 100%;
+          }
+        }
+
+        &__text {
+          text-align: center;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%) !important;
+          top: 0;
+          padding: 0 15px;
+
+          & > .section-title {
+            margin-bottom: 30px;
+          }
+
+          & > .author {
+            margin-top: 30px;
+          }
+        }
+
+        & > .img {
+          border-radius: none;
+          height: 100%;
+          width: 100%;
+          max-width: 100%;
+
+          & > img {
+            object-position: center 10%;
+          }
+        }
+      }
+
+      .owl-nav {
+        display: none;
+      }
+
+      .owl-dots {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -90px;
+      }
+    }
+  }
+  /*---------- End .our-clients-2 responsive ----------*/
+}
+
+@media (max-width: 1199px) {
+  /*---------- Start .header-top responsive ----------*/
+  .header-top {
+    display: none;
+  }
+  /*---------- End .header-top responsive ----------*/
+
+  /*---------- Start .header-middle responsive ----------*/
+  .header-middle {
+    .container {
+      align-items: center;
+      justify-content: space-between;
+      min-height: 70px;
+    }
+
+    .navbar {
+      overflow: auto !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+      padding-bottom: 70px;
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      transition: top 0.3s linear;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &.hide {
+        top: -200%;
+      }
+      &.show {
+        top: 70px;
+      }
+
+      &__right {
+        justify-self: flex-start;
+        max-height: 70px;
+        height: 70px;
+        order: 1;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      &-icon {
+        display: flex;
+      }
+
+      &-logo {
+        padding-top: 5px;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__menu {
+        margin-top: 50px;
+        order: 2;
+        max-width: 400px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-item {
+          display: inline-block;
+          margin: 0;
+          width: 100%;
+          position: static;
+          margin-bottom: 10px;
+          &:hover {
+            // & > .navbar__menu-link {
+            //   color: inherit!important;
+            // }
+            & > .navbar__submenu {
+              // animation: none;
+              display: none;
+            }
+          }
+        }
+        &-link {
+          height: 40px;
+          line-height: 40px;
+          font-family: $RobBold;
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 1.55;
+          padding: 0;
+          &:after {
+            border: none;
+          }
+        }
+      }
+
+      &__submenu {
+        padding: 5px;
+        position: static;
+        width: 100%;
+        background-color: transparent;
+
+        &-item {
+          margin: 0;
+        }
+
+        &-link {
+          font-size: 20px;
+          line-height: 1.5;
+          height: 100%;
+          &:hover {
+            color: $primary-pink-2;
+            text-indent: 0;
+            background-color: transparent;
+          }
+
+          &:before {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .header-middle responsive ----------*/
+
+  /*---------- Start .header-bottom responsive ----------*/
+  .header-bottom {
+    height: 920px;
+
+    &__banner {
+      .slide-item {
+        width: 100%;
+        height: 920px;
+        padding-top: 350px;
+
+        .container {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      .owl-dots {
+        position: relative;
+        top: -230px;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    .services {
+      bottom: -50px;
+      &__item {
+        height: 200px;
+        max-width: 200px;
+        flex: 0 0 200px;
+
+        &-title {
+          font-size: 24px;
+        }
+
+        &-text {
+          font-size: 12px;
+        }
+      }
+      .owl-dots {
+        top: 10px;
+      }
+    }
+  }
+  /*---------- End .header-bottom responsive ----------*/
+
+  /*---------- Start .about section responsive ----------*/
+  .about {
+    padding-top: 130px;
+    padding-bottom: 100px;
+
+    & > .container {
+      justify-content: space-around;
+    }
+
+    &__our-misson {
+      text-align: center;
+      padding-left: 0px;
+      max-width: 450px;
+      flex: 0 0 450px;
+
+      &-text {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &-img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      max-width: 450px;
+      flex: 0 0 450px;
+    }
+  }
+  /*---------- End .about section responsive ----------*/
+
+  /*---------- Start .why-choose-us responsive ----------*/
+  .why-choose-us {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    &__bg {
+      & > svg {
+        position: absolute;
+        top: -5px !important;
+        left: -75px;
+        height: initial;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      & > img {
+        display: none;
+      }
+
+      & > .circle-blue {
+        display: none;
+      }
+
+      & > .circle-pink {
+        display: none;
+      }
+    }
+
+    & > .container {
+      text-align: center;
+      width: 100%;
+      // margin-left: 0;
+
+      .difference {
+        margin-top: 50px;
+        max-width: 100%;
+        flex: 0 0 100%;
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-around;
+
+        &__item {
+          flex-direction: column;
+          align-items: center;
+          max-width: 300px;
+          &-number {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .why-choose-us responsive ----------*/
+
+  /*---------- Start .appointments responsive ----------*/
+  .appointments {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .container {
+      justify-content: space-around;
+
+      .online-appointments {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        .appointments-text {
+          margin: 50px 0;
+        }
+      }
+
+      .company-numbers {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        &__item {
+          max-width: 570px;
+          width: 100%;
+          margin-bottom: 50px;
+          .text {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .appointments responsive ----------*/
+
+  /*---------- Start .other-services responsive ----------*/
+  .other-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__cards {
+      margin-top: 50px;
+      display: flex;
+      max-height: 100%;
+      justify-content: space-between;
+
+      & > .card-item {
+        flex: 0 0 32%;
+        max-width: 32%;
+        padding: 20px 15px;
+        height: 100%;
+
+        & > .title {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        & > .subtitle {
+          margin-top: 20px;
+        }
+
+        & > .lists {
+          padding: 0;
+          li {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .other-services responsive ----------*/
+
+  /*---------- Start .form responsive ----------*/
+  .form {
+    min-height: initial;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__bg {
+      & > .circle-blue {
+        display: none;
+      }
+
+      & > .circle-pink {
+        display: none;
+      }
+
+      & > img {
+        display: none;
+      }
+    }
+
+    .container {
+      padding-bottom: 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__block {
+      flex: 0 0 570px;
+      max-width: 570px;
+      padding-left: 0;
+
+      & > form {
+        margin-left: -1px;
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        & > textarea {
+          flex: 0 0 100%;
+          max-width: 100% !important;
+          resize: none;
+          height: 210px;
+          margin-bottom: 22px;
+        }
+
+        & > .btn {
+          padding-left: 77px;
+          padding-right: 77px;
+        }
+
+        & > label {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  /*---------- End .form responsive ----------*/
+
+  /*---------- Start .faq responsive ----------*/
+  .faq {
+    &__img {
+      display: none;
+    }
+
+    &__content {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 100px 0;
+      .accardion {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .section-title {
+        text-align: center;
+        margin: 0;
+      }
+      & > .read-more {
+        align-self: center;
+      }
+    }
+  }
+  /*---------- End .faq responsive ----------*/
+
+  /*---------- Start .testimonials responsive ----------*/
+  .testimonials {
+    &__img {
+      display: none;
+    }
+
+    &__content {
+      justify-content: center;
+      // margin-left: auto;
+      // margin-right: auto;
+      max-width: 800px;
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 195px;
+      text-align: center;
+
+      &-carousel {
+        text-align: center;
+        .owl-nav,
+        .owl-dots {
+          bottom: -100px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .owl-dots {
+          bottom: -95px;
+        }
+      }
+    }
+  }
+  /*---------- End .testimonials responsive ----------*/
+
+  /*---------- Start .emergency-call responsive ----------*/
+  .emergency-call {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__items {
+      justify-content: space-around;
+      text-align: center;
+    }
+    &__item {
+      flex: 0 0 300px;
+      max-width: 300px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      p {
+        margin-bottom: 0;
+      }
+      & > .icon {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  /*---------- End .emergency-call responsive ----------*/
+
+  /*---------- Start .specialists responsive ----------*/
+  .specialists {
+    .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__carousel {
+      margin-top: 50px;
+
+      .owl-dots {
+        bottom: -10px;
+      }
+    }
+
+    &__item {
+      padding-bottom: 100px;
+    }
+  }
+  /*---------- End .specialists responsive ----------*/
+
+  /*---------- Start .latest-news responsive ----------*/
+  .latest-news {
+    .container {
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
+
+    &__carousel {
+      margin-top: 50px;
+    }
+
+    &__item {
+      padding-bottom: 50px;
+      & > .inner-block {
+        max-width: 270px;
+        padding-bottom: 20px;
+
+        & > .img {
+          height: 220px;
+          & > .date {
+            left: 20px;
+          }
+        }
+
+        & > .title {
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 30px;
+          font-size: 20px;
+        }
+
+        & > .text {
+          margin: 0;
+          padding: 10px 20px;
+          font-size: 15px;
+          line-height: 1.5;
+        }
+
+        & > .read-more-2 {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  /*---------- End .latest-news responsive ----------*/
+
+  /*---------- Start .footer responsive ----------*/
+  .footer {
+    .container {
+      justify-content: space-around;
+      & > div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+
+    &__top {
+      padding-top: 100px;
+      &-blocks {
+        padding-right: 0;
+        .content {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  /*---------- End .footer responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index2.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-2 responsive ----------*/
+  .header-bottom-2 {
+    height: 700px;
+    &__banner {
+      top: 0px;
+      .slide-item {
+        top: 0;
+        padding-top: 150px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__title {
+          font-size: 60px;
+        }
+        &__subtitle {
+          font-size: 20px;
+        }
+      }
+    }
+
+    & > .container {
+      // position: initial;
+      top: 115%;
+
+      .benefits-form {
+        width: 100%;
+        align-items: flex-start;
+        padding: 50px 15px;
+        justify-content: space-around;
+
+        & > div {
+          max-width: 48%;
+          text-align: center;
+        }
+
+        &__benefits {
+          height: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          &-item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            .icon {
+              margin: 0 0 20px 0;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        &__form {
+          & > form {
+            & > .btn,
+            & > .input-box {
+              width: 100%;
+
+              &:nth-last-child(1),
+              &:nth-last-child(2) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .header-bottom-2 responsive ----------*/
+
+  /*---------- Start .our-departments responsive ----------*/
+  .our-departments {
+    padding-top: 700px;
+
+    &__items {
+      justify-content: space-around;
+    }
+    &__inner-item {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  /*---------- End .our-departments responsive ----------*/
+
+  /*---------- Start .about-2 responsive ----------*/
+  .about-2 {
+    & > .container {
+      & > .about-2-card {
+        padding: 100px 15px;
+        text-align: center;
+        background: none;
+        background-color: $light-col;
+        justify-content: center;
+        & > .text {
+          padding: 0;
+
+          & > .signature {
+            align-self: center;
+            justify-content: center;
+          }
+        }
+        & > .img {
+          display: none;
+        }
+      }
+    }
+  }
+  /*---------- End .about-2 responsive ----------*/
+
+  /*---------- Start .other-services-2 responsive ----------*/
+  .other-services-2 {
+    padding-top: 430px;
+    padding-bottom: 100px;
+    .section-title {
+      margin: 0;
+    }
+
+    &__card {
+      margin-top: 50px;
+      padding: 50px 20px;
+      height: auto;
+      background-image: none;
+      background-color: $light-col;
+
+      & > .img {
+        display: none;
+      }
+
+      & > .content {
+        width: 100%;
+        padding: 0;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: initial;
+        & > .other-services-2__carousel {
+          .owl-stage-outer {
+            .owl-stage {
+              .owl-item {
+                display: flex;
+                justify-content: center;
+
+                h2.title {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+          .other-services-2__carousel {
+            &-item {
+              max-width: 300px;
+
+              & > .title {
+                margin-top: 0px;
+                font-size: 32px;
+              }
+
+              & > .subtitle {
+                margin-top: 10px;
+              }
+
+              & > .lists {
+                margin-top: 10px;
+
+                li {
+                  line-height: 1.5;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        .owl-nav {
+          display: none;
+        }
+        & > .btn {
+          margin-top: 30px;
+          position: relative;
+          max-width: 300px;
+          width: 100%;
+          left: 0;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  /*---------- End .other-services-2 responsive ----------*/
+
+  /*---------- Start .appointments-2 responsive ----------*/
+  .appointments-2 {
+    .container {
+      justify-content: space-around;
+
+      .online-appointments {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        .appointments-text {
+          max-width: 100%;
+        }
+      }
+
+      .company-numbers {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        &__item {
+          max-width: 570px;
+          width: 100%;
+        }
+
+        &__item:first-child {
+          margin-bottom: 50px;
+        }
+      }
+
+      & > .btn {
+        margin-top: 30px;
+      }
+    }
+  }
+  /*---------- End .appointments-2 responsive ----------*/
+
+  /*---------- Start .why-choose-us-2 responsive ----------*/
+  .why-choose-us-2 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    &__items {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__item {
+      text-align: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px;
+
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        margin-bottom: 40px;
+      }
+
+      &-number {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+  /*---------- End .why-choose-us-2 responsive ----------*/
+
+  /*---------- Start .our-numbers responsive ----------*/
+  .our-numbers {
+    height: initial;
+    padding-bottom: 70px;
+
+    & > .container {
+      flex-direction: column;
+      & > div {
+        max-width: 100%;
+      }
+    }
+
+    &__items {
+      max-height: initial;
+      justify-content: space-around;
+
+      & > .item {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 150px;
+        text-align: center;
+
+        & > h1 {
+          font-size: 60px;
+
+          & > span {
+            font-size: 60px;
+          }
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+  /*---------- End .our-numbers responsive ----------*/
+
+  /*---------- Start .specialists-2 responsive ----------*/
+  .specialists-2 {
+    padding: 100px 0 170px;
+    & > .container {
+      & > .specialists-2__card {
+        padding: 50px 20px;
+        background-image: none;
+        background-color: $light-col;
+        .specialists-2__carousel {
+          .owl-item {
+            display: flex;
+            justify-content: center;
+          }
+          &-item {
+            flex-direction: column;
+            justify-content: initial;
+            align-items: center;
+            max-width: 350px;
+            & > div {
+              margin: 0;
+              padding: 0;
+              max-height: initial;
+            }
+            & > .img {
+              height: 400px;
+              & > img {
+                object-position: center 20%;
+              }
+            }
+            & > .content {
+              padding: 20px 0px 0px;
+
+              table {
+                font-size: 16px;
+                thead {
+                  tr {
+                    td {
+                      .title {
+                        text-align: center;
+                        padding: 0 0 10px 0;
+                        font-size: 22px;
+                      }
+                    }
+                  }
+                }
+                & > tbody {
+                  tr {
+                    & > th {
+                      padding-bottom: 5px;
+                    }
+                    & > td {
+                      padding-bottom: 5px;
+                      a {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+                & > tfoot {
+                  text-align: center;
+                }
+              }
+            }
+          }
+          & > .owl-dots {
+            width: 100%;
+            bottom: -130px;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .specialists-2 responsive ----------*/
+
+  /*---------- Start .our-clients responsive ----------*/
+  .our-clients {
+    height: initial;
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    & > .container {
+      & > .section-title {
+        margin-bottom: 40px;
+      }
+    }
+    &__carousel {
+      padding-bottom: 20px;
+      &-item {
+        height: initial;
+        padding-top: 0;
+
+        & > .text {
+          font-size: 20px;
+        }
+
+        & > .title {
+          margin-top: 30px;
+        }
+        & > .subtitle {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  /*---------- End .our-clients responsive ----------*/
+
+  /*---------- Start .latest-news-2 responsive ----------*/
+  .latest-news-2 {
+    padding: 100px 0;
+
+    & > .container {
+      padding: 0;
+
+      & > .section-title {
+        margin-bottom: 50px;
+      }
+    }
+    &__carousel {
+      &-item {
+        max-width: 300px;
+        width: 100%;
+        max-height: initial;
+        height: initial;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & > .latest-news-2__card {
+          position: relative;
+
+          & > .img {
+            box-shadow: none;
+            position: static;
+            border-radius: 0;
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+            z-index: 11;
+
+            & > img {
+              object-position: center 20%;
+            }
+          }
+
+          & > .content {
+            border-radius: 0;
+            position: static;
+            height: initial;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 15px;
+            background-image: none;
+            background-color: $light-col;
+            box-shadow: none;
+            text-align: center;
+            & > .date {
+              font-size: 14px;
+              color: $light-col;
+              background-color: $primary-blue;
+              border-radius: 20px;
+              padding: 7px 12px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            & > .title {
+              margin-top: 20px;
+              font-size: 20px;
+            }
+
+            & > .text {
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      & > .owl-stage-outer > .owl-stage > .owl-item {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  /*---------- End .latest-news-2 responsive ----------*/
+
+  /*---------- Start .emergency-call-2 responsive ----------*/
+  .emergency-call-2 {
+    background-position: center 90%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    & > .container {
+      text-align: center;
+      align-items: center;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      & > .call {
+        flex-direction: column;
+        align-items: center;
+
+        & > .icon {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+  /*---------- End .emergency-call-2 responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index3.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .our-departments-2 section responsive ----------*/
+  .our-departments-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    & > .bg-text {
+      position: absolute;
+      top: 20px;
+      right: 0;
+    }
+
+    .owl-nav {
+      display: none;
+    }
+  }
+  /*---------- End .our-departments-2 section responsive ----------*/
+
+  /*---------- Start .about-3 section responsive ----------*/
+  .about-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    & > .container {
+      justify-content: space-around;
+
+      & > .content {
+        order: 2;
+        text-align: center;
+
+        & > .signature {
+          justify-content: center;
+          width: 100%;
+        }
+      }
+
+      & > .video {
+        order: 1;
+        margin-bottom: 50px;
+        & > .btn-video-outer {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          // bottom: -30px;
+        }
+      }
+    }
+  }
+  /*---------- End .about-3 section responsive ----------*/
+
+  /*---------- Start .why-choose-us-3 responsive ----------*/
+  .why-choose-us-3 {
+    & > .bl-left {
+      & > .content {
+        & > .items {
+          margin-top: 30px;
+          justify-content: space-around;
+
+          & > .item {
+            margin-left: 5px;
+            margin-right: 5px;
+            max-width: 150px;
+            width: 100%;
+            color: $light-col;
+            margin-bottom: 30px;
+
+            & > h1 {
+              font-size: 50px;
+
+              & > span {
+                font-size: 50px;
+              }
+            }
+
+            h4 {
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .why-choose-us-3 responsive ----------*/
+
+  /*---------- Start .other-services-3 responsive ----------*/
+  .other-services-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__cards {
+      margin-top: 50px;
+      display: flex;
+      max-height: 100%;
+      justify-content: space-between;
+
+      & > .card-item {
+        flex: 0 0 32%;
+        max-width: 32%;
+        padding: 20px 15px;
+        height: 100%;
+
+        & > .title {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        & > .subtitle {
+          margin-top: 20px;
+        }
+
+        & > .lists {
+          padding: 0;
+          li {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .other-services-3 responsive ----------*/
+
+  /*---------- Start .specialists-3 responsive ----------*/
+  .specialists-3 {
+    .container {
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+
+    &__carousel {
+      margin-top: 50px;
+
+      .owl-dots {
+        bottom: -10px;
+      }
+    }
+
+    &__item {
+      padding-bottom: 100px;
+    }
+  }
+  /*---------- End .specialists-3 responsive ----------*/
+
+  /*---------- Start .latest-news-2 responsive ----------*/
+  .latest-news-3 {
+    padding: 100px 0;
+
+    & > .container {
+      padding: 0;
+      & > .section-title {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__carousel {
+      &-item {
+        max-width: 300px;
+        width: 100%;
+        max-height: initial;
+        height: initial;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & > .latest-news-3__card {
+          position: relative;
+          border: 1px solid #e6e6e6;
+          & > .img {
+            box-shadow: none;
+            position: static;
+            border-radius: 0;
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+            z-index: 11;
+
+            & > img {
+              object-position: center 20%;
+            }
+          }
+
+          & > .content {
+            border-radius: 0;
+            position: static;
+            height: initial;
+            width: 100%;
+            padding: 15px;
+            background-image: none;
+            background-color: #fafafa;
+            box-shadow: none;
+            text-align: center;
+            & > .date {
+              font-size: 14px;
+              color: $light-col;
+              background-color: $primary-blue;
+              border-radius: 20px;
+              padding: 7px 12px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            & > .title {
+              margin-top: 20px;
+              font-size: 20px;
+            }
+
+            & > .text {
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      & > .owl-stage-outer > .owl-stage > .owl-item {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  /*---------- End .latest-news-3 responsive ----------*/
+
+  /*---------- Start .medical-center responsive ----------*/
+  .medical-center {
+    height: 550px;
+
+    & > .bl-right {
+      & > .content {
+        max-width: 550px;
+      }
+    }
+  }
+  /*---------- End .medical-center responsive ------------*/
+
+  /*****************************************************/
+  /************** Start of about.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-4 section responsive ----------*/
+  .header-bottom-4 {
+    height: 430px;
+
+    & > img {
+      top: -70px;
+      object-position: center top;
+    }
+
+    &__bg {
+      top: -70px;
+      background-image: linear-gradient(to right, $light-col 30%, transparent);
+    }
+
+    & > .container {
+      text-align: center;
+      padding-top: 0;
+      top: 50%;
+      & > .breadcrumb {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  /*---------- End .header-bottom-4 section responsive ----------*/
+
+  /*---------- Start .about-4 section responsive ----------*/
+  .about-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    & > .container {
+      & > .content {
+        & > .video {
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+          margin-bottom: 60px;
+          & > .btn-video-outer {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // bottom: -30px;
+          }
+        }
+
+        & > .content-right {
+          & > h4,
+          & > h1.section-title,
+          & > h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .about-4 section responsive ----------*/
+
+  /*---------- Start .medical-center-2 responsive ----------*/
+  .medical-center-2 {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    background-color: #f4f4f4;
+    .container {
+      flex-direction: column;
+      align-content: space-around;
+      & > .img {
+        max-width: 570px;
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+      & > .content {
+        text-align: center;
+        & > .list {
+          text-align: left;
+        }
+      }
+    }
+  }
+  /*---------- End .medical-center-2 responsive ------------*/
+
+  /*****************************************************/
+  /************** Start of blog-grid.html **************/
+  /*****************************************************/
+
+  /*---------- Start .latest-news-4 responsive ----------*/
+  .latest-news-4 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    & > .container {
+      justify-content: space-around;
+      & > .item {
+        max-width: 320px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 50px;
+        & > .img {
+          height: 200px;
+        }
+        & > .title {
+          padding-left: 20px;
+          margin-top: 30px;
+          font-size: 20px;
+        }
+
+        & > .text {
+          padding: 5px 20px 0px;
+        }
+
+        & > .read-more-2 {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    & > .container_left-sidebar,
+    & > .container_right-sidebar {
+      & > .article {
+        & > .item {
+          margin-bottom: 50px;
+        }
+
+        & > .single-card {
+          & > .title {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    .article {
+      padding-bottom: 0;
+
+      .single-card__comments {
+        .content {
+          text-align: center;
+        }
+      }
+    }
+  }
+  /*---------- End .latest-news-4 responsive ------------*/
+
+  /*****************************************************/
+  /******* Start of departments-3_column.html **********/
+  /*****************************************************/
+
+  /*---------- Start .departments-3 responsive ----------*/
+  .departments-3 {
+    & > .container {
+      & > .departments-3__items {
+        justify-content: space-around;
+
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        & > .item-icon,
+        & > .item {
+          margin-bottom: 50px;
+
+          & > .img {
+            width: 100%;
+            height: 200px;
+          }
+
+          & > .title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 24px;
+          }
+
+          & > .text {
+            padding: 0 15px;
+          }
+        }
+        & > .item-icon {
+          & > .title {
+            margin-top: 85px;
+          }
+        }
+      }
+      & > .departments-3__item-1 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & > .item {
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 50px;
+
+          & > .img {
+            max-width: 100%;
+            width: 100%;
+          }
+
+          & > .content {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 50px;
+            & > .departments-3__item-bg-text {
+              display: none;
+            }
+          }
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > .article {
+        max-width: 100%;
+        & > .departments-3__single {
+          padding-bottom: 0px;
+          padding-top: 100px;
+          width: 100%;
+
+          & > .title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            margin-left: 0;
+          }
+
+          & > .img {
+            height: 500px;
+            margin-bottom: 30px;
+          }
+
+          & > .prices {
+            margin-top: 50px;
+            padding-top: 50px;
+            padding-bottom: 0px;
+            & > .title {
+              margin-bottom: 50px;
+            }
+            & > .prices-block {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+
+              & > .item {
+                border-radius: 8px;
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                background-color: $light-col;
+                padding: 40px;
+                margin-bottom: 50px;
+              }
+            }
+          }
+
+          & > .doctors-department {
+            margin-top: 50px;
+            padding-bottom: 50px;
+
+            & > .title {
+              margin-bottom: 50px;
+            }
+            & > .doctors-department__carousel {
+              .owl-item {
+                display: flex;
+                justify-content: center;
+
+                & > .item {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  & > .img {
+                    max-width: 40%;
+                    height: 450px;
+                  }
+
+                  & > .content {
+                    margin-left: 0px;
+                    max-width: 55%;
+                    width: 100%;
+                    padding: 15px;
+                  }
+                }
+              }
+            }
+          }
+
+          & > .department-faq {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 35px;
+
+            & > .title {
+              margin-bottom: 50px;
+            }
+          }
+
+          & > .department-cases {
+            margin-top: 65px;
+            width: 100%;
+            & > .title {
+              font-size: 32px;
+              color: $text-col;
+              font-weight: 500;
+              line-height: 1;
+              margin-bottom: 50px;
+            }
+            .department-cases__carousel {
+              max-width: 100%;
+              .owl-item {
+                opacity: 0.5;
+                transition: all 0.3s linear;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                &.active {
+                  opacity: 1;
+                }
+                & > .item {
+                  padding-bottom: 50px;
+                  max-width: 270px;
+                  width: 100%;
+                  border-radius: 8px;
+                  overflow: hidden;
+                  position: relative;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > .sidebar {
+        padding: 0;
+        margin-bottom: 100px;
+        & > .departments-sidebar {
+          margin: 0;
+          max-width: 100%;
+
+          & > .appointment {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &_no-sidebar {
+        & > .article {
+          padding-bottom: 50px;
+          & > .departments-3__single {
+            & > .doctors-department {
+              & > .doctors-department__carousel {
+                .owl-item {
+                  & > .item {
+                    & > .img {
+                      max-width: 40%;
+                    }
+                    & > .content {
+                      max-width: 60%;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .departments-3 responsive ----------*/
+
+  /*****************************************************/
+  /*********** Start of cases-3_detail.html ************/
+  /*****************************************************/
+
+  /*---------- Start .case responsive ----------*/
+  .case {
+    & > .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      .case__cards {
+        margin-top: 50px;
+
+        &-item {
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-bottom: 50px;
+
+          & > .img {
+            height: 200px;
+
+            &.img_2 {
+              max-height: 400px;
+            }
+          }
+        }
+      }
+
+      .case__detail {
+        & > .title {
+          margin-bottom: 0;
+        }
+
+        & > .img-comp-container {
+          display: none;
+        }
+        & > .img-mobile {
+          display: block;
+          & > .img-mobile {
+            display: none;
+            width: 100%;
+            margin-top: 30px;
+          }
+        }
+        .doctor-history {
+          margin-top: 50px;
+
+          & > div {
+            max-width: 50%;
+          }
+
+          & > .doctor {
+            & > .content {
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        .photogallery {
+          margin-top: 100px;
+          text-align: center;
+
+          &-item {
+            max-width: 48%;
+            margin-bottom: 30px;
+          }
+        }
+
+        .testimonial {
+          margin-top: 100px;
+
+          & > .content {
+            max-width: 40%;
+            width: 100%;
+            margin: 0px;
+          }
+
+          & > .video {
+            max-width: 50%;
+            width: 100%;
+
+            & > .btn-video-outer {
+              top: 90%;
+              left: 50%;
+              transform: translate(-50%, -90%);
+            }
+          }
+        }
+      }
+
+      .my-pagination-2 {
+        margin-top: 100px;
+      }
+    }
+  }
+  /*---------- End .case responsive ----------*/
+
+  /*****************************************************/
+  /********* Start of doctors-3_columns.html ***********/
+  /*****************************************************/
+
+  /*---------- Start .doctors responsive ----------*/
+  .doctors {
+    & > .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      & > .doctors__cards {
+        & > .doctors__cards-item {
+          margin: 0 5px 50px;
+          & > a {
+            & > .img {
+              height: 240px;
+            }
+            & > .content {
+              padding: 20px 20px 0px 20px;
+
+              & > .text {
+                margin-top: 15px;
+                padding-top: 15px;
+              }
+            }
+          }
+          & > .socials {
+            padding: 0 20px 20px;
+          }
+        }
+      }
+
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        align-items: center;
+        flex-direction: column;
+
+        & > .sidebar {
+          margin-top: 50px;
+          max-width: 100% !important;
+          width: 100%;
+
+          & > .doctors-sidebar {
+            & > .appointment {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        & > .article {
+          max-width: 100%;
+          & > .doctors-block {
+            & > .content {
+              max-width: 570px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .doctors responsive ----------*/
+
+  /*****************************************************/
+  /***************** Start of shop.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .shop responsive ----------*/
+  .shop {
+    & > .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      & > .shop-cart {
+        & > .responsive-table {
+          overflow-x: auto;
+          &::-webkit-scrollbar {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            height: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: $primary-blue;
+            border-radius: 10px;
+            &:hover {
+              background-color: $primary-pink-2;
+            }
+          }
+          & > table {
+            & > thead {
+              & > tr {
+                & > td.title,
+                & > th.title {
+                  padding: 30px 15px;
+                }
+              }
+            }
+
+            & > tbody {
+              & > tr {
+                th {
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  padding: 15px 0;
+                  min-width: 300px;
+                  & > .img {
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 0;
+                  }
+
+                  & > .text {
+                    font-size: 18px;
+                    margin-top: 15px;
+                    font-family: $RobBold;
+                    line-height: 1.5;
+                  }
+                }
+
+                td {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+        & > .cupon {
+          float: initial;
+        }
+        & > .check {
+          float: initial;
+          padding: 20px;
+
+          & > .shipping {
+            & > table {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      & > .product {
+        & > .single-product {
+          & > div {
+            max-width: 100%;
+          }
+          & > .carousels {
+            & > .image-carousel {
+              height: initial;
+            }
+          }
+          & > .content {
+            margin-top: 50px;
+            padding: 0;
+          }
+        }
+
+        & > .description {
+          padding-bottom: 80px;
+        }
+      }
+      & > .relatives {
+        margin-top: 100px;
+        & > .relatives__carousel {
+          .owl-nav {
+            display: none;
+          }
+        }
+      }
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        flex-direction: column;
+        align-items: center;
+        & > .article {
+          max-width: 100%;
+          & > .shop-block {
+            & > .shop-block__card {
+              justify-content: space-around;
+              & > .shop-block__card-item {
+                margin-bottom: 50px;
+
+                & > .img {
+                  height: 220px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.shop-checkout {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+    }
+  }
+  /*---------- End .shop responsive ------------*/
+
+  /*****************************************************/
+  /***************** Start of faqs.html ****************/
+  /*****************************************************/
+
+  /*---------- start .faqs responsive ------------*/
+  .faqs {
+    & > .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > .article {
+        .faqs__controls-lists {
+          justify-content: space-around;
+        }
+      }
+      & > .sidebar {
+        padding-top: 0;
+      }
+    }
+  }
+  /*---------- End .faqs responsive ------------*/
+
+  /*****************************************************/
+  /***************** Start of contact.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .contact responsive ------------*/
+  .contact {
+    & > .container {
+      &.container_right-sidebar {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+      }
+    }
+    & > .contact-map-2 {
+      position: relative;
+      z-index: 2;
+      & > .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 0;
+        & > .contact-map__card-2 {
+          top: 0;
+
+          & > .content {
+            padding: 50px 20px;
+
+            & > .locations {
+              flex-wrap: wrap;
+              justify-content: space-around;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .contact responsive ------------*/
+}
+
+@media (max-width: 991px) {
+  /*---------- Start .header-bottom responsive ----------*/
+  .header-bottom {
+    height: 600px;
+    &__banner {
+      top: 0;
+
+      .slide-item {
+        height: 600px;
+        padding-top: 180px;
+      }
+    }
+
+    .services {
+      bottom: -380px;
+      &__item {
+        height: 200px;
+        max-width: 200px;
+        flex: 0 0 200px;
+
+        &-title {
+          font-size: 24px;
+        }
+
+        &-text {
+          font-size: 12px;
+        }
+      }
+      .owl-dots {
+        top: 10px;
+      }
+    }
+  }
+  /*---------- End .header-bottom responsive ----------*/
+
+  /*---------- Start .why-choose-us responsive ----------*/
+  .why-choose-us {
+    .container {
+      & > h5 {
+        text-align: center;
+      }
+      .section-title {
+        text-align: center;
+      }
+    }
+    &__bg {
+      & > img {
+        display: none;
+      }
+      & > .circle-blue {
+        right: -250px;
+        bottom: -200px;
+        top: initial;
+      }
+      & > .circle-pink {
+        right: 100px;
+        bottom: 320px;
+        top: initial;
+      }
+    }
+  }
+  /*---------- End .why-choose-us responsive ----------*/
+
+  /*---------- Start .about section responsive ----------*/
+  .about {
+    padding-top: 460px;
+
+    .container {
+      text-align: center;
+    }
+
+    &__our-misson {
+      display: none;
+    }
+
+    &__text {
+      padding-top: 0px;
+
+      & > h4 {
+        margin-bottom: 30px;
+      }
+
+      & > h2 {
+        margin-top: 30px;
+      }
+
+      & > p {
+        margin-top: 40px;
+      }
+
+      &-signature {
+        margin-top: 40px;
+        justify-content: center;
+      }
+    }
+  }
+  /*---------- End .about section responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index3.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .departments-3 responsive ----------*/
+  .departments-3 {
+    & > .container {
+      & > .article {
+        & > .departments-3__single {
+          & > .title {
+            text-align: center;
+            font-weight: 600;
+          }
+          & > .prices {
+            & > .title {
+              text-align: center;
+            }
+            & > .prices-block {
+              justify-content: space-between;
+              & > .item {
+                padding: 30px;
+                max-width: 48%;
+
+                &:first-child {
+                  margin-right: 0;
+                }
+                margin-bottom: 50px;
+              }
+            }
+          }
+
+          & > .doctors-department {
+            & > .title {
+              text-align: center;
+            }
+          }
+
+          & > .department-faq {
+            & > .title {
+              text-align: center;
+            }
+          }
+
+          & > .department-cases {
+            & > .title {
+              text-align: center;
+            }
+            .department-cases__carousel {
+              padding-bottom: 30px;
+              & > .owl-nav {
+                position: absolute;
+                top: initial;
+                bottom: 0;
+                left: 50%;
+                right: initial;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+      }
+
+      & > .sidebar {
+        padding: 0;
+
+        & > .departments-sidebar {
+          margin-top: 0;
+        }
+      }
+      &_no-sidebar {
+        & > .article {
+          padding-bottom: 100px;
+        }
+      }
+    }
+  }
+  /*---------- End .departments-3 responsive ----------*/
+
+  /*****************************************************/
+  /*********** Start of cases-3_detail.html **************/
+  /*****************************************************/
+
+  /*---------- Start .case responsive ----------*/
+  .case {
+    & > .container {
+      .case__detail {
+        .doctor-history {
+          align-items: center;
+          flex-direction: column;
+          & > div {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .case responsive ----------*/
+
+  /*****************************************************/
+  /*********** Start of doctors-3_columns.html **************/
+  /*****************************************************/
+
+  /*---------- Start .doctors responsive ----------*/
+  .doctors {
+    & > .container {
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        align-items: center;
+        flex-direction: column;
+        & > .article {
+          max-width: 570px;
+          width: 100%;
+
+          & > .doctors-block {
+            flex-direction: column;
+            align-items: center;
+            height: initial;
+
+            & > .img {
+              max-width: 570px !important;
+              width: 100%;
+            }
+
+            & > .content {
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+
+          & > .doctors-text {
+            & > .list {
+              height: initial;
+
+              & > .list-item {
+                padding-left: 10px;
+                width: 100%;
+              }
+            }
+          }
+
+          & > .doctors-testimonials {
+            & > .title {
+              text-align: center;
+            }
+
+            & > .doctors-testimonials__carousel {
+              .item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                & > .img {
+                  margin-bottom: 30px;
+                }
+
+                & > .content {
+                  margin-bottom: 30px;
+                }
+              }
+
+              & > .owl-nav {
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+
+        & > .sidebar {
+          max-width: 570px !important;
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*---------- End .doctors responsive ----------*/
+}
+
+@media (max-width: 767px) {
+  /*---------- Start .header-bottom responsive ----------*/
+  .header-bottom {
+    height: 500px;
+    .slide-item {
+      height: 500px;
+      padding-top: 170px;
+      &__title {
+        font-size: 40px;
+      }
+      &__subtitle {
+        font-size: 18px;
+      }
+    }
+    .services {
+      bottom: -370px;
+    }
+  }
+  /*---------- End .header-bottom responsive ----------*/
+
+  /*---------- Start .about section responsive ----------*/
+  .about {
+    padding-top: 420px;
+    padding-bottom: 70px;
+
+    .container {
+      text-align: center;
+    }
+
+    &__our-misson {
+      display: none;
+    }
+
+    &__text {
+      max-width: 100%;
+      padding-top: 0px;
+
+      & > h1 {
+        margin-top: 30px;
+      }
+
+      & > h2 {
+        margin-top: 30px;
+        font-size: 20px;
+      }
+
+      & > p {
+        margin-top: 30px;
+        font-size: 16px;
+      }
+
+      &-signature {
+        margin-top: 40px;
+        justify-content: center;
+      }
+    }
+  }
+  /*---------- End .about section responsive ----------*/
+
+  /*---------- Start .why-choose-us responsive ----------*/
+  .why-choose-us {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    & > .container {
+      .difference {
+        margin-top: 30px;
+
+        &__item {
+          margin-bottom: 30px;
+          &-number {
+            min-height: 70px;
+            min-width: 70px;
+            font-size: 40px;
+          }
+          &-title {
+            font-size: 18px;
+          }
+          &-text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .why-choose-us responsive ----------*/
+
+  /*---------- Start .appointments responsive ----------*/
+  .appointments {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .container {
+      justify-content: space-around;
+
+      .online-appointments {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        .appointments-text {
+          margin: 30px 0;
+        }
+      }
+
+      .company-numbers {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        &__item {
+          max-width: 570px;
+          width: 100%;
+          margin-bottom: 30px;
+          & > .number {
+            font-size: 40px;
+            width: 90px;
+            min-width: 90px;
+            height: 60px;
+            line-height: 60px;
+          }
+        }
+      }
+
+      & > .btn {
+        margin-top: 0;
+      }
+    }
+  }
+  /*---------- End .appointments responsive ----------*/
+
+  /*---------- Start .other-services ----------*/
+  .other-services {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    &__cards {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      & > .card-item {
+        flex: 0 0 370px;
+        max-width: 370px;
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /*---------- Start .other-services responsive ----------*/
+
+  /*---------- Start .form responsive ----------*/
+  .form {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__block {
+      textarea,
+      &-input {
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        font-size: 16px;
+      }
+
+      & > form {
+        margin-left: -1px;
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        & > textarea {
+          height: 100px;
+        }
+
+        & > .btn {
+          max-height: 50px;
+          line-height: 50px;
+          padding: 0;
+          padding-left: 77px;
+          padding-right: 77px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        & > label {
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+  /*---------- End .form responsive ----------*/
+
+  /*---------- Start .faq responsive ----------*/
+  .faq {
+    &__content {
+      padding: 70px 15px;
+      .accardion {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &__item {
+          &-text {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .faq responsive ----------*/
+
+  /*---------- Start .testimonials responsive ----------*/
+  .testimonials {
+    &__content {
+      padding-top: 70px;
+      padding-bottom: 145px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      & > .section-title {
+        text-align: center;
+      }
+      &-carousel {
+        margin-top: 30px;
+        text-align: center;
+        .owl-item {
+          q {
+            line-height: 1.5;
+            font-size: 16px;
+          }
+        }
+
+        .owl-nav,
+        .owl-dots {
+          bottom: -80px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .owl-dots {
+          bottom: -75px;
+        }
+      }
+    }
+  }
+  /*---------- End .testimonials responsive ----------*/
+
+  /*---------- Start .emergency-call responsive ----------*/
+  .emergency-call {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+  /*---------- End .emergency-call responsive ----------*/
+
+  /*---------- Start .specialists responsive ----------*/
+  .specialists {
+    .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &__carousel {
+      margin-top: 30px;
+    }
+
+    &__item {
+      padding-bottom: 80px;
+    }
+  }
+  /*---------- End .specialists responsive ----------*/
+
+  /*---------- Start .latest-news responsive ----------*/
+  .latest-news {
+    .container {
+      padding-top: 75px;
+      padding-bottom: 90px;
+    }
+
+    &__carousel {
+      margin-top: 30px;
+
+      .owl-dots {
+        bottom: -30px;
+      }
+    }
+
+    &__item {
+      padding-bottom: 30px;
+    }
+  }
+  /*---------- End .latest-news responsive ----------*/
+
+  /*---------- Start .footer responsive ----------*/
+  .footer {
+    &__top {
+      padding-top: 100px;
+    }
+
+    .container {
+      & > div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        & > .footer__top-blocks {
+          // margin-bottom: 80px;
+          // margin-top: 0;
+
+          .socials {
+            & > a:last-child {
+              margin-right: 0;
+            }
+          }
+
+          & > .title {
+            margin-bottom: 20px;
+            &:after {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .content {
+            // first-block
+            .content-item {
+              flex-direction: column;
+              align-items: center;
+
+              &:first-child {
+                .text {
+                  a {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.3;
+                  }
+                }
+              }
+            }
+            .work-date {
+              & > li {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          & > .footer__top-blocks {
+            &:nth-child(1) {
+              .content {
+                form {
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .content {
+                .menu {
+                  & > li {
+                    & > a {
+                      .fa {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .footer responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index2.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-2 responsive ----------*/
+  .header-bottom-2 {
+    height: 600px;
+    &__banner {
+      height: 600px;
+      top: 0;
+      .slide-item {
+        height: 600px;
+      }
+    }
+
+    & > .container {
+      // position: relative;
+      bottom: initial;
+      top: 670px;
+      .benefits-form {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+
+        & > div {
+          max-width: 500px;
+          width: 100%;
+          text-align: center;
+        }
+
+        &__benefits {
+          height: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          &-item {
+            margin-bottom: 20px;
+            &:last-child {
+              margin-bottom: 30px;
+            }
+
+            & > .text {
+              font-size: 20px;
+            }
+          }
+        }
+        &__form {
+          & > form {
+            & > .btn,
+            & > .input-box {
+              width: 100%;
+
+              &:nth-last-child(1),
+              &:nth-last-child(2) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .header-bottom-2 responsive ----------*/
+
+  /*---------- Start .our-departments responsive ----------*/
+  .our-departments {
+    padding-top: 955px;
+    padding-bottom: 40px;
+    .container {
+      .section-title {
+        margin-bottom: 30px;
+      }
+    }
+    &__items {
+      justify-content: space-around;
+    }
+    &__inner-item {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  /*---------- End .our-departments responsive ----------*/
+
+  /*---------- Start .about-2 responsive ----------*/
+  .about-2 {
+    & > .container {
+      & > .about-2-card {
+        padding: 70px 15px;
+        & > .text {
+          & > h4 {
+            margin-bottom: 25px;
+          }
+
+          & > h1 {
+            margin-bottom: 25px;
+          }
+
+          & > h2 {
+            font-size: 20px;
+            margin-bottom: 25px;
+          }
+
+          & > p {
+            margin-bottom: 25px;
+          }
+
+          & > .signature {
+            margin-top: 25px;
+            & > img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .about-2 responsive ----------*/
+
+  /*---------- Start .other-services-2 responsive ----------*/
+  .other-services-2 {
+    padding-top: 265px;
+    padding-bottom: 70px;
+
+    &__card {
+      margin-top: 30px;
+      padding: 30px 15px;
+    }
+  }
+  /*---------- End .other-services-2 responsive ----------*/
+
+  /*---------- Start .appointments-2 responsive ----------*/
+  .appointments-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container {
+      .online-appointments {
+        .appointments-text {
+          margin-top: 20px;
+        }
+      }
+
+      .company-numbers {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        &__item {
+          max-width: 570px;
+          width: 100%;
+          margin-bottom: 20px;
+          & > .number {
+            font-size: 40px;
+            width: 90px;
+            min-width: 90px;
+            height: 60px;
+            line-height: 60px;
+          }
+        }
+      }
+
+      & > .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+  /*---------- End .appointments-2 responsive ----------*/
+
+  /*---------- Start .why-choose-us-2 responsive ----------*/
+  .why-choose-us-2 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    .container {
+      .section-title {
+        margin-bottom: 40px;
+      }
+    }
+    &__item {
+      margin-bottom: 30px;
+
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        margin-bottom: 30px;
+      }
+      &-number {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  /*---------- End .why-choose-us-2 responsive ----------*/
+
+  /*---------- Start .our-numbers responsive ----------*/
+  .our-numbers {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  /*---------- End .our-numbers responsive ----------*/
+
+  /*---------- Start .specialists-2 responsive ----------*/
+  .specialists-2 {
+    padding: 70px 0 120px;
+    & > .container {
+      .section-title {
+        margin-bottom: 30px;
+      }
+      & > .specialists-2__card {
+        padding: 30px 15px;
+        .specialists-2__carousel {
+          & > .owl-dots {
+            bottom: -90px;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .specialists-2 responsive ----------*/
+
+  /*---------- Start .our-clients responsive ----------*/
+  .our-clients {
+    padding-top: 70px;
+    padding-bottom: 65px;
+    &__carousel {
+      margin-bottom: 30px;
+    }
+  }
+  /*---------- Start .our-clients responsive ----------*/
+
+  /*---------- Start .latest-news-2 responsive ----------*/
+  .latest-news-2 {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    .container {
+      .section-title {
+        margin-bottom: 30px;
+      }
+    }
+    &__carousel {
+      .owl-item {
+        padding-bottom: 0 !important;
+      }
+      .owl-nav {
+        width: 150px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  /*---------- End .latest-news-2 responsive ----------*/
+
+  /*---------- Start .emergency-call-2 responsive ----------*/
+  .emergency-call-2 {
+    background-position: center 70%;
+    background-size: auto 100%;
+    background-attachment: initial;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  /*---------- End .emergency-call-2 responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index3.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .our-departments-2 section responsive ----------*/
+  .our-departments-2 {
+    padding-top: 70px;
+    padding-bottom: 110px;
+
+    & > .bg-text {
+      display: none;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 150px;
+      top: 100%;
+    }
+  }
+  /*---------- End .our-departments-2 section responsive ----------*/
+
+  /*---------- Start .about-3 section responsive ----------*/
+  .about-3 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    & > .container {
+      & > .video {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /*---------- End .about-3 section responsive ----------*/
+
+  /*---------- Start .why-choose-us-3 responsive ----------*/
+  .why-choose-us-3 {
+    & > .bl-left {
+      & > .content {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        max-width: 540px;
+
+        & > .items {
+          margin-top: 30px;
+
+          & > .item {
+            max-width: 200px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    & > .bl-right {
+      & > .img {
+        & > img {
+          object-position: right 100% center 100%;
+        }
+      }
+    }
+  }
+  /*---------- End .why-choose-us-3 responsive ----------*/
+
+  /*---------- Start .other-services-3 ----------*/
+  .other-services-3 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    &__cards {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      & > .card-item {
+        flex: 0 0 300px;
+        max-width: 300px;
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /*---------- Start .other-services responsive ----------*/
+
+  /*---------- Start .specialists-3 responsive ----------*/
+  .specialists-3 {
+    .container {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    &__carousel {
+      margin-top: 30px;
+      .owl-nav {
+        width: 150px;
+        top: initial;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__item {
+      padding-bottom: 80px;
+    }
+  }
+  /*---------- End .specialists-3 responsive ----------*/
+
+  /*---------- Start .medical-center responsive ----------*/
+  .medical-center {
+    & > .bl-right {
+      padding: 70px 15px;
+    }
+  }
+  /*---------- End .medical-center responsive ------------*/
+
+  /*---------- Start .latest-news-2 responsive ----------*/
+  .latest-news-3 {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    .container {
+      .section-title {
+        margin-bottom: 30px;
+      }
+    }
+    &__carousel {
+      .owl-item {
+        padding-bottom: 0 !important;
+      }
+      .owl-nav {
+        width: 150px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  /*---------- End .latest-news-2 responsive ----------*/
+
+  /*---------- Start .our-clients-2 responsive ----------*/
+  .our-clients-2 {
+    &__carousel {
+      .slide-item {
+        & > .content {
+          padding-top: 70px;
+          padding-bottom: 70px;
+
+          .section-title {
+            margin-bottom: 30px !important;
+          }
+        }
+        &__text {
+          & > .author {
+            margin-top: 30px !important;
+          }
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  /*---------- End .our-clients-2 responsive ----------*/
+
+  /*****************************************************/
+  /************* Start of about.html ***************/
+  /*****************************************************/
+
+  /*---------- Start .about-4 section responsive ----------*/
+  .about-4 {
+    padding-top: 70px;
+    padding-bottom: 45px;
+    & > .container {
+      & > .content {
+        & > .video {
+          height: 350px;
+          & > .img {
+            & > img {
+              object-position: center 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .about-4 section responsive ----------*/
+
+  /*---------- Start .medical-center-2 responsive ----------*/
+  .medical-center-2 {
+    padding-top: 70px;
+    padding-bottom: 45px;
+    background-color: #f4f4f4;
+    .container {
+      flex-direction: column;
+      align-content: space-around;
+      & > .img {
+        max-width: 570px;
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+      & > .content {
+        text-align: center;
+        & > .list {
+          text-align: left;
+        }
+      }
+    }
+  }
+  /*---------- End .medical-center-2 responsive ------------*/
+
+  /*****************************************************/
+  /************* Start of blog-grid.html ***************/
+  /*****************************************************/
+
+  /*---------- Start .latest-news-4 responsive ----------*/
+  .latest-news-4 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    & > .container {
+      & > .item {
+        margin-bottom: 30px;
+      }
+    }
+    & > .container_left-sidebar,
+    & > .container_right-sidebar {
+      & > .article {
+        & > .item {
+          max-width: 370px;
+          margin-bottom: 30px;
+        }
+
+        & > .item-2 {
+          max-width: 370px;
+          & > .img {
+            height: 260px;
+          }
+        }
+        & > .single-card {
+          & > .blog {
+            flex-direction: column;
+
+            & > .icon {
+              margin: 0;
+              margin-bottom: 20px;
+            }
+          }
+
+          & > .also-like {
+            justify-content: space-around;
+            & > .title {
+              text-align: center;
+            }
+            & > .item {
+              max-width: 370px;
+              margin-bottom: 30px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          & > .single-card__comments {
+            & > .title {
+              width: 100%;
+              text-align: center;
+            }
+
+            & > .single-card__comments-items {
+              & > .item {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                .img {
+                  margin: 0;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          & > .single-card__post-comment {
+            flex-direction: column;
+            align-items: center;
+            & > input {
+              max-width: 100%;
+            }
+            & > button {
+              margin: 0;
+            }
+            & > label {
+              margin-top: 10px;
+              margin-right: initial;
+            }
+          }
+        }
+      }
+      & > .sidebar {
+        & > .blog-sidebar {
+          & > .feeds,
+          & > .follow,
+          & > .instagram {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .latest-news-4 responsive ------------*/
+
+  /*****************************************************/
+  /******* Start of departments-3_column.html **********/
+  /*****************************************************/
+
+  /*---------- Start .departments-3 responsive ----------*/
+  .departments-3 {
+    & > .container {
+      & > .departments-3__items {
+        padding-top: 70px;
+        padding-bottom: 40px;
+
+        & > .item-icon,
+        & > .item {
+          margin-bottom: 30px;
+          max-width: 48%;
+          padding-bottom: 30px;
+        }
+      }
+
+      & > .departments-3__item-1 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        & > .item {
+          margin-bottom: 30px;
+
+          & > .img {
+            max-height: 300px;
+          }
+
+          & > .content {
+            padding: 30px 15px;
+            & > .title {
+              margin: 0;
+            }
+            & > .text {
+              margin: 30px 0;
+            }
+          }
+        }
+      }
+
+      & > .article {
+        & > .departments-3__single {
+          padding-top: 70px;
+
+          & > .img {
+            height: 300px;
+          }
+
+          & > .prices {
+            & > .title {
+              margin-bottom: 30px;
+            }
+            & > .prices-block {
+              margin-bottom: 10px;
+              & > .item {
+                max-width: 100%;
+                padding: 20px;
+                margin-bottom: 30px;
+              }
+            }
+          }
+
+          & > .doctors-department {
+            & > .title {
+              margin-bottom: 30px;
+            }
+            & > .doctors-department__carousel {
+              padding-bottom: 30px;
+              .owl-item {
+                & > .item {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center;
+                  max-width: 100%;
+                  width: 100%;
+
+                  & > .img {
+                    max-width: 100%;
+                    height: 350px;
+                    margin-bottom: 0;
+                    & > img {
+                      object-position: center 20%;
+                    }
+                  }
+
+                  & > .content {
+                    margin-left: 0px;
+                    margin-bottom: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 100%;
+                    width: 100%;
+                    padding: 15px;
+                    & > .text {
+                      margin: 0 0 15px 0;
+                    }
+                    & > .lists {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+
+              & > .owl-nav {
+                position: absolute;
+                top: initial;
+                bottom: 0;
+                left: 50%;
+                right: initial;
+                transform: translateX(-50%);
+              }
+            }
+          }
+
+          & > .department-faq {
+            & > .title {
+              margin-bottom: 30px;
+            }
+          }
+
+          & > .department-cases {
+            & > .title {
+              margin-bottom: 30px;
+            }
+            .department-cases__carousel {
+              max-width: 100%;
+              .owl-item {
+                opacity: 0.5;
+                transition: all 0.3s linear;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                &.active {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > .sidebar {
+        margin-bottom: 70px;
+        & > .departments-sidebar {
+          & > .appointment {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &_no-sidebar {
+        & > .article {
+          padding-bottom: 70px;
+        }
+      }
+    }
+  }
+  /*---------- End .departments-3 responsive ----------*/
+
+  /*****************************************************/
+  /********* Start of doctors-3_columns.html ***********/
+  /*****************************************************/
+
+  /*---------- Start .doctors responsive ----------*/
+  .doctors {
+    & > .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      & > .doctors__cards {
+        margin-top: 30px;
+        & > .doctors__cards-item {
+          margin: 0 5px 60px;
+          max-width: 48%;
+
+          & > a {
+            & > .img {
+              height: 200px;
+            }
+          }
+        }
+      }
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        & > .article {
+          & > .doctors-block {
+            & > .img {
+              overflow: hidden;
+              height: 320px;
+            }
+            & > .content {
+              padding: 30px 15px;
+            }
+          }
+          & > .doctors-text {
+            margin-top: 30px;
+            padding-bottom: 40px;
+          }
+        }
+        & > .sidebar {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  /*---------- End .doctors responsive ----------*/
+
+  /*****************************************************/
+  /*********** Start of cases-3_detail.html **************/
+  /*****************************************************/
+
+  /*---------- Start .case responsive ----------*/
+  .case {
+    & > .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      .case__detail {
+        
+          & > .img-mobile {
+            margin-top: 30px;
+            margin-bottom: 70px;
+            & > .img-mobile__carousel {
+              .img-mobile__item {
+                height: 200px;
+              }
+          }
+        }
+        .doctor-history {
+          margin-top: 30px;
+          align-items: center;
+          flex-direction: column;
+          & > div {
+            max-width: 100%;
+          }
+
+          & > .doctor {
+            & > div {
+              max-width: 100%;
+            }
+            & > .img {
+              img {
+                object-position: center top;
+              }
+            }
+
+            flex-direction: column;
+            justify-content: space-around;
+            & > .content {
+              padding-bottom: 0;
+            }
+          }
+          & > .history {
+            padding-top: 30px;
+            text-align: center;
+          }
+        }
+
+        .photogallery {
+          margin-top: 70px;
+
+          &-item {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+          }
+        }
+
+        .testimonial {
+          margin-top: 70px;
+          text-align: center;
+          .icon {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          & > .content {
+            max-width: 100%;
+            margin-bottom: 30px;
+          }
+
+          & > .video {
+            max-width: 100%;
+          }
+        }
+      }
+      .case__cards {
+        margin-top: 30px;
+
+        &-item {
+          margin-bottom: 30px;
+          max-width: 48%;
+          & > .img {
+            &.img_2 {
+              max-height: 400px;
+            }
+          }
+        }
+      }
+      .my-pagination-2 {
+        margin-top: 70px;
+      }
+    }
+  }
+  /*---------- End .case responsive ----------*/
+  /*****************************************************/
+  /***************** Start of contact.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .contact responsive ------------*/
+  .contact {
+    & > .contact-map-2 {
+      & > .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        & > .contact-map__card-2 {
+          & > .content {
+            padding: 30px 15px;
+          }
+        }
+      }
+    }
+    & > .container {
+      &.container_right-sidebar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        & > .article {
+          padding-top: 0;
+          margin-bottom: 70px;
+
+          & > .title {
+            margin-bottom: 30px;
+          }
+        }
+        & > .sidebar {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+  /*---------- End .contact responsive ------------*/
+
+  /*****************************************************/
+  /***************** Start of shop.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .shop responsive ----------*/
+  .shop {
+    & > .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      & > .shop-cart {
+        & > .responsive-table {
+          & > table {
+            & > tfoot {
+              & > tr {
+                display: flex;
+                flex-direction: column;
+                & > td {
+                  text-align: left !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > .product {
+        & > .single-product {
+          & > .content {
+            margin-top: 20px;
+          }
+        }
+
+        & > .description {
+          padding-bottom: 50px;
+        }
+      }
+      & > .relatives {
+        margin-top: 70px;
+      }
+
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        flex-direction: column;
+        align-items: center;
+        & > .article {
+          max-width: 100%;
+          margin-bottom: 70px;
+          & > .shop-block {
+            & > .shop-block__header {
+              justify-content: space-around;
+            }
+            & > .shop-block__card {
+              margin-top: 30px;
+              justify-content: space-around;
+              & > .shop-block__card-item {
+                max-width: 48%;
+                margin-bottom: 30px;
+                & > .img {
+                  height: 220px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.shop-checkout {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        & > .sidebar {
+          max-width: 100% !important;
+
+          & > .checkout-sidebar {
+            & > div {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .shop responsive ------------*/
+}
+
+@media (max-width: 575px) {
+  /*---------- Start .header-middle responsive ----------*/
+  .header-middle {
+    .navbar {
+      &__menu {
+        &-item {
+          margin-bottom: 0px;
+        }
+        &-link {
+          font-size: 26px;
+        }
+      }
+
+      &__submenu {
+        &-link {
+          font-size: 16px;
+        }
+      }
+
+      &__right {
+        & > .navbar__bag {
+          order: 3;
+          margin-bottom: 20px;
+          .checkBox {
+            left: initial;
+            right: -15px;
+            max-width: 260px;
+          }
+        }
+
+        & > .navbar__search {
+          order: 2;
+          margin-bottom: 20px;
+        }
+        & > .btn {
+          width: 100%;
+          margin-left: 50px;
+          margin-right: 50px;
+          order: 1;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  /*---------- End .header-middle responsive ----------*/
+
+  /*---------- Start .header-bottom responsive ----------*/
+  .header-bottom {
+    &__banner {
+      top: 0;
+
+      .slide-item {
+        padding-top: 150px;
+      }
+    }
+
+    .services {
+      bottom: -340px;
+      &__item {
+        height: 180px;
+        max-width: 180px;
+        flex: 0 0 180px;
+
+        &-title {
+          font-size: 20px;
+        }
+
+        &-text {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  /*---------- End .header-bottom responsive ----------*/
+
+  /*---------- Start .about section responsive ----------*/
+  .about {
+    padding-top: 390px;
+  }
+  /*---------- End .about section responsive ----------*/
+
+  /*---------- Start .appointments responsive ----------*/
+  .appointments {
+    .container {
+      .company-numbers {
+        &__item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          & > .number {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .appointments responsive ----------*/
+
+  /*---------- Start .other-services responsive ----------*/
+  .other-services {
+    &__cards {
+      & > .card-item {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  /*---------- End .other-services responsive ----------*/
+
+  /*---------- Start .form responsive ----------*/
+  .form {
+    .container {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    &__block {
+      flex: 0 0 100%;
+      max-width: 100%;
+      &-input {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      &-input,
+      textarea,
+      select {
+        font-size: 16px;
+      }
+    }
+  }
+  /*---------- End .form responsive ----------*/
+
+  /*---------- Start .faq responsive ----------*/
+  .emergency-call {
+    .container {
+      & > .call {
+        margin-top: 30px;
+        flex-direction: column;
+        & > .icon {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        & > a {
+          font-size: 40px;
+        }
+      }
+    }
+    &__item {
+      flex: 0 0 300px;
+      max-width: 300px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 20px;
+      }
+      & > .icon {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  /*---------- End .emergency-call responsive ----------*/
+
+  /*---------- Start .specialists responsive ----------*/
+  .specialists {
+    .container {
+      padding-bottom: 105px;
+    }
+  }
+  /*---------- End .specialists responsive ----------*/
+
+  /*---------- Start .latest-news responsive ----------*/
+  .latest-news {
+    .container {
+      padding-top: 75px;
+      padding-bottom: 125px;
+    }
+  }
+  /*---------- End .latest-news responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index2.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-2 responsive ----------*/
+  .header-bottom-2 {
+    &__banner {
+      .slide-item {
+        padding-top: 100px;
+        &__title {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  /*---------- End .header-bottom-2 responsive ----------*/
+
+  /*---------- Start .our-departments responsive ----------*/
+  .our-departments {
+    padding-top: 1000px;
+  }
+  /*---------- End .our-departments responsive ----------*/
+
+  /*---------- Start .about-2 responsive ----------*/
+  .about-2 {
+    & > .container {
+      & > .about-2-card {
+        & > .text {
+          & > h2 {
+            font-size: 20px;
+          }
+          & > .signature {
+            flex-direction: column;
+            align-items: center;
+            & > img {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .about-2 responsive ----------*/
+
+  /*---------- Start .other-services-2 responsive ----------*/
+  .other-services-2 {
+    padding-top: 350px;
+    padding-bottom: 70px;
+    &__card {
+      & > .content {
+        & > .carousel {
+          .carousel-item {
+            & > .title {
+              font-size: 24px;
+            }
+
+            & > .subtitle {
+              font-size: 16px;
+            }
+
+            & > .lists {
+              margin-top: 20px;
+              font-weight: 600;
+              color: $text-col;
+              list-style: none;
+
+              li {
+                i.fa {
+                  color: $primary-blue;
+                  margin-right: 7px;
+                }
+                line-height: 24px;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .other-services-2 responsive ----------*/
+
+  /*---------- Start .appointments-2 responsive ----------*/
+  .appointments-2 {
+    .container {
+      .company-numbers {
+        &__item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          & > .number {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .appointments-2 responsive ----------*/
+
+  /*---------- Start .why-choose-us responsive ----------*/
+  .why-choose-us-2 {
+    &__item {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+
+      &-number {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+  /*---------- End .why-choose-us responsive ----------*/
+
+  /*---------- Start .specialists-2 responsive ----------*/
+  .specialists-2 {
+    & > .container {
+      & > .specialists-2__card {
+        .specialists-2__carousel {
+          &-item {
+            flex-direction: column;
+            justify-content: initial;
+            align-items: center;
+            max-width: 400px;
+            & > .content {
+              table {
+                font-size: 12px;
+                & > tbody {
+                  tr {
+                    & > th {
+                      padding-bottom: 5px;
+                    }
+                    & > td {
+                      padding-bottom: 5px;
+                      a {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                }
+                & > tfoot {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .specialists-2 responsive ----------*/
+
+  /*---------- Start .our-clients responsive ----------*/
+  .our-clients {
+    &__carousel {
+      &-item {
+        & > .text {
+          font-size: 16px;
+        }
+
+        & > .title {
+          font-size: 18px;
+        }
+
+        & > .subtitle {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  /*---------- End .our-clients responsive ----------*/
+
+  /*---------- Start .emergency-call-2 responsive ----------*/
+  .emergency-call-2 {
+    background-position: center right 40%;
+  }
+  /*---------- End .emergency-call-2 responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of index3.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .header-bottom-3 responsive ----------*/
+  .header-bottom-3 {
+    &__banner {
+      .slide-item {
+        &__text {
+          padding-top: 200px;
+        }
+
+        &__title {
+          margin-top: 20px;
+          font-size: 40px;
+        }
+
+        &__subtitle {
+          margin-top: 18px;
+          margin-bottom: 18px;
+          font-weight: 100;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  /*---------- Start .header-bottom-3 responsive ----------*/
+
+  /*---------- Start .about-3 section responsive ----------*/
+  .about-3 {
+    & > .container {
+      & > .video {
+        display: none;
+      }
+    }
+  }
+  /*---------- End .about-3 section responsive ----------*/
+
+  /*---------- Start .other-services responsive ----------*/
+  .other-services-3 {
+    &__cards {
+      & > .card-item {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        .lists {
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  /*---------- End .other-services responsive ----------*/
+
+  /*---------- Start .medical-center responsive ----------*/
+  .medical-center {
+    height: 700px;
+
+    & > .bl-right {
+      & > .content {
+        & > .medical-center__form {
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+  /*---------- End .medical-center responsive ------------*/
+
+  /*---------- Start .our-clients-2 responsive ----------*/
+  .our-clients-2 {
+    &__carousel {
+      .slide-item {
+        &__text {
+          & > .section-title {
+            margin-bottom: 50px;
+          }
+
+          & > .text {
+            font-size: 16px;
+          }
+
+          & > .author {
+            font-size: 20px;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .our-clients-2 responsive ----------*/
+
+  /*****************************************************/
+  /************** Start of about.html *****************/
+  /*****************************************************/
+
+  /*---------- Start .medical-center-2 responsive ----------*/
+  .medical-center-2 {
+    padding-top: 50px;
+    padding-bottom: 170px;
+    .container {
+      & > .img {
+        display: none;
+      }
+      & > .content {
+        & > .list {
+          flex-wrap: nowrap;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  /*---------- End .medical-center-2 responsive ------------*/
+
+  /*****************************************************/
+  /************** Start of blog-grid.html **************/
+  /*****************************************************/
+
+  /*---------- Start .latest-news-4 responsive ----------*/
+  .latest-news-4 {
+    & > .container {
+      & > .item {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  /*---------- End .latest-news-4 responsive ------------*/
+
+  /*****************************************************/
+  /******* Start of departments-3_column.html **********/
+  /*****************************************************/
+
+  /*---------- Start .departments-3 responsive ----------*/
+  .departments-3 {
+    & > .container {
+      & > .departments-3__items {
+        & > .item-icon,
+        & > .item {
+          & > .img {
+            height: 250px;
+          }
+          max-width: 100%;
+        }
+      }
+
+      & > .departments-3__item-1 {
+        & > .item {
+          & > .img {
+            max-height: 250px;
+            max-width: 100%;
+          }
+          & > .content {
+            & > .title {
+              font-size: 32px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .departments-3 responsive ----------*/
+
+  /*---------- Start .case responsive ----------*/
+  .case {
+    & > .container {
+      .case__cards {
+        &-item {
+          margin-left: 0;
+          margin-right: 0;
+          max-width: 420px;
+          width: 100%;
+          & > .img {
+            height: 220px;
+            &.img_2 {
+              max-height: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .case responsive ----------*/
+
+  /*****************************************************/
+  /********* Start of doctors-3_columns.html ***********/
+  /*****************************************************/
+
+  /*---------- Start .doctors responsive ----------*/
+  .doctors {
+    & > .container {
+      & > .doctors__cards {
+        & > .doctors__cards-item {
+          margin: 0 0 50px 0;
+          max-width: 100%;
+
+          & > a {
+            & > .img {
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .doctors responsive ----------*/
+
+  /*****************************************************/
+  /***************** Start of shop.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .shop responsive ----------*/
+  .shop {
+    & > .container {
+      &.container_left-sidebar,
+      &.container_right-sidebar {
+        & > .article {
+          & > .shop-block {
+            & > .shop-block__header {
+              flex-wrap: wrap;
+              height: initial;
+              justify-content: space-around;
+            }
+            & > .shop-block__card {
+              & > .shop-block__card-item {
+                max-width: 100%;
+
+                & > .img {
+                  height: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > .product {
+        & > .single-product {
+          & > .carousels {
+            & > .thumbs-carousel {
+              .owl-nav {
+                display: none;
+              }
+            }
+          }
+        }
+        & > .description {
+          // & > .head {
+          //     display: flex;
+          //     align-items: center;
+          //     height: 70px;
+          //     width: 100%;
+          //     padding: 0 50px;
+          //     background-color: #f7f7f7;
+          //     border: 1px solid #e6e6e6;
+          //     border-radius: 8px;
+
+          //     & > h1 {
+          //       width: 160px;
+          //       font-size: 18px;
+          //       line-height: 18px;
+          //       font-weight: 700;
+          //       font-family: $RobBold;
+          //       color: $text-col;
+          //     }
+
+          //     & > .name {
+          //       color: $primary-blue;
+          //     }
+          //   }
+          & > .list {
+            height: initial;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .shop responsive ------------*/
+
+  /*****************************************************/
+  /***************** Start of faqs.html ****************/
+  /*****************************************************/
+
+  /*---------- start .faqs responsive ------------*/
+  .faqs {
+    & > .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+  /*---------- End .faqs responsive ------------*/
+
+  /*****************************************************/
+  /***************** Start of contact.html ****************/
+  /*****************************************************/
+
+  /*---------- Start .contact responsive ------------*/
+  .contact {
+    & > .container_right-sidebar {
+      & > .article {
+        & > .title {
+          margin-bottom: 30px;
+        }
+
+        & > form {
+          & > .btn {
+            width: 100% !important;
+            margin-right: 0 !important;
+          }
+          & > label {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    & > .contact-map {
+      height: initial;
+      & > .container {
+        margin-top: 70px;
+        justify-content: center;
+        & > .contact-map__card {
+          position: static;
+          max-width: 100%;
+          & > .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  /*---------- End .contact responsive ------------*/
+}
+
+
+@media (max-width: 420px) {
+  /*---------- Start .other-services-2 responsive ----------*/
+  .other-services-2 {
+    padding-top: 430px;
+  }
+  /*---------- End .other-services-2 responsive ----------*/
+}
+
+@media (max-width: 389px) {
+  /*---------- Start .header-bottom responsive ----------*/
+  .header-bottom {
+    .services {
+      bottom: -360px;
+      &__item {
+        height: 270px;
+        max-width: 270px;
+        flex: 0 0 270px;
+
+        &-title {
+          font-size: 24px;
+        }
+
+        &-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  /*---------- End .header-bottom responsive ----------*/
+
+  .about {
+    padding-top: 490px;
+  }
+}

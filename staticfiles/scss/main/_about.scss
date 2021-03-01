@@ -1,0 +1,175 @@
+/**************************************************/
+/* .about */
+/**************************************************/
+
+.about {
+    position: relative;
+    padding-top: $section-space + 190px;
+    padding-bottom: $section-space;
+    z-index: 9;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        & > .icon {
+            position: absolute;
+            right: -20px;
+            top: -24px;
+        }
+    }
+
+    .container {
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    &__our-misson {
+        position: relative;
+        flex: 0 0 545px;
+        max-width: 545px;
+        width: 100%;
+        padding-left: 52px;
+    
+        &-text {
+            position: absolute;
+            top: 337px;
+            left: 0;
+            flex:0 0 325px;
+            max-width: 325px;
+            width: 100%;
+            padding: 47px 40px 46px;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: $primary-blue;
+            transition: all .3s linear;
+            z-index: 6;
+            // cursor: pointer;
+
+            // &:hover {
+            //     background-color: $primary-pink-2;
+            // }
+            
+            & > .icon {
+                padding-top: 2px;
+                margin-left: 1px;
+            }
+            
+            & > .title {
+                text-transform: uppercase;
+                font-family: $BebasBold;
+                font-size: 32.5px;
+                font-weight: 700;
+                margin-top: 12px;
+                color: $light-col;
+                letter-spacing: 0px;
+            }
+            
+            & > .text {
+                font-size: 15.5px;
+                margin-top: 6px;
+                line-height: 1.5;
+                color: $light-col;
+            }
+        }
+        
+        &-img {
+            overflow: hidden;
+            border-radius: 8px;
+            max-height: 642px;
+            max-width: 474px;
+            z-index: 5;
+            position: relative;
+
+            img {
+                transition: all .3s linear;
+                object-fit: cover;
+                object-position: center center;
+            }
+            
+            &:hover {
+                &>img {
+                    transform: scale(1.05);
+                }
+                // &:after {
+                //     top: -120%;
+                // }
+            }
+            
+            // &:after {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background-color: rgba(255, 255, 255, .3);
+            //     transition: all .3s linear;
+            // }
+        }
+    }
+    
+    &__text {
+        flex: 0 0 545px;
+        max-width: 545px;
+        padding-top: 20px;
+
+        & > h4 {
+            padding-left: 1px;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 6.5px;
+            color: $text-col;
+        }
+
+        
+        & > h1 {
+            margin-left: -4px;
+            margin-top: 48px;
+        }
+        
+        & > h2 {
+            margin-top: 30px;
+            font-family: $RobBold;
+            font-size: 25px;
+            line-height: 1.4;
+            color: $text-col;
+        }
+        
+        & > p {
+            font-family: $RobLight;
+            font-size: 18px;    
+            margin-top: 35px;
+            line-height: 30px;
+            color: $text-col-2;
+            margin-bottom: 22px;
+        }
+
+        &-signature {
+            
+            margin-top: 50px;
+            color: $text-col;
+            display: flex;
+            align-items: center;
+
+            & > img {
+                margin-right: 28px;
+            }
+
+            & > h4 {
+                font-size: 19px;
+                padding-top: 20px;
+                font-family: $RobBold;
+                span {
+                    font-family: $RobLight;
+                    font-size: 15px;
+                    color: $text-col-2;
+                }
+            }
+        }
+    }
+}

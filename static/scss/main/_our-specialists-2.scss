@@ -1,0 +1,184 @@
+/**************************************************/
+/* .specialists-2 */
+/**************************************************/
+.specialists-2 {
+    position: relative;
+    padding-top: $section-space-2 + 60px;
+    padding-bottom: $section-space-2 + 70px;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        & > .icon {
+            position: absolute;
+            left: -10px;
+            bottom: -24px;
+            width: 100%;
+            max-width: 1201px;
+
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    & > .container {
+        position: relative;
+        flex-direction: column;
+        
+        & > .section-title {
+            text-align: center;
+            margin-bottom: $title-space-2;
+        }
+
+        & > .specialists-2__card {
+            padding: 50px;
+            border-radius: 8px;
+            width: 100%;
+
+            background-image: linear-gradient(to right, $primary-blue 320px, $light-col 1px);
+            box-shadow: 0px 20px 51px 0px rgba( 0, 0, 0, .1);
+            
+            .specialists-2__carousel {
+                &-item {
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-col;
+                    
+                    & > div {
+                        max-height: 600px;
+                        max-width: 520px;
+                        width: 100%;
+                    }
+
+                    & > .img {
+                        position: relative;
+                        overflow: hidden;
+                        max-width: 520px;
+                        width: 100%;
+                        border-radius: 8px;
+
+                        & > img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                            transition: all .3s linear;
+                        }
+
+                        &:hover {
+                            &>img {
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+
+                    & > .content {
+                        padding-top: 20px;
+                        padding-left: 35px;
+                        padding-right: 50px;
+                        
+                        table {
+                            width: 100%;
+                            color: $text-col;
+                            font-size: 20px;
+                            line-height: 1.5;
+                            
+                            & > thead {
+                                td > .title {
+                                    font-size: 30px;
+                                    font-family: $RobBold;
+                                    padding-bottom: 30px;
+                                }
+                            }
+                            
+                            & > tbody {
+                                tr {
+                                    vertical-align: top;
+                                    
+                                    & > th {
+                                        padding-bottom: 10px;
+                                        width: 45%;
+                                        text-align: left;
+                                        font-family: $RobBold;
+                                        font-weight: 900;
+                                    }
+                                    & > td {
+                                        width: 50%;
+                                        padding-bottom: 10px;
+                                        
+                                        a {
+                                            line-height: 2;
+                                            font-size: 20px;
+                                            margin-right: 10px;
+                                            color: $text-col;
+                                            transition: all .3s linear;
+    
+                                            &:hover {
+                                                color: $primary-pink-2;
+                                            }
+                                        }
+                                        table {
+                                            width: 100%;
+                                            td {
+                                                width: 50%;
+                                            }    
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            & > tfoot {
+                                td > .btn {
+                                    margin-top: 20px;
+                                    padding-left: 40px;
+                                    padding-right: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & > .owl-dots {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -130px;
+                    transform: translateX(-50%);
+                    .owl-dot {
+                        margin-right: 2px;
+                        
+                        &:last-child {
+                            margin-right: 0;
+                            
+                            & > span {
+                                margin-right: 0;
+                            }
+                        }
+                        
+                        & > span{
+                            width: 10px;
+                            min-width: 10px;
+                            height: 10px;
+                        }
+
+                        &.active span {
+                            width: 48px;
+                            transition: all .3s ease;
+                            background-color: $primary-pink-2!important;
+                        }
+                        
+                    }
+                
+                }
+                
+            }
+        }
+    }
+}

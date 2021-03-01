@@ -1,0 +1,122 @@
+/**************************************************/
+/* .testimonials */
+/**************************************************/
+.testimonials {
+    display: flex;
+    
+    &__img {
+        // margin-left: 8px;
+        max-width: 50%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        & > img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__content {
+        padding: $section-space 75px ($section-space + 110px);
+        max-width: 50%;
+        width: 100%;
+        
+        &-carousel {
+            margin-top: 50px;
+        
+            &-item {
+                flex: 0 0 790px;
+                max-width: 790px;
+                
+                q {
+                    font-style: italic;
+                    font-size: 19px;
+                    line-height: 40px;
+                    letter-spacing: -.15px;
+                }
+
+                h2 {
+                    margin-top: 30px;
+                    font-size: 21.5px;
+                    font-family: $RobBold;
+                }
+                h4 {
+                    margin-top: 13px;
+                    font-size: 17.3px;
+                    color: $primary-blue;
+                }
+            }
+
+            .owl-nav {
+                // background-color: red;
+                position: absolute;
+                bottom: -115px;
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    overflow: hidden;
+                    border-radius: 8px!important;
+                    width: 49px;
+                    height: 49px;
+                    border: 1px solid $primary-blue!important;  
+                    background-color: $light-col!important;
+                
+                    transition: all .3s linear;
+                    
+                    &:hover {
+                        background-color: $primary-blue!important;
+                        span {
+                            color: $light-col;
+                        }
+                    }
+
+                    span {
+                        line-height: 20px;
+                        font-weight: 900;
+                        margin-top: -5px;
+                        font-size: 30px;
+                        color: $primary-blue;
+                    }
+                }
+            }
+
+            .owl-dots {
+                height: 50px;
+                position: absolute;
+                bottom: -110px;
+                left: 80px;
+                display: flex;
+                align-items: center;
+                
+                & > .owl-dot {
+                    margin-right: 2px;
+                    &:last-child {
+                        margin-right: 0;
+                        
+                        & > span {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+        
+            .owl-dot span{
+                min-width: 10px;
+                height: 10px;
+            }
+            
+            .owl-dot.active span {
+                width: 48px;
+                transition: all .3s ease;
+                background-color: $primary-pink-2!important;
+            }
+        }
+    }
+
+}

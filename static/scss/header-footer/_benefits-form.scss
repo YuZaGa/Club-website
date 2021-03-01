@@ -1,0 +1,119 @@
+/**************************************************/
+/* .benefits-form */
+/**************************************************/
+
+.header-bottom-2{
+    
+    & > .container {
+        position: absolute;
+        bottom: -160px;
+        left: 50%;
+        transform: translateX(-50%)!important;
+        z-index: 10;
+
+        .benefits-form {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+            border-radius: 8px;
+            background-color: $light-col;
+            box-shadow: 0px 20px 51px 0px rgba(0, 0, 0, .05);
+            
+            & > div {
+                max-width: 480px;
+                width: 100%;
+            } 
+        
+            &__benefits {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    
+                    & > .icon {
+                        background-color: $primary-blue;
+                        border-radius: 50%;
+                        width: 90px;
+                        height: 90px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 25px;
+                        position: relative;
+                        animation: animateBlueShadow 1s infinite linear alternate-reverse;
+        
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 104px; 
+                            height: 104px; 
+                            border-radius: 50%;
+                            background-color: rgba($primary-blue, .1);
+                            z-index: -1;
+                        }
+                    }
+        
+                    & > .text {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $text-col;
+                    }
+                                  
+                }
+            }
+        
+            &__form {
+                & > .section-title {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+        
+                & > form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+        
+                    & > .btn, & > .input-box {
+                        outline: none;
+                        height: 42px;
+                        border-radius: 8px;
+                        width: 235px;
+                        margin-bottom: 10px;
+                        padding: 6px 12px;
+                        letter-spacing: initial;
+                        transition: all .2s linear;
+                        
+                        &:nth-last-child(1), 
+                        &:nth-last-child(2) {
+                            margin-bottom: 0;
+                        } 
+                    }
+                    & > .input-box {
+                        background-color: #fafafa;
+                        border: 2px solid #e6e6e6;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $text-col;
+        
+                        &:hover {
+                            background: #fff;
+                        }
+        
+                        &:focus {
+                            background: #fff;
+                            border-color: $primary-pink-2
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

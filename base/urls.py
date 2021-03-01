@@ -1,9 +1,21 @@
 from django.urls import path
-from . import views
+from base.views import *
 
 urlpatterns = [
-	path('', views.home, name="home"),
+	#path('', views.home, name="home"),
+	path('', 
+    IndexView.as_view(),
+    name="home"),
+
+
 	path('about.html/',views.about,name="about"),
+	path('contact.html/',views.contact,name="contact"),
+	path('blog.html/',views.blog,name="blog"),
+	path('event.html/',views.events,name="events"),
+	path('event/<slug:slug>/',views.event, name="event"),
+	path('team.html/',views.teams,name="teams"),
+	
+	path('latestevents',views.latestevents,name="latestevents"),
 	path('posts', views.posts, name="posts"),
 	path('post/<slug:slug>/', views.post, name="post"),
 	path('profile/', views.profile, name="profile"),

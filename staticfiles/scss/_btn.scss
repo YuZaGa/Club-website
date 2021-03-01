@@ -1,0 +1,228 @@
+/**************************************************/
+/* btn styles */
+/**************************************************/
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+    display: inline-block;
+    font-family: $RobBold;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3.1px;
+    display: inline-block;
+    color: $light-col;
+    border-radius: 8px;
+    text-transform: uppercase;
+    
+    &_pink {
+        padding: 20px 26px 20px 27px; 
+        box-sizing: border-box;
+        background-color: $primary-pink-2;
+        // border: 2px solid $primary-pink-2;
+        overflow: hidden;
+        transition: all .3s ease;
+        position: relative;
+        z-index: 1;
+        
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     height: 100%;
+        //     width: 100%;
+        //     transform: translateX(-105%);
+        //     background-color: $light-col;
+        //     color: $primary-pink-2;
+        //     transition: all .3s ease;
+        //     z-index: -1;
+        // }
+                
+        &:hover {
+            // color: $primary-pink-2; // for ::before
+            color: $light-col;
+            background-color: $primary-pink;
+            // &:before {
+            //     transform: translateX(0%);
+            // }
+        
+        }
+    }
+    
+    &_blue {
+        padding: 25px 37.5px; 
+        box-sizing: border-box;
+        background-color: $primary-blue;
+        // border: 2px solid $primary-blue;
+        overflow: hidden;
+        transition: .3s ease;
+        position: relative;
+        
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     height: 100%;
+        //     width: 0%;
+        //     transition: .3s ease;
+        //     background-color: $light-col;
+        //     color: $primary-blue;
+        // }
+
+        &:hover {
+            background-color: $primary-pink-2;
+            color: $light-col;
+
+            // for ::before
+            // z-index: 1;
+            // color: $primary-blue; 
+
+            // &:before {
+            //     z-index: -1;
+            //     width: 100%;
+            // }    
+        }
+        &:active {
+            background-color: $primary-pink;
+        }
+    }
+}
+
+.btn-2 {
+    width: 155px;
+    border-radius: 8px;
+    font-family: $RobBold;
+    font-size: 14px;
+    padding: 12.5px 20px;
+    transition: all .3s linear;
+    text-align: center;
+    box-shadow: 8px 18px 30px rgba($primary-blue, .2)!important;
+
+    &_blue {
+        color: $light-col;
+        background-color: $primary-blue;
+    
+        &:hover {
+            background-color: $primary-pink-2;
+            box-shadow: 8px 18px 30px rgba($primary-pink-2, .2)!important;
+            color: $light-col;            
+        }
+    }
+
+    &_pink {
+        @extend .btn_pink;
+        padding: 25px 40px;
+        box-shadow: 8px 18px 30px rgba($primary-pink-2, .2)!important;
+          
+    }
+
+    & > .fa {
+        margin-left: 10px;
+    }
+}   
+
+.btn-play {
+    color: $primary-blue;
+    background-color: $light-col;
+    padding: 17px;
+    border-radius: 50%;
+    position: relative;
+    animation: playBtn 2s infinite linear;
+    box-shadow:0px 0px 15px rgba($light-col, 1);
+    
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: playBtn 2s infinite linear;
+        animation-delay: .5s;
+        box-shadow:0px 0px 15px rgba($light-col, 1)!important;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: rgba($light-col, .3);
+        width: 140%;
+        height: 140%;
+    }
+    
+}
+
+.btn-video {
+    color: $light-col;
+    text-transform: capitalize;
+    font-size: 16px;
+
+    &-outer {
+        width: 220px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        background-color: $primary-pink-2;
+        border: 2px solid transparent;
+        transition: all .3s linear;
+        // padding: 5px;
+        & > .btn-video {
+            
+            font-size: 20px;
+            line-height: 20px;
+            font-family: $RobBold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all .3s linear;
+
+            & > .btn-play {
+                color: $primary-pink-2;
+                margin: 0;
+                margin-right: 25px;
+                margin-left: -15px;
+                padding: 20px;
+            }
+        }
+
+        &:hover {
+            border-color: $primary-pink-2;
+            background-color: $light-col;
+            & > .btn-video {
+                color: $primary-pink-2;
+            }
+        }
+    }
+
+    & > .btn-play {
+        margin-bottom: -10px;
+        margin-right: 25px;
+        color: $dark-col;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .btn {
+        letter-spacing: 0;       
+
+        &_pink-2,
+        &_pink {
+            letter-spacing: 0;       
+            padding: 15px; 
+        }
+
+        &_blue {
+            letter-spacing: 0;       
+            padding:20px; 
+        }
+    }
+}

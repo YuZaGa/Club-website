@@ -1,0 +1,83 @@
+/**************************************************/
+/* .header-bottom-4 */
+/**************************************************/
+
+.header-bottom-4 {
+	background-color: $light-col;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 350px;
+	z-index: 10;
+	
+	& > img {
+		position: absolute;
+		top: -150px;
+		left: 0;
+		height: 500px;
+		width: 100%;
+		z-index: 1;
+		object-fit: cover;
+		object-position: center center;
+	}
+	
+	
+	&__bg {
+		position: absolute;
+		top: -150px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 500px;
+		background-image: linear-gradient(to right, $light-col, transparent,  transparent);
+		overflow: hidden;
+		z-index: 2;
+		& > .icon {
+			max-width: 530px;
+			width: 40%;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			& > img {
+				width: 100%;
+			}
+		}
+	}
+
+	& > .container {
+		z-index: 5;
+		display: block;
+		position: relative;
+		padding-top: 125px;
+		height: 100%;
+
+		& > .section-title {
+			width: 100%;
+		}
+
+		& > .breadcrumb {
+			width: 100%;
+			background-color: transparent;
+			margin: 0;
+			padding: 0;
+
+			& > .breadcrumb-item {
+				font-weight: 600;
+				font-size: 20px;
+				a{
+					color: $primary-blue;
+					transition: all .3s linear;
+					&:hover {
+						color: $primary-pink-2;
+					}
+				}
+				&.active {
+					color: $text-col;
+				}
+			} 
+		}
+	}
+
+}

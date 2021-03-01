@@ -1,0 +1,118 @@
+/**************************************************/
+/* .other-services */
+/**************************************************/
+.other-services {
+  position: relative;
+  overflow: hidden;
+  padding-top: $section-space + 5px;
+  padding-bottom: $section-space + 5px;
+  z-index: 10;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+
+    & > img {
+      opacity: 1;
+      z-index: 8;
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon {
+      z-index: 9;
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 947px;
+      width: 100%;
+      & > img {
+        // opacity: .1;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__bg-2 {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(242, 242, 242, 0.9);
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__cards {
+    margin-top: $title-space;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    & > .card-item {
+      border-radius: 8px;
+      flex: 0 0 350px;
+      max-width: 350px;
+      width: 100%;
+      padding: 50px 30px;
+      background-color: $light-col;
+      border: 1px solid $light-col;
+      transition: all 0.3s linear;
+      box-shadow: 9.548px 10.239px 35px rgba(0, 0, 0, 0.06);
+
+      &:hover {
+        border-color: $primary-pink-2;
+        box-shadow: 15.657px 23.213px 51px rgba($primary-pink-2, 0.2);
+      }
+
+      & > .title {
+        margin-top: 30px;
+        font-size: 23px;
+        letter-spacing: -1px;
+        font-weight: 900;
+        font-family: $RobBold;
+        color: $text-col;
+      }
+
+      & > .subtitle {
+        margin-top: 25px;
+        font-size: 13.5px;
+        color: $text-col-2;
+        line-height: 1.5;
+      }
+
+      & > .lists {
+        font-weight: 600;
+        color: $text-col;
+        margin-top: 20px;
+        padding-left: 10px;
+        list-style: none;
+        text-align: left;
+
+        li {
+          i.fa {
+            color: $primary-blue;
+            margin-right: 7px;
+          }
+          line-height: 36px;
+          font-size: 15.5px;
+          letter-spacing: -0.15px;
+        }
+      }
+    }
+  }
+}

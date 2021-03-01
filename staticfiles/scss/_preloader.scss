@@ -1,0 +1,86 @@
+/**************************************************/
+/* .preloader */
+/**************************************************/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999999999999;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 1s;
+}
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, $primary-pink-2);
+    animation: animateLoader 2s infinite linear;
+}
+
+@keyframes animateLoader {
+    0% {
+        transform: rotate(0deg);
+        // filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        // filter: hue-rotate(360deg);
+    }
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    right: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+    
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(45deg, transparent, transparent 40%, $primary-pink-2);
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+}
+
+.preloader-text {
+    margin-top: 30px;
+    position: relative;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-pink-2;
+    // animation: animatePreloaderText 3s infinite linear;
+}
+
+@keyframes animatePreloaderText{
+    0%{
+        text-shadow: 0;
+    }
+    50%{
+        text-shadow: 0 0 20px $primary-pink-2;
+    }
+    100% {
+        text-shadow: 0;
+    }
+}

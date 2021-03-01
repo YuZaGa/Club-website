@@ -41,6 +41,7 @@ class Post(models.Model):
 	featured = models.BooleanField(default=False)
 	tags = models.ManyToManyField(Tag, null=True, blank=True)
 	slug = models.SlugField(null=True, blank=True)
+	createdp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
 	def __str__(self):
 		return self.headline
@@ -61,6 +62,90 @@ class Post(models.Model):
 
 		super().save(*args, **kwargs)
 
+
+class Event(models.Model):
+	title = models.CharField(max_length=200)
+	sub_headline = models.CharField(max_length=600, null=True, blank=True)
+	organiser = models.CharField(max_length=100, null=True, blank=True)
+	thumbnail = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+	body = RichTextUploadingField(null=True, blank=True)
+	created = models.DateTimeField(auto_now_add=True)
+	active = models.BooleanField(default=False)
+	featured = models.BooleanField(default=False)
+	tags = models.ManyToManyField(Tag, null=True, blank=True)
+	slug = models.SlugField(null=True, blank=True)
+	createdp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
+	def __str__(self):
+		return self.title
+
+	def save(self, *args, **kwargs):
+
+		if self.slug == None:
+			slug = slugify(self.headline)
+
+			has_slug = Event.objects.filter(slug=slug).exists()
+			count = 1
+			while has_slug:
+				count += 1
+				slug = slugify(self.title) + '-' + str(count) 
+				has_slug = Event.objects.filter(slug=slug).exists()
+
+			self.slug = slug
+
+		super().save(*args, **kwargs)
+
+class Team(models.Model):
+	name = models.CharField(max_length=200)
+	teamvar = models.CharField(max_length=200, null=True, blank=True)
+	position = models.CharField(max_length=200, null=True, blank=True)
+	filtag = models.CharField(max_length=200, null=True, blank=True)
+	insta = models.CharField(max_length=300, null=True, blank=True)
+	lin = models.CharField(max_length=300, null=True, blank=True)
+	desc = models.CharField(max_length=600)
+	
+	pic = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+	#body = RichTextUploadingField(null=True, blank=True)
+	#created = models.DateTimeField(auto_now_add=True)
+	#active = models.BooleanField(default=False)
+	#featured = models.BooleanField(default=False)
+	#tags = models.ManyToManyField(Tag, null=True, blank=True)
+	#slug = models.SlugField(null=True, blank=True)
+	#createdp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
+	def __str__(self):
+		return self.name
+
+	def save(self, *args, **kwargs):
+
+		super().save(*args, **kwargs)
+
+
+
+
+class LatestEvent(models.Model):
+	organiser = models.CharField(max_length=200)
+	event = models.CharField(max_length=200, null=True, blank=True)
+	day = models.CharField(max_length=200)
+	date = models.CharField(max_length=200)
+	time = models.CharField(max_length=200)
+	link = models.CharField(max_length=600)
+	
+	thumbnail = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+	#body = RichTextUploadingField(null=True, blank=True)
+	created = models.DateTimeField(auto_now_add=True)
+	active = models.BooleanField(default=False)
+	featured = models.BooleanField(default=False)
+	#tags = models.ManyToManyField(Tag, null=True, blank=True)
+	#slug = models.SlugField(null=True, blank=True)
+	createdp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
+	def __str__(self):
+		return self.event
+
+	def save(self, *args, **kwargs):
+
+		super().save(*args, **kwargs)
 
 class PostComment(models.Model):
 	author = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True, blank=True)

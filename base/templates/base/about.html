@@ -1,1032 +1,371 @@
 <!DOCTYPE html>
+{% extends 'base/base.html' %}
 {% load static %}
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Mintech  IT Solutions &  Services Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Mintech IT Solutions & Services Template</title>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800;900&family=Roboto:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
-  <link rel="stylesheet" href="{% static 'assets/css/libraries.css' %}">
-  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-</head>
+{% block body_block %}
 
-<body>
-  <div class="wrapper">
-    <div class="preloader">
-      <div class="loading">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </div><!-- /.preloader -->
-
-    <!-- =========================
-        Header 
-    =========================== -->
-    <header class="header header-transparent">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
-        <div class="container">
-          <button type="button" class="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
-            <i class="icon-nav"></i>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button">
-            <span class="menu-lines"><span></span></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav mr-auto ml-auto">
-              <li class="nav__item  has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-
-                  <li class="nav__item">
-                    <a href="{% url 'home' %}" class="nav__item-link">Home</a>
-                  </li><!-- /.nav-item -->
-
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="about.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="awards.html" class="nav__item-link">Award & Recognition</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="careers.html" class="nav__item-link">Careers</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
-                <ul class="dropdown-menu wide-dropdown-menu">
-                  <li class="nav__item">
-                    <div class="row mx-0">
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Management</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cyber
-                              Security</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cloud
-                              Computing</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Consulting</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software
-                              Dev</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
-                          </li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Education,
-                              Non-Profit</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Accounting,
-                              Finance</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Government &
-                              Public</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                              &
-                              Utilities</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                              Law
-                              Firms</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Manufacturing</a>
-                          </li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                    </div><!-- /.row -->
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">News&Media</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Our Blog</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-modern.html" class="nav__item-link">Case Studies Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-classic.html" class="nav__item-link">Case Studies Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-single.html" class="nav__item-link">Single Case Study</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="coming-soon.html" class="nav__item-link">Coming Soon</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="404.html" class="nav__item-link">404 Page</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link  open-register-popup">Register</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link  open-login-popup">Login</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link">Contacts</a>
-              </li><!-- /.nav-item -->
-            </ul><!-- /.navbar-nav -->
-          </div><!-- /.navbar-collapse -->
-          <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
-            <li>
-              <button class="action__btn action__btn-login open-login-popup">
-                <i class="icon-user"></i><span>Login</span>
-              </button>
-            </li>
-            <li class="d-none d-xl-block">
-              <a href="request-quote.html" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Request
-                A Quote</a>
-            </li>
-          </ul><!-- /.navbar-actions -->
-        </div><!-- /.container -->
-      </nav><!-- /.navabr -->
-    </header><!-- /.Header -->
-
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout1 bg-overlay bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <h1 class="pagetitle__heading">About Us</h1>
-            <p class="pagetitle__desc">We are experienced professionals who understand that It services is changing, and
-              are true partners who care about your success. Our team provides a consultative approach on emerging
-              technology.
-            </p>
-            <a href="projects-grid.html" class="btn btn__primary mr-30">Our Services</a>
-            <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-              <div class="video__player">
-                <span class="video__player-animation"></span>
-                <span class="video__player-animation video__player-animation-2"></span>
-                <i class="fa fa-play"></i>
-              </div>
-              <span class="video__btn-title color-white">Play Video!</span>
-            </a>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-    <!-- ========================
-      Secondary Nav
-    =========================== -->
-    <section class="secondary-nav sticky-top py-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="nav nav-tabs justify-content-center">
-              <a href="about-us.html" class="nav__link active">About Us</a>
-              <a href="why-us.html" class="nav__link">Why Choose Us</a>
-              <a href="leadership-team.html" class="nav__link">Leadership Team</a>
-              <a href="awards.html" class="nav__link">Awards & Recognition</a>
-              <a href="pricing.html" class="nav__link">Pricing & Plans</a>
-              <a href="faqs.html" class="nav__link">Help & FAQs</a>
-              <a href="careers.html" class="nav__link">Careers</a>
-            </nav>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Secondary Nav -->
-
-    <!-- ========================
-      About Layout 1
-    =========================== -->
-    <section class="about-layout1">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="heading-layout2 mb-30">
-              <h2 class="heading__subtitle">Trusted By The World's Best Organizations</h2>
-              <h3 class="heading__title mb-30">Our technology allows you to offer latest software to your possible
-                customers!
-              </h3>
-              <p class="heading__desc mb-25">Mintech has been helping organizations throughout the World to manage their
-                IT with our unique approach to technology management and consultancy solutions. As one of the world's
-                largest ITService Providers, our deep pool of over 130 certified engineers and IT support staff are
-                ready to help.</p>
-            </div><!-- /heading -->
-            <a href="about-us.html" class="btn btn__primary btn__xl btn__icon mb-30">
-              <span>More About Us</span>
-              <i class="icon-arrow-right"></i>
-            </a>
-            <img src="assets/images/about/singnture.png" alt="singnture" class="d-block">
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="about__img">
-              <img src="assets/images/about/1.jpg" alt="about">
-              <div class="cta-banner">
-                <div class="slick-carousel" data-slick='{"slidesToShow": 1, "arrows": false, "dots": true}'>
-                  <div class="cta-banner__item">
-                    <div class="cta-banner__icon"><i class="icon-technician"></i></div>
-                    <h4 class="cta-banner__title mb-0">Utilising latest timelineing solutions, and decades of work
-                      experience.
-                    </h4>
-                  </div><!-- /.cta-banner__item -->
-                  <div class="cta-banner__item">
-                    <div class="cta-banner__icon"><i class="icon-funnel"></i></div>
-                    <h4 class="cta-banner__title mb-0">Thinking insights, verified driven research, metrics make right
-                      decisions!
-                    </h4>
-                  </div><!-- /.cta-banner__item -->
-                </div><!-- /.slick-carousel -->
-              </div><!-- /.cta-banner -->
-            </div><!-- /.about-img -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 1 -->
-
-    <!-- ======================
-    History Timeline
-    ========================= -->
-    <section class="history-timeline pb-0">
-      <div class="history-timeline-bg">
-        <div class="bg-img"><img src="assets/images/backgrounds/7.jpg" alt="background"></div>
-      </div>
-      <div class="container">
-        <div class="row heading heading-layout2 mb-90">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h2 class="heading__subtitle">Explore Our Great History!!</h2>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h3 class="heading__title color-white">One of the world's largest IT Providers since 2005.</h3>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-      <div class="timeline-bar"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="timeline-carousel-wrapper">
-              <div class="slick-carousel carousel-arrows-light"
-                data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 2}}, {"breakpoint": 570, "settings": {"slidesToShow": 1}}]}'>
-                <!-- timeline Item #1 -->
-                <div class="timeline-item">
-                  <h4 class="timeline-item__year">2005</h4>
-                  <p class="timeline-item__desc">We partner with you to enable your technology so you focus on your
-                    organization’s mission leverage our talent, and creativity to help your business succeed above all.
-                  </p>
-                </div><!-- /.timeline-item -->
-                <!-- timeline Item #2 -->
-                <div class="timeline-item">
-                  <h4 class="timeline-item__year">2010</h4>
-                  <p class="timeline-item__desc">Our support works around the clock to ensure your work is secure and
-                    monitored safely. You access to over 99 IT professionals working to provide you with the most
-                    efficient
-                    solutions.</p>
-                  <p class="timeline-item__desc">To focus on your mission leverage our talent, and creativity to succeed
-                    above all.</p>
-                </div><!-- /.timeline-item -->
-                <!-- timeline Item #3 -->
-                <div class="timeline-item">
-                  <h4 class="timeline-item__year">2015</h4>
-                  <p class="timeline-item__desc">Our people are held to the highest level accountability to ensure you
-                    are
-                    always satisfied with your results. We believe that honesty, integrity, and a commitment to ethical
-                    business practices.</p>
-                  <p class="timeline-item__desc">We cross industries and provide services to almost every business
-                    either
-                    as
-                    a co-managed or supplemental asset.</p>
-                </div><!-- /.timeline-item -->
-                <!-- timeline Item #4 -->
-                <div class="timeline-item">
-                  <h4 class="timeline-item__year">2017</h4>
-                  <p class="timeline-item__desc">Our people are held to the highest level accountability to ensure you
-                    are
-                    always satisfied with your results. We believe that honesty, integrity, and a commitment to ethical
-                    business practices.</p>
-                  <p class="timeline-item__desc">We cross industries and provide services to almost every business
-                    either
-                    as
-                    a co-managed or supplemental asset.</p>
-                </div><!-- /.timeline-item -->
-                <!-- timeline Item #4 -->
-                <div class="timeline-item">
-                  <h4 class="timeline-item__year">2020</h4>
-                  <p class="timeline-item__desc">Whether providing consulting expertise on a specific vendor technology,
-                    strategizing on IT budget, providing a security assessment, or managing IT infrastructure, we can
-                    provide it all.</p>
-                  <p class="timeline-item__desc">Our people are held to the highest level accountability to ensure you
-                    are
-                    always satisfied with your results. We believe that honesty, integrity, and a commitment to ethical
-                    business practices.</p>
-                </div><!-- /.timeline-item -->
-              </div><!-- /.carousel -->
-            </div>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <div class="download-area">
-              <p class="download-area__text">Provide users with appropriate view and access permissions to requests,
-                problems, changes, contracts, assets, solutions, and reports with our experienced professionals.
-              </p>
-              <a href="#" class="btn btn__white btn__bordered btn__xl btn__icon mb-30">
-                <span>Download Brochure</span>
-                <i class="icon-arrow-right"></i>
-              </a>
-            </div>
-          </div><!-- /.col-lg-5 -->
-          <div class="col-sm-12 col-md-12 col-lg-7">
-            <div class="cta-banner bg-overlay bg-overlay-primary">
-              <div class="bg-img"><img src="assets/images/banners/4.jpg" alt="background"></div>
-              <h4 class="cta-banner__title">Perfect Solutions That Your Business Demands!</h4>
-              <p class="cta-banner__desc">From network and device management to security, we're bringing IT together for
-                an integrated, overarching approach.</p>
-              <div class="d-flex flex-wrap">
-                <a href="#" class="btn btn__secondary btn__secondary-style2 btn__xl mr-20">Request A Demo</a>
-                <a href="#" class="btn btn__white btn__bordered btn__xl btn__icon">
-                  <span>Get Started</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-            </div><!-- /.cta-banner -->
-          </div><!-- /.col-lg-7 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.History Timeline -->
-
-    <!-- =========================
-      Awards
-      =========================== -->
-    <section class="awards pt-20">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <div class="heading-layout2">
-              <h3 class="heading__title mb-50">Our awards and recognitions</h3>
-            </div>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row awards-wrapper">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- fancybox item #1 -->
-            <div class="fancybox-item">
-              <div class="fancybox-item__icon__img">
-                <img src="assets/images/awards/icons/1.png" alt="icon">
-              </div><!-- /.fancybox-item__icon__img -->
-              <div class="fancybox-item__content">
-                <h4 class="fancybox-item__title">CSS Design Award</h4>
-                <p class="fancybox-item__desc">A web design & development award platform for digital folk, UI/UX peeps
-                  and inspiring leaders of the web.
-                </p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-3 -->
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- fancybox item #2 -->
-            <div class="fancybox-item">
-              <span class="pinned-ribbon"></span>
-              <div class="fancybox-item__icon__img">
-                <img src="assets/images/awards/icons/2.png" alt="icon">
-              </div><!-- /.fancybox-item__icon__img -->
-              <div class="fancybox-item__content">
-                <h4 class="fancybox-item__title">W3 Design Award</h4>
-                <p class="fancybox-item__desc">Awards celebrates digital by honoring outstanding Websites, Web
-                  Marketing, Video, Sites, Apps & Social content.
-                </p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-3 -->
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- fancybox item #3 -->
-            <div class="fancybox-item">
-              <div class="fancybox-item__icon__img">
-                <img src="assets/images/awards/icons/3.png" alt="icon">
-              </div><!-- /.fancybox-item__icon__img -->
-              <div class="fancybox-item__content">
-                <h4 class="fancybox-item__title">The FWA Award</h4>
-                <p class="fancybox-item__desc">Showcasing innovation every day since 2000, our mission is to showcase
-                  cutting edge creativity, regardless
-                </p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-3 -->
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <!-- fancybox item #4 -->
-            <div class="fancybox-item">
-              <div class="fancybox-item__icon__img">
-                <img src="assets/images/awards/icons/4.png" alt="icon">
-              </div><!-- /.fancybox-item__icon__img -->
-              <div class="fancybox-item__content">
-                <h4 class="fancybox-item__title">WWW Awards</h4>
-                <p class="fancybox-item__desc">The awards that recognize the talent and effort of the best web
-                  designers, developers and agencies in the world.
-                </p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-3 -->
-        </div><!-- /.row -->
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <p class="fz-16 my-4">Trusted by the world's best organizations, for 15 years and running, it has been
-              delivering
-              smiles to hundreds of IT advisors, developers, users, and business owners.
-            </p>
-          </div><!-- /.col-lg-5 -->
-          <div class="col-sm-12 col-md-12 col-lg-7 d-flex justify-content-end">
-            <a href="#" class="btn btn__primary btn__link">
-              <span>Explore All Awards</span><i class="icon-arrow-right icon-outlined"></i>
-            </a>
-          </div><!-- /.col-lg-7 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Awards -->
-
-    <!-- ========================= 
-      Testimonials layout 1
-      =========================  -->
-    <section class="testimonials testimonials-layout1 testimonials-has-top-img text-center">
-      <div class="bg-img"><img src="assets/images/backgrounds/4.jpg" alt="backgrounds"></div>
-      <img src="assets/images/testimonials/testimonials-group.png" alt="testimonials" class="testimonials-top-img">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="heading">
-              <h3 class="heading__title mb-0">1500 Satisfied Users Over The Globe</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="testimonials-wrapper">
-              <div class="slider-with-navs">
-                <!-- Testimonial #1 -->
-                <div class="testimonial-item">
-                  <p class="testimonial-item__desc">If you’re looking for a rewarding career and the chance to make an
-                    impact, you’ve come to the right place. We will transform your business through our techniques!
-                  </p>
-                  <div class="testimonial-item__meta">
-                    <h4 class="testimonial-item__meta__title">John Peter</h4>
-                    <p class="testimonial-item__meta__desc">7oroof Inc</p>
-                  </div><!-- /.testimonial-meta -->
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #2 -->
-                <div class="testimonial-item">
-                  <p class="testimonial-item__desc">My project was a simple & small task, but the persistence and
-                    determination turned it into an awesome and great project which make me happy.
-                  </p>
-                  <div class="testimonial-item__meta">
-                    <h4 class="testimonial-item__meta__title">Ahmed Abdallah</h4>
-                    <p class="testimonial-item__meta__desc">Web Inc</p>
-                  </div><!-- /.testimonial-meta -->
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #3 -->
-                <div class="testimonial-item">
-                  <p class="testimonial-item__desc">If you’re looking for a rewarding career and the chance to make an
-                    impact, you’ve come to the right place. We will transform your business through our techniques!
-                  </p>
-                  <div class="testimonial-item__meta">
-                    <h4 class="testimonial-item__meta__title">Ayman</h4>
-                    <p class="testimonial-item__meta__desc">7oroof Inc</p>
-                  </div><!-- /.testimonial-meta -->
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #2 -->
-                <div class="testimonial-item">
-                  <p class="testimonial-item__desc">My project was a simple & small task, but the persistence and
-                    determination turned it into an awesome and great project which make me happy.
-                  </p>
-                  <div class="testimonial-item__meta">
-                    <h4 class="testimonial-item__meta__title">John Peter</h4>
-                    <p class="testimonial-item__meta__desc">7oroof Inc</p>
-                  </div><!-- /.testimonial-meta -->
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #3 -->
-                <div class="testimonial-item">
-                  <p class="testimonial-item__desc">My project was a simple & small task, but the persistence and
-                    determination turned it into an awesome and great project which make me happy .
-                  </p>
-                  <div class="testimonial-item__meta">
-                    <h4 class="testimonial-item__meta__title">John Peter</h4>
-                    <p class="testimonial-item__meta__desc">7oroof Inc</p>
-                  </div><!-- /.testimonial-meta -->
-                </div><!-- /. testimonial-item -->
-              </div>
-              <div class="slider-nav">
-                <div class="testimonial-item__thumb">
-                  <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb">
-                </div><!-- /.testimonial-thumb -->
-                <div class="testimonial-item__thumb">
-                  <img src="assets/images/testimonials/thumbs/2.png" alt="author thumb">
-                </div><!-- /.testimonial-thumb -->
-                <div class="testimonial-item__thumb">
-                  <img src="assets/images/testimonials/thumbs/3.png" alt="author thumb">
-                </div><!-- /.testimonial-thumb -->
-                <div class="testimonial-item__thumb">
-                  <img src="assets/images/testimonials/thumbs/2.png" alt="author thumb">
-                </div><!-- /.testimonial-thumb -->
-                <div class="testimonial-item__thumb">
-                  <img src="assets/images/testimonials/thumbs/3.png" alt="author thumb">
-                </div><!-- /.testimonial-thumb -->
-              </div><!-- /.slcik-nav -->
-            </div>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.testimonials 1 -->
-
-    <!-- =====================
-           Clients
-    ======================== -->
-    <section class="clients border-top pt-50 pb-50">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-              <div class="client">
-                <img src="assets/images/clients/1.png" alt="client">
-                <img src="assets/images/clients/1.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/2.png" alt="client">
-                <img src="assets/images/clients/2.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/3.png" alt="client">
-                <img src="assets/images/clients/3.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/4.png" alt="client">
-                <img src="assets/images/clients/4.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/5.png" alt="client">
-                <img src="assets/images/clients/5.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/6.png" alt="client">
-                <img src="assets/images/clients/6.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/7.png" alt="client">
-                <img src="assets/images/clients/7.png" alt="client">
-              </div><!-- /.client -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.clients -->
-
-    <!-- =========================
-       Banner layout 2
-      =========================== -->
-    <section class="banner-layout2 pt-0 pb-100">
-      <div class="bg-img"><img src="assets/images/backgrounds/8.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-            <div class="banner-text">
-              <div class="heading-layout2 heading-light mb-40">
-                <h3 class="heading__title mb-30">Timely service delivery & incident resolutions!!</h3>
-                <p class="heading__desc">Provide users with appropriate view and access permissions to requests,
-                  problems, changes, contracts, assets, solutions, and reports with our experienced professionals.
-                </p>
-              </div><!-- /.heading -->
-              <a href="pricing.html" class="btn btn__white btn__bordered btn__hi mb-30">Pricing & Plans</a>
-            </div>
-          </div><!-- /.col-xl-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-            <div class="banner-img">
-              <img src="assets/images/banners/5.jpg" alt="banner">
-              <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                <div class="video__player">
-                  <span class="video__player-animation"></span>
-                  <span class="video__player-animation video__player-animation-2"></span>
-                  <i class="fa fa-play"></i>
+        <!-- Start of .header-bottom-4 -->
+        <header class="header-bottom-4">
+            <img src="{% static './images/banner/banner4.jpg'}">
+            <div class="header-bottom-4__bg">
+                <div class="icon">
+                    <img src="{% static './images/banner/banner-shape.png'}">
                 </div>
-              </a>
             </div>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-        <div class="row counters-wrapper counters-light mt-70">
-          <!-- counter item #1 -->
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="counter-item">
-              <h4 class="counter">6,154</h4>
-              <p class="counter-item__desc">Projects And Software Developed in 2021</p>
-            </div><!-- /.counter-item -->
-          </div><!-- /.col-lg-3 -->
-          <!-- counter item #2 -->
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="counter-item">
-              <h4 class="counter">2,512</h4>
-              <p class="counter-item__desc">Qualified Employees And Developers With Us</p>
-            </div><!-- /.counter-item -->
-          </div><!-- /.col-lg-3 -->
-          <!-- counter item #3 -->
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="counter-item">
-              <h4 class="counter">1,784</h4>
-              <p class="counter-item__desc">Satisfied Clients We Have Served Globally</p>
-            </div><!-- /.counter-item -->
-          </div><!-- /.col-lg-3 -->
-          <!-- counter item #4 -->
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="counter-item">
-              <h4 class="counter">0,25</h4>
-              <p class="counter-item__desc">Years Of Experience In The IT & Software Industry</p>
-            </div><!-- /.counter-item -->
-          </div><!-- /.col-lg-3 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Banner layout 2 -->
-
-    <!-- ======================
-      Blog Grid
-    ========================= -->
-    <section class="blog-grid pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-40">
-              <h2 class="heading__subtitle">Recent Articles</h2>
-              <h3 class="heading__title">Resource Library</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <!-- Blog Item #1 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/1.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Consulting</a><a href="#">Sales</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">May 13, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">Five Ways to Develop a World Class Sales Operations
-                    Function</a>
-                </h4>
-                <p class="post-item__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #2 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/2.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Tech</a><a href="#">Communications</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">April 17, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">Succession Risks That Threaten Your Leadership Strategy</a>
-                </h4>
-                <p class="post-item__desc">Today’s organizations need a quality bench of leaders to drive business
-                  outcomes and satisfy employees, customers and investors who now demand more transparency and
-                  accountability...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #3 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/3.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Digital Business</a><a href="#">Cloud</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">March 20, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">What Do Employee Engagement Surveys Tell You About
-                    Employee?</a>
-                </h4>
-                <p class="post-item__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
-
-    <!-- ========================
-      Footer
-    ========================== -->
-    <footer class="footer bg-heading">
-      <div class="bg-img"><img src="assets/images/backgrounds/2.png" alt="backgrounds"></div>
-      <div class="footer-contact pt-50 pb-50">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-2">
-              <div class="contact-info">
-                <h6 class="footer-widget__title">Quick Contact</h6>
-                <ul class="contact-list list-unstyled mb-0">
-                  <li><a href="tel:00123968574">+ (002) 0106-1245-741</a></li>
-                  <li><a href="mailto:Mintech@7oroof.com">Mintech@7oroof.com</a></li>
-                </ul>
-              </div><!-- /.contact-info -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-4 col-md-4 col-lg-2">
-              <div class="contact-info">
-                <h6 class="footer-widget__title">Our Address</h6>
-                <ul class="contact-list list-unstyled mb-0">
-                  <li>2307 Beverley Rd , New York 11226 U.S.</li>
-                </ul>
-              </div><!-- /.contact-info -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-4 col-md-4 col-lg-2">
-              <div class="contact-info">
-                <h6 class="footer-widget__title">Opening Hours</h6>
-                <ul class="contact-list list-unstyled mb-0">
-                  <li>Mon - Fri: 8am - 7pm</li>
-                  <li>Sat - Sun: 9 am - 8pm</li>
-                </ul>
-              </div><!-- /.contact-info -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-12 col-md-8 col-lg-6">
-              <h6 class="footer-widget__title">Newsletter</h6>
-              <form class="footer-form d-flex mb-0">
-                <input type="text" class="form-control mr-20" placeholder="Your Email Address">
-                <button type="submit" class="btn btn__primary btn__primary-style2">Subscribe</button>
-              </form>
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.footer-contact -->
-      <div class="footer-primary">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-4 footer-widget footer-widget-about">
-              <div class="footer-widget__content">
-                <img src="assets/images/logo/logo-light.png" alt="logo" class="mb-30">
-                <p class="color-gray mb-40">We are experienced professionals who understand that It services is
-                  changing, and are
-                  true partners who care about your future business success.</p>
-                <ul class="social-icons list-unstyled mb-0">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul><!-- /.social-icons -->
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-xl-2 -->
-            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
-              <h6 class="footer-widget__title">Company</h6>
-              <div class="footer-widget__content">
-                <nav>
-                  <ul class="list-unstyled">
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="leadership-team.html">Meet Our Team</a></li>
-                    <li><a href="blog.html">News & Media</a></li>
-                    <li><a href="projects-grid.html">Case Studies</a></li>
-                    <li><a href="contacs.html">Contacts</a></li>
-                    <li><a href="#">Investors</a></li>
-                  </ul>
-                </nav>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
-              <h6 class="footer-widget__title">Solutions</h6>
-              <div class="footer-widget__content">
-                <nav>
-                  <ul class="list-unstyled">
-                    <li><a href="#">IT Management</a></li>
-                    <li><a href="#">Cyber Security</a></li>
-                    <li><a href="#">Cloud Computing</a></li>
-                    <li><a href="#">IT Consulting</a></li>
-                    <li><a href="#">Software Dev</a></li>
-                    <li><a href="#">IT Support</a></li>
-                  </ul>
-                </nav>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
-              <h6 class="footer-widget__title">Resources</h6>
-              <div class="footer-widget__content">
-                <nav>
-                  <ul class="list-unstyled">
-                    <li><a href="pricing.html">Pricing and plans</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="faqs.html">Help & FAQ</a></li>
-                    <li><a href="contacs.html">Contact Us</a></li>
-                    <li><a href="#">Site map</a></li>
-                  </ul>
-                </nav>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
-              <h6 class="footer-widget__title">We're Hiring</h6>
-              <div class="footer-widget__content">
-                <p class="fz-14 color-white">Interested in joining the Mintech team?</p>
-                <a href="careers.html" class="btn btn__primary btn__primary-style2 btn__link">
-                  <span>Our Careers</span><i class="icon-arrow-right icon-outlined"></i>
-                </a>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.footer-primary -->
-      <div class="footer-secondary">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-              <span class="fz-14">&copy; 2020 Mintech, All Rights Reserved. With Love by</span>
-              <a class="fz-14 color-primary" href="http://themeforest.net/user/7oroof">7oroof.com</a>
-            </div><!-- /.col-lg-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.footer-secondary -->
-    </footer><!-- /.Footer -->
-    <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
-
-    <div class="burger-menu">
-      <div class="burger-menu__content">
-        <button type="button" class="burger-menu__close"><i class="fas fa-times"></i></button>
-        <div class="burger-menu__header">
-          <img src="assets/images/logo/logo-light.png" alt="logo" class="mb-30">
-          <p class="color-white">We are experienced professionals who understand that It services is changing, and are
-            true partners who care about your future business success.</p>
-        </div><!-- /.burger-menu__header -->
-        <div class="contact-blocks-wrapper">
-          <div class="contact-block contact-block-light">
-            <h5 class="contact-block__title">Our Location</h5>
-            <ul class="contact-block__list list-unstyled">
-              <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
-            </ul>
-          </div><!-- /.contact-panel__info__block -->
-          <div class="contact-block contact-block-light">
-            <h5 class="contact-block__title">Quick Contact</h5>
-            <ul class="contact-block__list list-unstyled">
-              <li><a href="mailto:Mintech@7oroof.com"></a>Email: Mintech@7oroof.com</li>
-              <li><a href="mailto:Mintech@7oroof.com"></a>Support: Mintech@7oroof.com</li>
-            </ul>
-          </div><!-- /.contact-panel__info__block -->
-          <div class="contact-block contact-block-light">
-            <h5 class="contact-block__title">Opening Hours</h5>
-            <ul class="contact-block__list list-unstyled">
-              <li>Monday - Friday</li>
-              <li>8 am to 7 pm</li>
-            </ul>
-          </div><!-- /.contact-panel__info__block -->
-          <ul class="social-icons list-unstyled mb-0 mt-20">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          </ul><!-- /.social-icons -->
-        </div><!-- /.contact-blocks-wrapper -->
-      </div><!-- /.burger-menu__content -->
-    </div><!-- /.burger-menu -->
-
-    <div class="login-popup" id="login-popup">
-      <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Login!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-30">
-            <label>Email (required)</label>
-            <input type="text" class="form-control" placeholder="username">
-          </div>
-          <div class="form-group mb-20">
-            <label>Password (required)</label>
-            <input type="password" class="form-control" placeholder="password">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Remember Me!</label>
+            <div class="container">
+                <h1 class="section-title">About <span>us</span></h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About Us</li>
+                </ol>
             </div>
-            <a href="#" class="fz-14 font-weight-bold color-secondary">Forget Password?</a>
-          </div>
-          <button type="submit" class="btn btn__secondary btn__block">Login</button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Don’t Have An Account?</span>
-          <button id="go-register" class="go-register fz-14 font-weight-bold">
-            <span>Register Here</span><i class="icon-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div><!-- /.login-popup -->
+        </header>
+        <!-- End of .header-bottom-4 -->
 
-    <div class="login-popup" id="register-popup">
-      <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Register!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-30">
-            <label>Email (required)</label>
-            <input type="text" class="form-control" placeholder="username">
-          </div>
-          <div class="form-group mb-20">
-            <label>Password (required)</label>
-            <input type="password" class="form-control" placeholder="password">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck2">
-              <label class="custom-control-label" for="customCheck2">I read & agree to <a href="#">Terms &
-                  Conditions</a></label>
+        <!-- Start of .about-4 -->
+        <section class="about-4" id="about">
+            <div class="latest-news__bg">
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/latest-news__right-bottom-shape.png'}">
+                </div>
             </div>
-          </div>
-          <button type="submit" class="btn btn__secondary btn__block">Register</button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Have An Account?</span>
-          <button id="go-login" class="go-login fz-14 font-weight-bold">
-            <span>Login Here</span><i class="icon-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div><!-- /.login-popup -->
-  </div><!-- /.wrapper -->
+            <div class="container">
+                <div class="content">
+                    <div class="video">
+                        <a class="btn-video-outer" data-fancybox href="https://youtu.be/lM02vNMRRB0">
+                            <span class="btn-video">
+                                <i class="fa fa-play btn-play"></i>watch video
+                            </span>
+                        </a>
+                        <div class="img">
+                            <img src="{% static './images/jpg/about-html.jpg'}">
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <h4>who we are</h4>
+                        <h1 class="section-title">Medical center<br><span>in new york</span> </h1>
+                        <h2>We offer reasonable pricing health care plans, insurance packages to clients.</h2>
+                        <p>
+                            MEDIHELP Medical Center provide patients with choices to ask for the conducting and
+                            analyzing of several lab tests on-site at no cost for prioritized patients or at 70% for
+                            people with an insurance.
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                            ut perspiciatis unde omnis iste natus error sit volu ptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.
+                            <br>
+                            <br>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                            numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of .about-4 -->
 
-  <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
-  <script src="{% static 'assets/js/plugins.js' %}"></script>
-  <script src="{% static 'assets/js/main.js' %}"></script>
-</body>
+         <!-- Start of .specialists-2 -->
+         <section class="specialists-2">
+            <div class="specialists-2__bg">
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/ornament__left-bottom.png'}">
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="section-title section-title_60">our <span>specialists</span></h1>
+                <div class="specialists-2__card">
+                    <div class="specialists-2__carousel owl-carousel owl-theme">
 
-</html>
+                        <div class="specialists-2__carousel-item">
+                            <div class="img">
+                                <img src="{% static './images/jpg/our-specialists-women.jpg'}">
+                            </div>
+                            <div class="content">
+                                <table>
+                                    <thead>
+                                        <td colspan="2">
+                                            <h1 class="title">Dr. Sara Jefferson</h1>
+                                        </td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Speciality</th>
+                                            <td>Ophtalmology</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Areas of Expertise:</th>
+                                            <td>Cataract Treatment<br>Laser Eye Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Years of Practice:</th>
+                                            <td>20 years</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Working Time:</th>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Mon-Thu</td>
+                                                        <td>08:00-20:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>07:00-22:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>08:00-18:00</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Contacts:</th>
+                                            <td><a href="tel:+11234564466">+ 1 123 456 44 66</a><br>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <td colspan="2">
+                                            <a href="doctors-single_right.html" class="btn btn-2_pink">book a visit</a>
+                                        </td>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="specialists-2__carousel-item">
+                            <div class="img">
+                                <img src="{% static './images/jpg/our-specialists-women.jpg'}">
+                            </div>
+                            <div class="content">
+                                <table>
+                                    <thead>
+                                        <td colspan="2">
+                                            <h1 class="title">Dr. Sara Jefferson</h1>
+                                        </td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Speciality</th>
+                                            <td>Ophtalmology</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Areas of Expertise:</th>
+                                            <td>Cataract Treatment<br>Laser Eye Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Years of Practice:</th>
+                                            <td>20 years</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Working Time:</th>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Mon-Thu</td>
+                                                        <td>08:00-20:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>07:00-22:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>08:00-18:00</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Contacts:</th>
+                                            <td><a href="tel:+11234564466">+ 1 123 456 44 66</a><br>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <td colspan="2">
+                                            <a href="#" class="btn btn-2_pink">book a visit</a>
+                                        </td>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="specialists-2__carousel-item">
+                            <div class="img">
+                                <img src="{% static './images/jpg/our-specialists-women.jpg'}">
+                            </div>
+                            <div class="content">
+                                <table>
+                                    <thead>
+                                        <td colspan="2">
+                                            <h1 class="title">Dr. Sara Jefferson</h1>
+                                        </td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Speciality</th>
+                                            <td>Ophtalmology</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Areas of Expertise:</th>
+                                            <td>Cataract Treatment<br>Laser Eye Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Years of Practice:</th>
+                                            <td>20 years</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Working Time:</th>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Mon-Thu</td>
+                                                        <td>08:00-20:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>07:00-22:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>08:00-18:00</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Contacts:</th>
+                                            <td><a href="tel:+11234564466">+ 1 123 456 44 66</a><br>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <td colspan="2">
+                                            <a href="#" class="btn btn-2_pink">book a visit</a>
+                                        </td>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="specialists-2__carousel-item">
+                            <div class="img">
+                                <img src="{% static './images/jpg/our-specialists-women.jpg'}">
+                            </div>
+                            <div class="content">
+                                <table>
+                                    <thead>
+                                        <td colspan="2">
+                                            <h1 class="title">Dr. Sara Jefferson</h1>
+                                        </td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Speciality</th>
+                                            <td>Ophtalmology</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Areas of Expertise:</th>
+                                            <td>Cataract Treatment<br>Laser Eye Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Years of Practice:</th>
+                                            <td>20 years</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Working Time:</th>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Mon-Thu</td>
+                                                        <td>08:00-20:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>07:00-22:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>08:00-18:00</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Contacts:</th>
+                                            <td><a href="tel:+11234564466">+ 1 123 456 44 66</a><br>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <td colspan="2">
+                                            <a href="#" class="btn btn-2_pink">book a visit</a>
+                                        </td>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of .specialists-2 -->
+
+        <!-- Start of .our-numbers -->
+        <section class="our-numbers">
+            <div class="our-numbers__bg"></div>
+            <div class="container">
+                <div class="our-numbers__items">
+                    <div class="item">
+                        <h1><span class="counter">125</span>+</h1>
+                        <h4>Certified Great Doctors</h4>
+                    </div>
+                    <div class="item">
+                        <h1><span class="counter">10</span>+</h1>
+                        <h4>National Awards</h4>
+                    </div>
+                    <div class="item">
+                        <h1><span class="counter">30</span>+</h1>
+                        <h4>Medical Cervices</h4>
+                    </div>
+                    <div class="item">
+                        <h1><span class="counter">20</span>+</h1>
+                        <h4>Years of Experience</h4>
+                    </div>
+
+                </div>
+                <div class="our-numbers__img wow fadeInRight" data-wow-duration="1s">
+                    <img src="{% static './images/jpg/our-numbers.jpg'}">
+                </div>
+            </div>
+        </section>
+        <!-- End of .our-numbers -->
+
+     
+        {% endblock %}

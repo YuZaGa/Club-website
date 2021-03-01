@@ -1,0 +1,388 @@
+/**************************************************/
+/* doctors */
+/**************************************************/
+
+.doctors {
+
+    & > .container {
+        position: relative;
+        padding-top: $section-space;
+        padding-bottom: $section-space;
+        display: flex;
+        flex-direction: column;
+        
+        & > .doctors__controls {
+            
+            & > .doctors__controls-lists {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                
+                & > .doctors__controls-item {
+                    font-size: 18px;
+                    color: $text-col-2;
+                    transition: all .3s linear;
+                    margin-right: 30px;
+                    cursor: pointer;
+        
+                    &.active,
+                    &:hover {
+                        color: $primary-pink-2;
+                    }
+                }
+            }
+    
+        }
+    
+        & > .doctors__cards {
+            margin-top: 50px;
+            
+            & > .doctors__cards-item {
+                width: 100%;
+                max-width: 31.5%;
+                transition: all .3s linear;
+                border: 1px solid #e4e4e4;
+                background-color: $light-col;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 8px;
+                margin-bottom: 70px;
+                overflow: hidden;
+
+                & > a {
+                    display: block;
+                    
+                    & > .img {
+                        width: 100%;
+                        height: 340px;
+                        overflow: hidden;
+                                
+                        & > img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+                    
+                    & > .content {
+                        display: block;
+                        padding: 40px 40px 0px 40px;
+                        
+                        & > .name {
+                            color: $text-col;
+                            font-size: 22px;
+                            font-weight: 900;
+                            font-family: $RobBold!important;
+                            transition: all .3s linear;
+                        }
+                        
+                        & > .profession {
+                            color: $text-col-2;
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
+                        
+                        & > .text {
+                            border-top: 1px solid $text-col-2;
+                            margin-top: 20px;
+                            padding-top: 20px;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            color: $text-col-2;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                &  > .socials {
+                    padding: 0 40px 40px;
+                    & > a {
+                        display: inline-block;
+                        height: 30px;
+                        margin-right: 10px;
+
+                        & > .fa {
+                            display: block;
+                            color: $text-col-2;
+                            transition: all .3s linear;
+                            font-size: 20px;
+                            text-align: left;
+                            line-height: 30px;
+
+                            &:hover {
+                                color: $primary-pink-2;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {                    
+                    box-shadow: 0px 0px 35px 0px rgba( 0, 0, 0, .1 );
+                    & > a {
+                        & > .content {
+                            & > .name {
+                                color: $primary-blue;
+                            }
+                        }
+                    }
+                }     
+            }
+        }
+
+        & > .my-pagination {
+            margin: 0;
+        }
+        
+        &.container_left-sidebar,
+        &.container_right-sidebar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & > .article {
+                max-width: 800px;
+                width: 100%;
+            
+                & > .doctors-block {
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 490px;
+                    
+                    & > .img {
+                        overflow: hidden;
+                        max-width: 400px;
+                        height: 490px;
+                        width: 100%;
+                        border-radius: 8px;
+                        
+                        & > img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+
+                    & > .content {
+                        width: 100%;
+                        max-width: 470px;
+                        padding: 50px;
+                        
+                        table {
+                            width: 100%;
+                            color: $text-col;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            
+                            & > thead {
+                                td {
+                                    & > .title {
+                                        font-size: 30px;
+                                        font-family: $RobBold;
+                                    }
+                                    & > .profession {
+                                        font-size: 20px;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        color: $text-col;
+                                        padding-bottom: 30px;
+                                    }
+                                } 
+                            }
+                            
+                            & > tbody {
+                                tr {
+                                    vertical-align: top;
+                                    
+                                    & > th {
+                                        padding-bottom: 10px;
+                                        width: 45%;
+                                        text-align: left;
+                                        font-family: $RobBold;
+                                        font-weight: 900;
+                                    }
+
+                                    & > td {
+                                        width: 50%;
+                                        padding-bottom: 10px;
+                                        
+                                        a {
+                                            line-height: 2;
+                                            font-size: px;
+                                            margin-right: 10px;
+                                            color: $text-col;
+                                            transition: all .3s linear;
+    
+                                            &:hover {
+                                                color: $primary-pink-2;
+                                            }
+                                        }
+                                        table {
+                                            width: 100%;
+                                            td {
+                                                width: 50%;
+                                            }    
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                            & > tfoot {
+                                td > .btn {
+                                    margin-top: 20px;
+                                    padding-left: 40px;
+                                    padding-right: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                & > .doctors-text {
+                    margin-top: 45px;
+                    padding-bottom: 50px;
+                    border-bottom: 1px solid #d9d9d9;
+                    
+                    & > .text {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: $text-col-2;
+                    }
+
+                    & > .list-title {
+                        margin-top: 40px;
+                        font-size: 16px;
+                        font-weight: 900;
+                        line-height: 1.5;
+                    }
+
+                    & > .list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        height: 130px;
+                        
+                        & > .list-item {
+                            width: 370px;
+                            height: 32px;
+                            font-size: 16px;
+                            padding-left: 35px;
+                            line-height: 32px;
+                            text-transform: capitalize;
+                            
+                            & > .fa {
+                                margin-right: 15px;
+                            }
+                        }
+                    
+                    }
+                }
+
+                & > .doctors-testimonials {
+                    margin-top: 70px;
+                    & > .title {
+                        margin-bottom: 55px;
+                        line-height: 32px;
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+
+                    & > .doctors-testimonials__carousel {
+                        
+                        .item {
+                            display: flex;
+                            justify-content: space-between;
+                        
+                            & > .img {
+                                max-width: 170px;
+                                width: 100%;
+                                max-height: 170px;
+                                height: 100%;
+                                overflow: hidden;
+                                border-radius: 50%;
+    
+                                & > img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                }
+                            }
+    
+                            & > .content {
+                                max-width: 600px;
+                                width: 100%;
+                            
+                                & > .text {
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    color: $text-col-2;
+                                }
+    
+                                & > .name {
+                                    margin-top: 30px;
+                                    line-height: 22px;
+                                    font-size: 22px;
+                                    font-family: $RobBold;
+                                }
+                            
+                                & > .profession {
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                    color: $text-col-2;
+                                }
+                            }
+                        }
+    
+                        & > .owl-nav {
+                            position: absolute;
+                            top: -100px;
+                            right: 0;
+                            width: 108px;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                display: block;
+                                margin: 0!important;
+                                overflow: hidden;
+                                border-radius: 8px!important;
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #999999;  
+                                transition: all .3s linear;
+                                background-color: $light-col;
+                                
+                                span {
+                                    display: block;
+                                    display: inline;
+                                    line-height: 20px;
+                                    color: #999999;
+                                    font-size: 30px;
+                                }
+                                
+                
+                                &:hover {
+                                    border-color: $primary-pink-2;
+                                    background-color: $primary-pink-2;
+                                    span {
+                                        color: $light-col;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & > .sidebar {
+                max-width: 270px;
+                width: 100%;
+            }
+        } 
+    }
+}

@@ -9,23 +9,130 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from django.views import generic
 from .decorators import *
 
 from .forms import PostForm, CustomUserCreationForm, ProfileForm, UserForm
 from .filters import PostFilter
 
-from .models import *
+from django.views.generic import CreateView, ListView, DetailView,TemplateView
+from base.models import *
+
+from . import views
+
+#from .import models
 
 # Create your views here.
 
-def home(request):
-	posts = Post.objects.filter(active=True, featured=True)[0:3]
 
-	context = {'posts':posts}
-	return render(request, 'base/home.html', context)
+class IndexView(ListView):
+    context_object_name = 'home'    
+    template_name = 'base/index.html'
+    queryset = Post.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super(IndexView, self).get_context_data(**kwargs)
+        context['latestevents'] = LatestEvent.objects.filter(active=True, featured=True).order_by('-createdp')[0:3]
+        context['posts'] = Post.objects.filter(active=True, featured=True).order_by('-createdp')[0:5]
+        return context
+
+
+
+
+def contact(request):
+    	return render(request, 'base/contact.html')
+
+def team(request):
+    	return render(request, 'base/team.html')
+
+def event(request):
+	
+    return render(request, 'base/events.html')
+	
+
+def about(request):
+    	return render(request, 'base/about.html')
+
+
+
+
 
 def posts(request):
-	posts = Post.objects.filter(active=True)
+	posts = Post.objects.filter(active=True).order_by('-createdp')
+	myFilter = PostFilter(request.GET, queryset=posts)
+	posts = myFilter.qs
+
+	page = request.GET.get('page')
+
+	paginator = Paginator(posts, 2)
+
+	try:
+		posts = paginator.page(page)
+	except PageNotAnInteger:
+		posts = paginator.page(1)
+	except EmptyPage:
+		posts = paginator.page(paginator.num_pages)
+
+	context = {'posts':posts, 'myFilter':myFilter}
+	return render(request, 'base/posts.html', context)
+
+def events(request):
+	events = Event.objects.filter(active=True).order_by('-createdp')
+	myFilter = PostFilter(request.GET, queryset=events)
+	events = myFilter.qs
+
+	page = request.GET.get('page')
+
+	paginator = Paginator(events, 2)
+
+	try:
+		events = paginator.page(page)
+	except PageNotAnInteger:
+		events = paginator.page(1)
+	except EmptyPage:
+		events = paginator.page(paginator.num_pages)
+
+	context = {'events':events, 'myFilter':myFilter}
+	return render(request, 'base/events.html', context)
+
+def event(request, slug):
+	event = Event.objects.get(slug=slug)
+
+	if request.method == 'POST':
+		PostComment.objects.create(
+			author=request.user.profile,
+			post=post,
+			body=request.POST['comment']
+			)
+		messages.success(request, "You're comment was successfuly posted!")
+
+		return redirect('event', slug=event.slug)
+
+	context = {'event':event}
+	return render(request, 'base/event.html', context)
+
+def latestevents(request):
+	latestevents = LatestEvent.objects.filter(active=True).order_by('-createdp')
+	myFilter = PostFilter(request.GET, queryset=latestevents)
+	latestevents = myFilter.qs
+
+	
+
+	context = {'latestevents':latestevents, 'myFilter':myFilter}
+	return render(request, 'base/index.html', context)
+
+
+def teams(request):
+	teams = Team.objects.all().order_by('teamvar')
+	
+
+	
+
+	context = {'teams':teams}
+	return render(request, 'base/team.html', context)
+
+def blog(request):
+	posts = Post.objects.filter(active=True).order_by('-createdp')
 	myFilter = PostFilter(request.GET, queryset=posts)
 	posts = myFilter.qs
 
@@ -41,7 +148,8 @@ def posts(request):
 		posts = paginator.page(paginator.num_pages)
 
 	context = {'posts':posts, 'myFilter':myFilter}
-	return render(request, 'base/posts.html', context)
+	return render(request, 'base/blog.html', context)
+	
 
 def post(request, slug):
 	post = Post.objects.get(slug=slug)

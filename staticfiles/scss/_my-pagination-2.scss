@@ -1,0 +1,104 @@
+/**************************************************/
+/* .my-pagination-2 */
+/**************************************************/
+.my-pagination-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    & > li {
+        text-transform: uppercase;
+        width: 170px;
+        height: 50px;
+        
+        & > .link-center {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+            color: $text-col;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $primary-pink-2;
+            }
+        }
+
+        
+        
+        & > a:not(.link-center) {
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: $primary-blue;
+            border-radius: 8px;
+            border: 1px solid $primary-blue;
+            transition: all .3s linear;
+            
+            & > span {
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 50px;
+            }
+
+            & > .fa {
+                margin-top: -5px;
+            }
+            
+            &:hover {
+                color: $light-col;
+                border-color: $primary-blue;
+                background-color: $primary-blue;
+                box-shadow: 8px 18px 51px 0px rgba($primary-blue, .3);
+            }
+        }
+
+        &.disabled {
+            & > a {
+                color: $text-col-2!important;
+                background-color: #f2f2f2!important;
+                border-color: #e6e6e6!important;
+                box-shadow: none!important;
+            
+                &:hover {
+                    cursor: default!important;
+                    user-select: none!important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .my-pagination-2 {
+        & > li {
+        
+            & > .link-center {
+                font-size: 15px;
+                line-height: 50px;
+            }
+    
+
+            &:first-child {
+                display: flex;
+            }
+
+            &:last-child {
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            & > a:not(.link-center) {
+                width: 50px;
+                height: 50px;
+                & > span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

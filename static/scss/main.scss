@@ -1,0 +1,131 @@
+/*---------- IbnSino HTML Template ------*/
+/*---------- TABLE OF CONTENTS ----------*/
+
+// base scss files
+// 0. variables
+// 1. containers
+// 2. fonts
+// 3. base
+// 4. svg-icons
+// 5. btn-styles
+// 6. template animation
+// 7. template circle blocks 
+// 8. to-top btn 
+// 9. font-awesome
+// 10. preloader
+// 11. searchBox
+// 12. popup-form
+// 13. bg-text
+// 14. pagination
+// 15. main-blog
+// 16. pagination-2
+// /*----------------------------------*/
+// /*---------- temlate pages----------*/
+// /*----------------------------------*/
+
+/*
+
+These are css styles, others're attached
+
+1. index.html
+2. index2.html
+3. index2.html
+4. about.html
+5. blog-grid.html
+6. blog-grid_left.html
+7. departments-3_column.html
+8. departments-details_right.html 
+9. cases-3_columns.html 
+10. doctors-single_right.html 
+11. shop.html 
+12. faqs.html 
+...
+// responsive 
+*/ 
+
+@import "variables";
+@import "container";
+@import "fonts";
+@import "base";
+@import "svg-icons";
+@import "btn";
+@import "animation";
+@import "circle";
+@import "to-top";
+@import "font-awesome-4.7.0/font-awesome";
+@import "preloader";
+@import "searchBox";
+@import "popup-form";
+@import "bg-text";
+@import "my-pagination";
+@import "main-blog";
+@import "my-pagination-2";
+
+// /*----------------------------------------*/
+// 1. index.html
+@import "header-footer/header-top";
+@import "header-footer/header-middle";
+@import "header-footer/header-bottom";
+@import "header-footer/services";
+@import "main/about";
+@import "main/why-choose-us";
+@import "main/appointments";
+@import "main/other-services";
+@import "main/form";
+@import "main/faq";
+@import "main/testimonials";
+@import "main/emergency-call";
+@import "main/our-specialists";
+@import "main/latest-news";
+@import "header-footer/footer";
+// 2. index2.html
+@import "header-footer/header-bottom-2";
+@import "header-footer/benefits-form";
+@import "main/our-departments";
+@import "main/about-2";
+@import "main/other-services-2";
+@import "main/appointments-2";
+@import "main/why-choose-us-2";
+@import "main/our-numbers";
+@import "main/our-specialists-2";
+@import "main/our-clients";
+@import "main/latest-news-2";
+@import "main/emergency-call-2";
+// 3. index3.html
+@import "header-footer/header-bottom-3";
+@import "main/our-departments-2";
+@import "main/about-3";
+@import "main/why-choose-us-3";
+@import "main/other-services-3";
+@import "main/our-specialists-3";
+@import "main/latest-news-3";
+@import "main/medical-center";
+@import "main/our-clients-2";
+// 4. about.html
+@import "header-footer/header-bottom-4";
+@import "main/about-4";
+@import "main/medical-center-2";
+@import "main/form-2";
+// 5. blog-grid.html
+@import "main/latest-news-4";
+// 6. blog-grid_left.html
+@import "blog-sidebar";            
+// 7. departments-3_column.html
+@import "main/our-departments-3";            
+// 8. departments-details_right.html 
+@import "departments-sidebar";
+// 9. cases-3_columns.html 
+@import "main/case";
+// 10. doctors-single_right.html 
+@import "main/doctors";
+@import "doctors-sidebar";
+// 11. shop.html 
+@import "main/shop";
+@import "shop-sidebar";
+// 12. faqs.html 
+@import "main/faqs";
+// 13. contact.html 
+@import "main/contact";
+
+// . responsive
+@import "responsive";

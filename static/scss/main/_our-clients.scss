@@ -1,0 +1,134 @@
+/**************************************************/
+/* .our-clients */
+/**************************************************/
+
+.our-clients {
+  position: relative;
+  z-index: 10;
+  background-image: url("./../images/jpg/our-clients-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  // height: 650px;
+  padding-top: $section-space-2 + 5px;
+  padding-bottom: $section-space-2 + 20px;
+
+  &__bg {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-blue, 0.5);
+  }
+
+  & > .container {
+    flex-direction: column;
+    & > .section-title {
+      text-align: center;
+    }
+  }
+
+  &__carousel {
+    width: 100%;
+    text-align: center;
+
+    &-item {
+      background-image: url("./../../images/icons/qu.png");
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 330px;
+      padding-top: 64px;
+      max-width: 792px;
+
+      & > .text {
+        line-height: 1.5;
+        color: $light-col;
+        font-size: 26px;
+      }
+
+      & > .title {
+        margin-top: 30px;
+        color: $light-col;
+        font-size: 22px;
+        font-family: $RobBold;
+      }
+
+      & > .subtitle {
+        font-size: 18px;
+        color: $light-col;
+        margin-top: 5px;
+      }
+    }
+    .owl-item {
+      display: flex;
+      justify-content: center;
+    }
+
+    & > .owl-dots {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      z-index: 10;
+
+      & > .owl-dot span {
+        width: 10px;
+        min-width: 10px;
+        height: 10px;
+        min-height: 10px;
+        margin-right: 5px;
+        background-color: $light-col !important;
+        cursor: pointer;
+      }
+
+      & > .owl-dot.active span {
+        width: 47px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    & > .owl-nav {
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      & > button {
+        overflow: hidden;
+        border-radius: 8px !important;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background-color: rgba($light-col, 0.5) !important;
+
+        transition: all 0.3s linear;
+
+        &:hover {
+          background-color: $primary-blue !important;
+          span {
+            color: $light-col;
+          }
+        }
+
+        span {
+          line-height: 20px;
+          font-weight: 900;
+          margin-top: -5px;
+          font-size: 30px;
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+}

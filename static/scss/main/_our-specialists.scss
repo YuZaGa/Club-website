@@ -1,0 +1,171 @@
+/**************************************************/
+/* .specialists */
+/**************************************************/
+.specialists {
+    position: relative;
+    
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        & > .icon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+            max-width: 824px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        padding-top: $section-space;
+        padding-bottom: $section-space + 10px;
+    }
+    
+    &__carousel {
+        padding: 0!important;
+        margin-top: $title-space - 20px;
+        max-width: 1200px;
+        width: 100%;
+    
+        .owl-nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            padding: 10px 3px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                overflow: hidden;
+                border-radius: 8px!important;
+                width: 49px;
+                height: 49px;
+                border: 1px solid $primary-blue!important;  
+                background-color: $light-col!important;
+            
+                transition: all .3s linear;
+                
+                &:hover {
+                    background-color: $primary-blue!important;
+                    span {
+                        color: $light-col!important;
+                    }
+                }
+
+                span {
+                    line-height: 20px;
+                    font-weight: 900;
+                    margin-top: -5px;
+                    font-size: 30px;
+                    color: $primary-blue;
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+        }
+        
+        .owl-dot {
+            margin-right: 2px;
+            &:last-child {
+                margin-right: 0;
+                
+                & > span {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+        .owl-dot span{
+            min-width: 10px;
+            height: 10px;
+        }
+        
+        .owl-dot.active span {
+            width: 48px;
+            transition: all .3s ease;
+            background-color: $primary-pink-2!important;
+        }
+    }
+
+    &__item {
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: center;
+
+        & > .inner-block {
+            position: relative;
+            z-index: 1;
+            max-width: 260px;
+            border: 1px solid #f0f0f0;
+            background-color: #fafafa;
+            border-radius: 8px;
+            padding-bottom: 15px;
+            transition: all .3s ease-in-out;
+            &:hover {
+                box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, .1 );
+            }
+
+            & > .img {
+                overflow: hidden;
+                width: 100%;
+                height: 260px; 
+                object-fit: cover;
+                object-position: center center;
+            }
+            
+            & > .name {
+                color: $text-col;
+                margin-top: 25px;
+                font-size: 17.5px;
+                font-family: $RobBold;
+                text-align: center;
+            }
+
+            & > .proffesia {
+                margin-top: 8px;
+                text-align: center;
+                color: $primary-blue;
+                font-weight: 600;
+            }
+            
+            & > .work-date {
+                width: 100%;
+                padding: 10px 43px;
+                li {
+                    color: $text-col;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    height: 28px;
+                    line-height: 28px;
+                }
+                  
+            }
+
+            & > .btn-2 {
+                position: absolute;
+                bottom: -21px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 20;
+            }
+        }
+    }
+}

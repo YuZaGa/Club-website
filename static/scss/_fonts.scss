@@ -1,0 +1,40 @@
+/**************************************************/
+/* fonts */
+/**************************************************/
+
+@font-face {
+    // I changed $RobLight(Roboto-light) to the $RobLight(Roboto-regular); 
+    font-family: $RobLight;
+    src: url("../fonts/roboto/Roboto-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $RobBold;
+    src: url("../fonts/roboto/Roboto-Bold.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+}
+
+@font-face {
+    font-family: $RobBlack;
+    src: url("../fonts/roboto/Roboto-Black.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format('truetype'),
+    url("../fonts/Bebas_Neue/BebasNeue-Regular.otf") format('opentype');
+    font-family: $Bebas;
+    font-display: block;
+}
+
+@font-face {
+    src: url("../fonts/Bebas_Neue/BebasNeue-Bold.ttf") format('truetype');
+    font-family: $BebasBold;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block body_block %}
+
+
+        <!-- Start of .header-bottom-4 -->
+        <header class="header-bottom-4">
+            <img src="./images/banner/banner8.jpg">
+            <div class="header-bottom-4__bg">
+                <div class="icon">
+                    <img src="{% static './images/banner/banner-shape.png'%}">
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="section-title">Team <span>Innovision</span></h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Our Team</li>
+                </ol>
+            </div>
+        </header>
+        <!-- End of .header-bottom-4 -->
+
+        <!-- Start of .doctors -->
+        <section class="doctors main-blog">
+            <div class="main-blog__bg">
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/form-shape.png'%}">
+                </div>
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/specialists__left-bottom-shape.png'%}">
+                </div>
+            </div>
+            <div class="container">
+                <!-- filter control btns -->
+                <div class="doctors__controls">
+                    <ul class="doctors__controls-lists">
+                        
+                        <li class="doctors__controls-item active" data-filter=".filterCore">Core</li>
+                        <li class="doctors__controls-item" data-filter=".filterLead">Lead</li>
+                        <li class="doctors__controls-item" data-filter=".filterExecutive">Executive</li>
+                        <li class="doctors__controls-item" data-filter=".filterEvent">Event Management</li>
+                        <li class="doctors__controls-item" data-filter=".filterPr">PR</li>
+                    </ul>
+                </div>
+            
+                <div class="doctors__cards doctorsFilterContainer">
+                    
+
+                    {% for l in teams %}
+
+                    <div class="{{l.filtag}}">
+                        <a href="#">
+                            <div  class="img">
+                                <img src="{{ l.pic.url }}">
+                            </div>
+                            <div class="content">
+                                <h1 class="name">{{l.name}}</h1>
+                                <p class="profession">{{l.position}}</p>
+                                <p class="text">
+                                    {{l.desc}}
+                                </p>
+                            </div>
+                        </a>
+                        <div class="socials">
+                       
+                            <a href="{{l.lin}}" class="aa"><i class="fa fa-linkedin"></i></a>
+                            <a href="{{l.insta}}" class="aa"><i class="fa fa-instagram"></i></a>
+                      
+                        </div>
+                    </div>
+                    
+                    {% endfor %}
+
+                    <!-- Member 2 -->
+
+
+
+                    
+                </div>
+
+ 
+            </div>
+        </section>
+        <!-- End of .doctors -->
+
+
+
+ 
+
+    <!-- isotope filter card -->
+    <script src="{% static './js/isotope.pkgd.min.js'%}"></script>
+
+{% endblock %}

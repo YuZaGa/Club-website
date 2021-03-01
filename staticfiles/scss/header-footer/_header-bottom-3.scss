@@ -1,0 +1,213 @@
+/**************************************************/
+/* .header-bottom-3 */
+/**************************************************/
+
+.header-bottom-3 {
+  background-color: $light-col;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 750px;
+  z-index: 10;
+
+  &__banner {
+    overflow: hidden;
+
+    .slide-item {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 750px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & > .content {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        height: 580px;
+        max-width: 50%;
+        width: 100%;
+        background-color: $primary-blue;
+        z-index: 2;
+        border-radius: 0 8px 8px 0;
+
+        & > .bg-text {
+          position: absolute;
+          right: -40px;
+        }
+
+        h5 {
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          font-weight: 400;
+          font-size: 20px;
+          color: $light-col;
+        }
+      }
+
+      &__text {
+        position: absolute;
+        right: 15px !important;
+        top: 0;
+        padding-top: 140px;
+        max-width: 570px;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__title {
+        margin-top: 25px;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-family: $Bebas;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0px;
+        width: 100%;
+        color: $light-col;
+
+        span {
+          font-weight: 900;
+          font-family: $Bebas;
+          color: $primary-pink-2;
+        }
+      }
+
+      &__subtitle {
+        margin-top: 22px;
+        margin-bottom: 34px;
+        font-weight: 100;
+        font-size: 25px;
+        color: $light-col;
+      }
+
+      & > .img {
+        border-bottom-left-radius: 8px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 750px;
+        width: 100%;
+        max-width: 54%;
+        overflow: hidden;
+        z-index: 1;
+
+        & > img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center 30%;
+        }
+      }
+    }
+
+    & > .owl-stage-outer {
+      & > .owl-stage {
+        & > .owl-item {
+          transition: all 0.3s linear;
+          // opacity: 0;
+
+          .slide-item {
+            & > .content > .slide-item__text {
+              opacity: 0;
+              transform: translateX(-200px);
+              transition: all 0.5s linear;
+            }
+          }
+
+          &.active {
+            .slide-item {
+              & > .content > .slide-item__text {
+                opacity: 1;
+                transform: translateX(0);
+              }
+              & > .img {
+                & > img {
+                  animation: bannerScale 5s linear 1s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+      top: -180px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      padding: 10px 3px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 20;
+
+      button {
+        margin: 0 !important;
+        overflow: hidden;
+        border-radius: 8px !important;
+        width: 49px;
+        height: 49px;
+        border: 1px solid $primary-blue !important;
+        transition: all 0.3s linear;
+        background-color: $light-col;
+        span {
+          display: block;
+          display: inline;
+          line-height: 20px;
+          font-size: 20px;
+          color: $primary-blue;
+          font-size: 30px;
+        }
+		
+        &:first-child {
+          background-color: $light-col;
+          span {
+            color: $primary-blue;
+          }
+        }
+        &:last-child {
+          background-color: $primary-blue;
+          span {
+            color: $light-col;
+          }
+		}
+		
+        &:hover:first-child,
+        &:hover:last-child {
+          border-color: $primary-pink-2 !important;
+          background-color: $primary-pink-2;
+          span {
+            color: $light-col;
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      position: relative;
+      left: 50%;
+      transform: translateX(-75%);
+      top: -230px;
+      text-align: center;
+
+      .owl-dot span {
+        min-width: 10px;
+        height: 10px;
+      }
+
+      .owl-dot.active span {
+        width: 48px;
+        transition: all 0.3s ease;
+        background-color: $primary-pink-2 !important;
+      }
+    }
+  }
+}

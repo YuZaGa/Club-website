@@ -1,0 +1,83 @@
+/**************************************************/
+/* .other-services-3 */
+/**************************************************/
+.other-services-3 {
+    position: relative;
+    overflow: hidden;
+    padding-top: $section-space-2;
+    padding-bottom: $section-space-2;
+    background-color: $light-col;
+    
+    & > .bg-text {
+        position: absolute;
+        right: -25px;
+        top: 30px;
+    }
+    
+    .container {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__cards {
+            margin-top: $title-space-2 - 10px;
+            display: flex;
+            justify-content: space-between;
+            // border: 1px solid red;
+            
+
+            & > .card-item {
+                border-radius: 8px;
+                flex: 0 0 350px;
+                max-width: 350px;
+                width: 100%;
+                padding: 50px 20px;
+                background-color: $light-col;
+                border: 1px solid $light-col;
+                transition: all .3s linear;
+                box-shadow: 9.548px 10.239px 35px rgba(0,0,0, .06);
+
+                &:hover {
+                    border-color: $primary-pink-2;
+                    box-shadow: 15.657px 23.213px 51px rgba($primary-pink-2, .2);
+                }
+                
+
+                & > .title {
+                    margin-top: 30px;
+                    font-size: 23px;
+                    letter-spacing: -1px;
+                    font-weight: 900;
+                    font-family: $RobBold;
+                    color: $text-col;
+                }
+
+                & > .subtitle {
+                    margin-top: 25px;
+                    font-size: 13.5px;
+                    color: $text-col-2;
+                    line-height: 1.5;
+                }
+
+                & > .lists {
+                    font-weight: 600;
+                    color: $text-col;
+                    margin-top: 20px;
+                    padding-left: 10px;
+                    list-style: none;
+                    text-align: left;
+            
+                    li {
+                        i.fa {
+                            color: $primary-blue;
+                            margin-right: 7px;
+                        }
+                        line-height: 36px;
+                        font-size: 15.5px;
+                        letter-spacing: -.15px;
+                    }
+                }
+            }
+    }
+}

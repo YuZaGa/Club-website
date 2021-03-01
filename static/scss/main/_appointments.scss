@@ -1,0 +1,111 @@
+/**************************************************/
+/* .appointments */
+/**************************************************/
+
+.appointments {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: $section-space - 5px;
+    padding-bottom: $section-space;
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        .icon {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 726px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .section-title {
+        padding-top: 3px;
+        margin-left: -3px;
+        line-height: .9;
+        span {
+            padding-top: 5px;
+        }
+    }
+
+    .container {
+        justify-content: space-between;
+    
+
+        .online-appointments {
+            flex: 0 0 550px;
+            max-width: 550px;
+            width: 100%;
+
+            .appointments-text {
+                font-size: 19px;
+                margin-top: 24px;
+                line-height: 1.8;
+            }
+        }
+
+        .company-numbers {
+            flex: 0 0 550px;
+            max-width: 550px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            
+            &__item {
+                display: flex;
+
+                & > .number {
+                    border-radius: 8px;
+                    color: $light-col;
+                    background-color: $primary-pink-2;
+                    width: 132px;
+                    min-width: 132px;
+                    height: 87px;
+                    line-height: 87px;
+                    text-align: center;
+                    font-size: 56px;
+                    font-family: $Bebas;
+                    font-weight: 600;
+                    letter-spacing: 1.3px;
+                    margin-right: 29px;
+                    margin-left: -1px;
+                
+                    animation: 1s animatePinkShadow linear alternate-reverse infinite;
+                }
+
+                & > .content {
+                    h3 {
+                        margin-top: 2px;
+                        margin-bottom: 10px;
+                        letter-spacing: -1px;
+                        line-height: 1.5;
+                        font-family: $RobBold;
+                        font-size: 23px;
+                        color: $text-col;
+                        font-weight: 900;
+                        text-transform: capitalize;
+                    }
+                    
+                    p {
+                        font-size: 15.5px;
+                        line-height: 1.5;
+                        color: $text-col-2;
+                    }
+                }
+            }
+        }  
+        & > .btn {
+            margin-top: 30px;
+        }  
+    }
+}

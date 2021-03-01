@@ -1,0 +1,87 @@
+/**************************************************/
+/* .our-departments */
+/**************************************************/
+
+.our-departments {
+    position: relative;
+    padding-top: $section-space-2 + 165px;
+    padding-bottom: 90px;
+    overflow: hidden;
+
+    &__bg {
+        background-color: #fafafa;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        & > .icon:first-child {
+            position: absolute;
+            right: -10px;
+            top: -24px;
+            width: 100%;
+            max-width: 1201px;
+        }
+        & > .icon:last-child {
+            position: absolute;
+            left: -10px;
+            bottom: -24px;
+            width: 100%;
+            max-width: 1201px;
+        }
+    }
+
+    & > .container {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+
+        & > .section-title {
+            margin-bottom: $title-space-2;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    &__inner-item {
+        max-width: 268px;
+        width: 100%;
+        height: 280px;
+        transition: all .3s linear;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        background-color: $light-col;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        padding: 30px;
+
+        &:hover {
+            border: 1px solid rgb( 55, 116, 194 );
+            box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, .1 );
+        }
+
+        
+        & > .title {
+            font-family: $RobBold;
+            font-size: 22px;
+            color: $text-col;  
+            letter-spacing: -.5px;
+        }
+
+        & > .text {
+            font-size: 16px;
+            color: $text-col-2;
+        }
+        
+    }
+
+}

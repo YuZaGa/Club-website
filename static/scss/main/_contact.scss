@@ -1,0 +1,321 @@
+/**************************************************/
+/* contact */
+/**************************************************/
+
+.contact {
+  & > .contact-map {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 690px;
+
+    & > .container {
+
+      & > .contact-map__card {
+        position: absolute;
+        z-index: 20;
+        top: 100px;
+        max-width: 340px;
+        width: 100%;
+        background-color: $primary-blue;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & > .img {
+          width: 100%;
+          height: 240px;
+          overflow: hidden;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+
+        & > .content {
+          padding: 40px;
+
+          & > .number {
+            display: flex;
+            flex-direction: column;
+            & > a {
+              cursor: pointer !important;
+              font-size: 18px;
+              line-height: 1.5;
+              font-weight: 700;
+              color: $light-col;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $primary-pink-2;
+              }
+            }
+          }
+
+          & > .email,
+          & > .adress {
+            margin: 0;
+            display: inline-block;
+            line-height: 1.5;
+            font-weight: 100;
+            font-size: 18px;
+            color: $light-col;
+            margin-top: 25px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          & > .email:hover {
+            cursor: pointer;
+            color: $primary-pink-2;
+          }
+
+          & > .btn {
+            margin-top: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  & > .contact-map-2 {
+    position: relative;
+    z-index: 2;
+    & > .container {
+      margin-bottom: 20px;
+      & > .contact-map__card-2 {
+        position: relative;
+        top: -120px;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & > img {
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+
+        & > .blue {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 2;
+          background-color: rgba($primary-blue, 0.9);
+        }
+
+        & > .content {
+          position: relative;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 3;
+          padding: 70px 100px;
+
+          & > .locations {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            & > .item {
+              max-width: 230px;
+              padding: 0 15px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+
+              & > .icon {
+                margin-bottom: 10px;
+              }
+
+              & > .tel {
+                font-size: 16px;
+                line-height: 1.3;
+                font-weight: 900;
+                color: $light-col;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  color: $primary-pink-2;
+                }
+              }
+
+              & > .adress {
+                font-size: 16px;
+                line-height: 1.3;
+                font-weight: 100;
+                color: $light-col;
+              }
+
+              & > .email {
+                font-size: 16px;
+                line-height: 1.3;
+                font-weight: 100;
+                color: $light-col;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  color: $primary-pink-2;
+                }
+              }
+
+              margin-bottom: 30px;
+            }
+          }
+          & > form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            & > .form-row {
+              width: 100%;
+              & > .form-group {
+                & > .form-control {
+                  height: 60px;
+                  padding: 20px;
+                  box-shadow: none;
+                  outline: none;
+                  background-color: rgba(0, 0, 0, 0.1);
+                  border: 1px solid transparent;
+                  border-radius: 8px;
+                  color: $light-col;
+                  font-weight: 600;
+                  font-size: 18px;
+                  transition: all 0.3s ease-in-out;
+
+                  &::placeholder {
+                    font-weight: 100;
+                  }
+
+                  &:hover {
+                    border-color: $primary-pink-2;
+                  }
+
+                  &:focus {
+                    border-color: $primary-pink-2;
+                    background-color: rgba(0, 0, 0, 0.2);
+                  }
+                }
+
+                &:first-child {
+                  height: 160px;
+                  & > textarea {
+                    height: 100%;
+                    resize: none;
+                  }
+                }
+              }
+            }
+
+            & > .btn {
+              padding: 0;
+              height: 60px;
+              line-height: 58px;
+              width: 220px;
+            }
+
+            & > label {
+              margin: 15px 0;
+              color: $light-col;
+              font-size: 16px;
+              font-weight: 100;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > .container {
+    padding-top: 15px;
+    padding-bottom: 145px;
+
+    &.container_right-sidebar {
+      display: flex;
+      justify-content: space-between;
+      & > .article {
+        padding-top: 85px;
+        max-width: 700px;
+        width: 100%;
+
+        & > .title {
+          font-size: 30px;
+          font-family: $RobBold;
+          line-height: 1;
+          color: $text-col;
+          margin-bottom: 35px;
+        }
+
+        & > form {
+          
+          & > .form-row {
+            & > .form-group {
+              & > .form-control {
+                height: 70px;
+                padding: 20px;
+                box-shadow: none;
+                outline: none;
+                background-color: #fafafa;
+                border: 1px solid #e6e6e6;
+                border-radius: 8px;
+                color: $text-col;
+                font-weight: 600;
+                font-size: 18px;
+                transition: all 0.3s ease-in-out;
+
+                &::placeholder {
+                  font-weight: 100;
+                }
+
+                &:hover {
+                  border-color: $primary-pink-2;
+                }
+
+                &:focus {
+                  border-color: $primary-pink-2;
+                  background-color: $light-col;
+                }
+              }
+
+              &:first-child {
+                height: 355px;
+                & > textarea {
+                  height: 100%;
+                  resize: none;
+                }
+              }
+            }
+          }
+
+          & > .btn {
+            padding: 0;
+            height: 70px;
+            line-height: 68px;
+            width: 230px;
+            margin-right: 20px;
+          }
+
+          & > label {
+            color: $text-col-2;
+            font-size: 16px;
+            font-weight: 100;
+          }
+        }
+      }
+
+      & > .sidebar {
+        max-width: 370px;
+        width: 100%;
+      }
+    }
+  }
+}

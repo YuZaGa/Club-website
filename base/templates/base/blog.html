@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+{% block body_block %}
+
+        <!-- Start of .header-bottom-4 -->
+        <header class="header-bottom-4">
+            <img src="{% static './images/banner/banner4.jpg'%}">
+            <div class="header-bottom-4__bg">
+                <div class="icon">
+                    <img src="{% static './images/banner/banner-shape.png'%}">
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="section-title">Latest <span>news</span></h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Latest News</li>
+                </ol>
+            </div>
+        </header>
+        <!-- End of .header-bottom-4 -->
+        
+        <!-- Start of .latest-news-4 -->
+        <section class="latest-news-4 main-blog">
+            <div class="main-blog__bg">
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/form-shape.png'%}">
+                </div>
+                <div class="icon">
+                    <img src="{% static './images/png-shapes/specialists__left-bottom-shape.png'%}">
+                </div>
+            </div>
+
+      
+            <div class="container">
+
+                <div>
+                    {% if request.user.is_staff %}
+		            <a class="btn btn-warning" href="{% url 'create_post' %}">Create Post</a>
+	                {% endif %}
+	                <form id="searchForm" method="GET">
+		            {{myFilter.form|crispy}}
+		
+		            <input class="btn btn-primary" type="submit" value="search">
+	                </form>
+                    <br>
+                </div>
+                {% for post in posts %}
+                <a href="{%  url 'post' post.slug %}" class="item">
+                    <div class="img">
+                        <img src="{% static './images/jpg/latest-news1.jpg'%}">
+                        <span class="date">{{post.createdp.date}}</span>
+                    </div>
+                    <h4 class="title">{{post.headline}}</h4>
+                    <p class="text">
+                        {{post.sub_headline}}
+                    </p>
+                    
+                    <span class="read-more-2">read more</span>
+                    {% endfor %}
+                </a>
+                <div style="padding-left: 35%;padding-right: 30%;">
+                    {% if posts.has_other_pages %}
+                    <ul class="pagination">
+                
+                        {% if posts.has_previous %}
+                        <li class="page-item"><a data-page="{{posts.previous_page_number}}" href="?page={{posts.previous_page_number}}" class="page-link">&laquo</a></li>
+    
+                        <li class="page-item"><a data-page="1" href="?page=1" class="page-link">First</a></li>
+                        {% endif %}
+    
+                        {% for i in posts.paginator.page_range %}
+                        {% if posts.number == i %}
+                            <li class="page-item"><a class="active page-link">{{i}}</a></li>
+                        {% else %}
+                            <li class="page-item"><a data-page="{{i}}" href="?page={{i}}" class="page-link">{{i}}</a></li>
+                        {% endif %}
+                        
+                        {% endfor %}
+    
+                        {% if posts.has_next %}
+                        <li class="page-item"><a data-page="{{posts.paginator.num_pages}}" href="?page={{posts.paginator.num_pages}}" class="page-link">Last</a></li>
+    
+                        <li class="page-item"><a data-page="{{posts.next_page_number}}" href="?page={{posts.next_page_number}}" class="page-link">&raquo</a></li>
+                        {% endif %}
+    
+    
+    
+                    </ul>
+                    {% endif %}
+                </div>
+         
+            </div>
+        </section>
+        <!-- End of .latest-news-4 -->
+
+      
+       {% endblock %}
