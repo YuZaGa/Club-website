@@ -183,9 +183,9 @@ django_heroku.settings(locals())
 #AWS_DEFAULT_ACL = None
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'yuzaga',
-    'API_KEY': '179748487429254',
-    'API_SECRET': 'IJw-ig_1wSqzdKut-trYPO4BGDs'
+    'CLOUD_NAME': '',
+    'API_KEY': '',
+    'API_SECRET': ''
 }
 
 MEDIA_ROOT = '/media/'  # or any prefix you choose
