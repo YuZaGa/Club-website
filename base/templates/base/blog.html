@@ -54,7 +54,7 @@
                 {% for post in posts %}
                 <a href="{%  url 'post' post.slug %}" class="item">
                     <div class="img">
-                        <img src="{% static './images/jpg/latest-news1.jpg'%}">
+                        <img src="{{post.thumbnail.url}}">
                         <span class="date">{{post.createdp.date}}</span>
                     </div>
                     <h4 class="title">{{post.headline}}</h4>
