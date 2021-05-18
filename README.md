@@ -1,17 +1,42 @@
-# django-portfolio-website
+Innovision-Club
+===============
+College Club website developed with Django
 
-GETTING STARTED
+This is a dynamic website for addressing the basic needs of a college club such as blogging, announcements, team management etc which can be handled by the inbuilt Admin Panel.
 
-1 - Install requirements
-  pip install -r requirements.txt
- 
-2 - Runserver on port 8000
+Current features
+----------------
+Latest Events :
+* Ability to announce upcoming events
+* Ability to insert a link alongwith posters of such events to direct to registeration forms
 
-    python manage.py runserver
-    
-    http://127.0.0.1:8000/
-    
-3 - Create superuser
-    python manage.py createsuperuser
-    
-![](static/images/personal-blog.jpg)
+Latest Blogs :
+* Inbuilt advanced editor with tags, active & featured filters, Search functionality
+* 
+
+Team Profile : 
+* Add Team members according to thier groups
+* Decide the order in which you want them to be displayed. 
+* Ability to add thier social handle and thier description along with their photograph
+
+
+
+## Setup
+1. Git Clone this project:
+2. Create an python environment with ```python -m venv venv``` or ```virtualenv venv``` and activate it with (windows:```venv\Scripts\activate```, Mac/Linux:```source venv/bin/activate```.
+3. Install required packages: ``` pip install -r requirements.txt ```
+4. Update the cloudinary API and key in settings.py
+5. Create superuser
+6. Run app: ``` python manage.py runserver ```
+
+Bonus - Publish it on Heroku with Cloudinary serving as image storage solution. 
+
+https://codeburst.io/deploy-your-django-project-for-free-140d73a2c76b
+
+https://github.com/klis87/django-cloudinary-storage
+
+The free tier of Heroku sleeps after 30 minutes of inactivity. Use Kaffiene (http://kaffeine.herokuapp.com/) to keep it awake. 
+
+
+## Addition and Modification
+Due credit to people who have worked on different components of the project beforehand. **Dennis Ivy**
