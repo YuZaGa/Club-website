@@ -1,14 +1,22 @@
 Innovision-Club
 ===============
+
+![alt text](https://github.com/YuZaGa/Club-website/blob/master/staticfiles/11.png)
+
 College Club website developed with Django
 
 This is a dynamic website for addressing the basic needs of a college club such as blogging, announcements, team management etc which can be handled by the inbuilt Admin Panel.
 
 Current features
 ----------------
+
+![alt text](https://github.com/YuZaGa/Club-website/blob/master/staticfiles/22.png)
+
 Latest Events :
 * Ability to announce upcoming events
 * Ability to insert a link alongwith posters of such events to direct to registeration forms
+
+![alt text](https://github.com/YuZaGa/Club-website/blob/master/staticfiles/33.png)
 
 Latest Blogs :
 * Inbuilt advanced editor with tags, active & featured filters, Search functionality
