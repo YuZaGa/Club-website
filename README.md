@@ -15,17 +15,19 @@ Current features
 Latest Events :
 * Ability to announce upcoming events
 * Ability to insert a link alongwith posters of such events to direct to registeration forms
+* Active & featured filters
 
 ![alt text](https://github.com/YuZaGa/Club-website/blob/master/staticfiles/33.png)
 
 Latest Blogs :
-* Inbuilt advanced editor with tags, active & featured filters, Search functionality
-* 
+* Inbuilt advanced editor 
+* Search functionality with tags
+* Active & featured filters
 
 Team Profile : 
 * Add Team members according to thier groups
 * Decide the order in which you want them to be displayed. 
-* Ability to add thier social handle and thier description along with their photograph
+* Ability to add thier social handle and their description along with their photograph
 
 
 
